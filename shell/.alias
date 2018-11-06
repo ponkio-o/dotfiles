@@ -1,0 +1,16 @@
+# command alias
+alias dirs="dirs -v"
+alias python="python3"
+alias ll="ls -all"
+
+# ls color
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  alias ls="ls -GF"
+  ;;
+linux*)
+  # Linux
+  alias ls='ls -F --color'
+  ;;
+esac
