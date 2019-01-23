@@ -12,6 +12,12 @@ Plugin 'nathanaelkane/vim-indent-guides'
 call vundle#end()
 filetype plugin indent on
 
+" Syntax
+autocmd ColorScheme * highlight LineNr ctermfg=239
+syntax enable
+colorscheme molokai
+set t_Co=256
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -27,6 +33,10 @@ set hidden
 set showcmd
 " 改行時に#を入力しない
 autocmd FileType * setlocal formatoptions-=ro
+" Esc変更
+noremap <C><Space> <Esc>
+" クリップボード共有
+set clipboard=unnamedplus
 
 " 見た目系
 " 行番号を表示
@@ -76,9 +86,4 @@ set hlsearch
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-" 行番号背景
-hi LineNr ctermbg=0 ctermfg=0
-hi CursorLineNr ctermbg=4 ctermfg=0
-set cursorline
-hi clear CursorLine
 
