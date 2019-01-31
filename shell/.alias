@@ -2,6 +2,8 @@
 alias dirs="dirs -v"
 alias python="python3"
 alias ll="ls -all"
+alias agi="sudo apt-get -y install"
+alias lanip="sudo arp-scan -I enp31s0 -l"
 
 # ls color
 case "${OSTYPE}" in
