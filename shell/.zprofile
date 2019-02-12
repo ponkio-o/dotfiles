@@ -77,4 +77,9 @@ if [[ ! -n $TMUX ]]; then
   tmux attach-session -t "$ID"
 fi
 
+# tmuxを終了したらターミナルも終了させる
+if [[ ! -n $TMUX ]]; then
+    tmux new-session && exit
+fi
+
 source ~/.alias
