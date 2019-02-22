@@ -54,4 +54,20 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+# tmux自動起動
+if [[ ! -n $TMUX ]]; then
+  # get the IDs
+  ID="`tmux list-sessions`"
+  if [[ -z "$ID" ]]; then
+    tmux new-session
+  fi
+  ID="`echo $ID | $PERCOL | cut -d: -f1`"
+  tmux attach-session -t "$ID"
+fi
+
+# tmuxを終了したらターミナルも終了させる
+if [[ ! -n $TMUX ]]; then
+    tmux new-session && exit
+fi
+
 source ~/.alias
