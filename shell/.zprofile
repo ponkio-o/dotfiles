@@ -42,18 +42,6 @@ export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-# lsがカラー表示になるようエイリアスを設定
-case "${OSTYPE}" in
-darwin*)
-  # Mac
-  alias ls="ls -GF"
-  ;;
-linux*)
-  # Linux
-  alias ls='ls -F --color'
-  ;;
-esac
-
 # git設定
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
 autoload -Uz vcs_info

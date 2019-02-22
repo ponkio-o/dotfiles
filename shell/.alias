@@ -3,7 +3,7 @@ alias dirs="dirs -v"
 alias python="python3"
 alias ll="ls -all"
 alias agi="sudo apt-get -y install"
-alias lanip="sudo arp-scan -I enp31s0 -l"
+#alias lanip="sudo arp-scan -I enp31s0 -l"
 
 # ls color
 case "${OSTYPE}" in
@@ -14,5 +14,17 @@ darwin*)
 linux*)
   # Linux
   alias ls='ls -F --color'
+  ;;
+esac
+
+# arp-scan
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  alias lanip="sudo arp-scan -I en0 -l"
+  ;;
+linux*)
+  # Linux
+  alias ls="sudo arp-scan -I enp31s0 -l"
   ;;
 esac
