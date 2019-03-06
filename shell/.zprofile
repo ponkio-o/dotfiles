@@ -7,6 +7,9 @@ compinit
 setopt nolistbeep
 setopt magic_equal_subst
 
+#kubectl complete
+source <(kubectl completion zsh)
+
 # プロンプト
 PROMPT="%F{green}%c %f%# "
 
