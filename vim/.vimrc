@@ -71,6 +71,19 @@ set tabstop=4
 " 行頭でのTab文字の表示幅
 set shiftwidth=4
 
+if has("autocmd")
+  filetype plugin on
+  filetype indent on
+  "sw=softtabstop, sts=shiftwidth, ts=tabstop, et=expandtab
+  autocmd FileType c       setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType html    setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType yaml    setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType python  setlocal sw=4 sts=4 ts=4 et
+endif
+
+
+
+
 
 " 検索系
 " 検索文字列が小文字の場合は大文字小文字を区別なく検索する
