@@ -25,6 +25,6 @@ darwin*)
   ;;
 linux*)
   # Linux
-  alias ls="sudo arp-scan -I enp31s0 -l"
+  alias lanip="sudo arp-scan -I enp31s0 -l"
   ;;
 esac
