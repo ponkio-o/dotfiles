@@ -30,12 +30,6 @@ setopt auto_pushd
 DIRSTACKSIZE=10
 #同じディレクトリを重複しない
 setopt pushd_ignore_dups
-#dirs -v
-alias dirs="dirs -v"
-
-#alias
-alias python="python3"
-alias ll="ls -all"
 
 #色
 autoload colors
