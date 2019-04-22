@@ -17,7 +17,7 @@ alias ....="cd ../../.."
 alias ga="git add"
 alias gc="git commit"
 alias gst="git status"
-alias gpo="git push origin"
+alias gpo="git push"
 
 alias emacs="vim"
 
