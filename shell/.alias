@@ -15,7 +15,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 alias ga="git add"
-alias gc="git commit"
+alias gc="git commit -m"
 alias gst="git status"
 alias gpo="git push origin"
 
