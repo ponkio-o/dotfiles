@@ -3,7 +3,23 @@ alias dirs="dirs -v"
 alias python="python3"
 alias ll="ls -all"
 alias agi="sudo apt-get -y install"
-#alias lanip="sudo arp-scan -I enp31s0 -l"
+alias mv="mv -i"
+alias rm="rm -i"
+alias c="pbcopy"
+alias new="tmux new-window"
+alias pwdc="pwd | tr -d "\n" | pbcopy"
+alias -g G="|grep --color=auto"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+alias ga="git add"
+alias gc="git commit"
+alias gst="git status"
+alias gpo="git push origin"
+
+alias emacs="vim"
 
 # ls color
 case "${OSTYPE}" in
