@@ -44,3 +44,15 @@ linux*)
   alias lanip="sudo arp-scan -I enp31s0 -l"
   ;;
 esac
+
+# arp-scan
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  :
+  ;;
+linux*)
+  # Linux
+  alias pbcopy="xsel --clipboard --input"
+  ;;
+esac
