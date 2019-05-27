@@ -19,6 +19,9 @@ alias gc="git commit -m"
 alias gst="git status"
 alias gpo="git push origin"
 
+alias dp="docker ps"
+alias di="docker images"
+
 alias emacs="vim"
 
 # ls color
