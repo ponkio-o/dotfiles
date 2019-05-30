@@ -9,6 +9,7 @@ alias c="pbcopy"
 alias n="tmux new-window"
 alias pwdc="pwd | tr -d "\n" | pbcopy"
 alias -g G="|grep --color=auto"
+alias cl="clear"
 
 alias ..="cd .."
 alias ...="cd ../.."
