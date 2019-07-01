@@ -11,6 +11,7 @@ alias pwdc="pwd | tr -d "\n" | pbcopy"
 alias -g G="|grep --color=auto"
 alias cl="clear"
 alias cls="clear && ls"
+alias ssh="ssh -A"
 
 alias ..="cd .."
 alias ...="cd ../.."
