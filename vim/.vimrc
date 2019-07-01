@@ -1,9 +1,8 @@
 " Vundle
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
-
+set rtp+=~/.vim/bundle/vundle 
+call vundle#rc() 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/lightline.vim'
@@ -16,9 +15,7 @@ filetype plugin indent on
 autocmd ColorScheme * highlight LineNr ctermfg=239
 syntax enable
 colorscheme molokai
-set t_Co=256
-
-" setting
+set t_Co=256 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
 " バックアップファイルを作らない
@@ -79,6 +76,7 @@ if has("autocmd")
   autocmd FileType html    setlocal sw=4 sts=4 ts=4 et
   autocmd FileType yaml    setlocal sw=2 sts=2 ts=2 et
   autocmd FileType python  setlocal sw=4 sts=4 ts=4 et
+  autocmd BUfNewFile,BufRead */.ssh/ssh_conf/* setf sshconfig
 endif
 
 
