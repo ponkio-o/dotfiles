@@ -58,6 +58,7 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 function find_cd() {
     cd "$(find . -type d | peco)"
 }
+
 function peco-select-history() {
   BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
   CURSOR=$#BUFFER
