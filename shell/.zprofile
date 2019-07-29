@@ -54,6 +54,11 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+#peco function
+function find_cd() {
+    cd "$(find . -type d | peco)"  
+}
+
 # 初回シェル時のみ tmux実行
 if [ $SHLVL = 1 ]; then
     tmux
