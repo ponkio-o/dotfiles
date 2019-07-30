@@ -27,7 +27,8 @@ alias dp="docker ps"
 alias di="docker images"
 alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
 
-alias cf="find_cd"
+alias cdf="find_cd"
+alias vimf="find_vim"
 
 alias emacs="vim"
 
