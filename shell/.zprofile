@@ -73,7 +73,7 @@ bindkey '^r' peco-select-history
 
 # 初回シェル時のみ tmux実行
 if [ $SHLVL = 1 ]; then
-    tmux
+    tmux a
 fi
 
 source ~/.alias
