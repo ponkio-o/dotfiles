@@ -23,9 +23,11 @@ alias gc="git commit -m"
 alias gst="git status"
 alias gpo="git push origin"
 
-alias dp="docker ps"
-alias di="docker images"
-alias de='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
+#docker alias
+alias dps="docker ps"
+alias dimages="docker images"
+alias dexec='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
+alias dstop='docker stop $(docker ps | peco | cut -d " " -f 1)'
 
 alias cdf="find_cd"
 alias vimf="find_vim"
