@@ -31,7 +31,7 @@ DIRSTACKSIZE=10
 #同じディレクトリを重複しない
 setopt pushd_ignore_dups
 
-#色
+# color
 autoload colors
 colors
 
@@ -71,9 +71,21 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
-# 初回シェル時のみ tmux実行
-if [ $SHLVL = 1 ]; then
-    tmux a
+# terminal起動時にtmuxセッションを選択
+export PERCOL=peco
+if [[ ! -n $TMUX ]]; then
+  # get the IDs
+  ID="`tmux list-sessions`"
+  if [[ -z "$ID" ]]; then
+    tmux new-session
+  fi
+  create_new_session="Create New Session"
+  ID="$ID\n${create_new_session}:"
+  ID="`echo $ID | $PERCOL | cut -d: -f1`"
+  if [[ "$ID" = "${create_new_session}" ]]; then
+    tmux new-session
+  fi
+  tmux attach-session -t "$ID"
 fi
 
 source ~/.alias
