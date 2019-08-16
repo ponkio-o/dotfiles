@@ -13,6 +13,11 @@ source <(kubectl completion zsh)
 # プロンプト
 PROMPT="%F{green}%c %f%# "
 
+# zsh history
+export HISTSIZE=1000
+export SAVEHIST=10000
+setopt hist_ignore_dups
+
 #スペルミス
 setopt correct
 #ディレクトリ名でcd
