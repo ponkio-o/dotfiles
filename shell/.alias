@@ -58,7 +58,7 @@ linux*)
   ;;
 esac
 
-# arp-scan
+# copy to clipboard
 case "${OSTYPE}" in
 darwin*)
   # Mac

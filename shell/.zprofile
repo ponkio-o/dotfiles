@@ -15,8 +15,8 @@ PROMPT="%F{green}%c %f%# "
 
 # zsh history
 export HISTSIZE=1000
-export SAVEHIST=10000
-setopt hist_ignore_dups
+export SAVEHIST=100000
+setopt histignorealldups
 
 #スペルミス
 setopt correct
