@@ -69,3 +69,15 @@ linux*)
   alias pbcopy="xsel --clipboard --input"
   ;;
 esac
+
+# open command
+case "${OSTYPE}" in
+darwin*)
+  # Mac
+  :
+  ;;
+linux*)
+  # Linux
+  alias open="xdg-open"
+  ;;
+esac
