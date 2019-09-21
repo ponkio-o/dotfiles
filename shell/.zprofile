@@ -77,20 +77,22 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 # terminal起動時にtmuxセッションを選択
-export PERCOL=peco
-if [[ ! -n $TMUX ]]; then
-  # get the IDs
-  ID="`tmux list-sessions`"
-  if [[ -z "$ID" ]]; then
-    tmux new-session
-  fi
-  create_new_session="Create New Session"
-  ID="$ID\n${create_new_session}:"
-  ID="`echo $ID | $PERCOL | cut -d: -f1`"
-  if [[ "$ID" = "${create_new_session}" ]]; then
-    tmux new-session
-  fi
-  tmux attach-session -t "$ID"
+select-tmux-session () {
+    session=$(tmux ls | peco | cut -d: -f 1)
+    if [ -n "$session" ] ; then
+        tmux at -t "$session"
+    fi
+}
+
+
+if [ -z "$TMUX" ] ; then
+    if [ $(tmux ls | wc -l) -eq 0 ] ; then
+        tmux
+    elif [ $(tmux ls | wc -l) -eq 1 ] ; then
+        tmux at -t $(tmux ls | cut -d: -f 1)
+    else
+        select-tmux-session
+    fi
 fi
 
 source ~/.alias
