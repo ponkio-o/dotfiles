@@ -107,5 +107,11 @@ if &term == "xterm-256color"
     hi Visual  ctermfg=236
 endif
 
-" .md を markdown として扱う
-au BufRead,BufNewFile *.md set filetype=markdown
+""" markdown preview
+autocmd BufRead,BufNewFile *.mkd  set filetype=markdown
+autocmd BufRead,BufNewFile *.md  set filetype=markdown
+" Need: kannokanno/previm
+nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
+" 自動で折りたたまないようにする
+let g:vim_markdown_folding_disabled=1
+let g:previm_enable_realtime = 1
