@@ -7,6 +7,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'itchyny/lightline.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-markdown'
+Plugin 'kannokanno/previm'
+Plugin 'tyru/open-browser.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -103,3 +106,6 @@ if &term == "xterm-256color"
     hi Comment ctermfg=102
     hi Visual  ctermfg=236
 endif
+
+" .md を markdown として扱う
+au BufRead,BufNewFile *.md set filetype=markdown
