@@ -3,7 +3,6 @@ if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
 autoload -U compinit
-compinit
 setopt nolistbeep
 setopt magic_equal_subst
 
@@ -75,24 +74,5 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-# terminal起動時にtmuxセッションを選択
-select-tmux-session () {
-    session=$(tmux ls | peco | cut -d: -f 1)
-    if [ -n "$session" ] ; then
-        tmux at -t "$session"
-    fi
-}
-
-
-if [ -z "$TMUX" ] ; then
-    if [ $(tmux ls | wc -l) -eq 0 ] ; then
-        tmux
-    elif [ $(tmux ls | wc -l) -eq 1 ] ; then
-        tmux at -t $(tmux ls | cut -d: -f 1)
-    else
-        select-tmux-session
-    fi
-fi
 
 source ~/.alias
