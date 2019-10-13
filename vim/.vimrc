@@ -115,3 +115,6 @@ nnoremap <silent> <C-p> :PrevimOpen<CR> " Ctrl-pでプレビュー
 " 自動で折りたたまないようにする
 let g:vim_markdown_folding_disabled=1
 let g:previm_enable_realtime = 1
+
+" tex compiler
+nnoremap <silent> <C-t> :!texc -b %<CR> " Ctrl-pでプレビュー
