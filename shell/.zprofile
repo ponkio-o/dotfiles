@@ -27,6 +27,8 @@ setopt no_beep
 setopt ignore_eof
 #Check "rm *" command
 setopt rm_star_wait
+#curl no matches found対策
+setopt nonomatch
 
 #cdでpushdする
 setopt auto_pushd
