@@ -23,6 +23,8 @@ alias gc="git commit -m"
 alias gst="git status"
 alias gpo="git push origin"
 
+alias terraform="tf"
+
 #docker alias
 alias dps="docker ps"
 alias dimages="docker images"
