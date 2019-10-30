@@ -2,7 +2,8 @@
 if [ -e /usr/local/share/zsh-completions ]; then
     fpath=(/usr/local/share/zsh-completions $fpath)
 fi
-autoload -U compinit
+autoload -Uz compinit
+compinit
 setopt nolistbeep
 setopt magic_equal_subst
 
