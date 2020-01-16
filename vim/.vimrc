@@ -38,6 +38,11 @@ noremap <C><Space> <Esc>
 " クリップボード共有
 set clipboard=unnamedplus
 
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <silent> <C-a> <Esc>0<Insert>
+inoremap <silent> <C-e> <Esc>$a
+
 " 見た目系
 " 行番号を表示
 set number
