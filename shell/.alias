@@ -29,8 +29,14 @@ alias tf="terraform"
 #docker alias
 alias dps="docker ps"
 alias dimages="docker images"
-alias dexec='docker exec -it $(docker ps | peco | cut -d " " -f 1) /bin/bash'
-alias dstop='docker stop $(docker ps | peco | cut -d " " -f 1)'
+alias dexec='docker exec -it $(docker ps | tail -n +2 | peco | cut -d " " -f 1) /bin/bash'
+alias dstop='docker stop $(docker ps | tail -n +2 | peco | cut -d " " -f 1)'
+
+#kubernetes alias
+alias k="kubectl"
+alias kgp="kubectl get pod"
+alias kgn="kubectl get node"
+alias kexec='kubectl exec -it $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1) /bin/bash'
 
 alias cdf="find_cd"
 alias vimf="find_vim"
