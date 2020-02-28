@@ -16,5 +16,3 @@ if [ -z "$TMUX" ] ; then
     fi
 fi
 
-autoload -Uz compinit
-compinit
