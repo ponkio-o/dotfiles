@@ -1,28 +1,35 @@
+# 補完候補時にビープ音を鳴らさない
 setopt nolistbeep
+# 引数の補完を有効化　
 setopt magic_equal_subst
+zstyle ':completion:*:default' menu select=1
 
 # プロンプト
 PROMPT="%F{green}%c %f%# "
 
 # zsh history
+HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 setopt histignorealldups
 
-#スペルミス
+# スペルミス
 setopt correct
-#ディレクトリ名でcd
+# ディレクトリ名でcd
 setopt auto_cd
-#beep off
+# beep off
 setopt no_beep
-#^Dで終了しない
+# ^D で終了しない
 setopt ignore_eof
-#Check "rm *" command
+# Check "rm *" command
 setopt rm_star_wait
-#curl no matches found対策
+# curl no matches found 対策
 setopt nonomatch
+# 履歴を共有
+setopt share_history
 
-#cdでpushdする
+
+# cd で pushd する
 setopt auto_pushd
 #pushdの上限値
 DIRSTACKSIZE=10
@@ -35,10 +42,7 @@ colors
 
 # ls
 export LSCOLORS=gxfxcxdxbxegedabagacag
-export LS_COLORS='di=36;40:ln=35;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;46'
-
-# 補完候補もLS_COLORSに合わせて色が付くようにする
-zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=32:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
 # git設定
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
@@ -69,4 +73,10 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
  
+setopt auto_list
+setopt auto_menu
+zstyle ':completion:*:default' menu select=1 
+# 補完候補もLS_COLORSに合わせて色が付くようにする
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
 source ~/.alias
