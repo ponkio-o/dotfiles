@@ -41,8 +41,8 @@ autoload colors
 colors
 
 # ls
-export LSCOLORS=gxfxcxdxbxegedabagacag
-export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=32:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+#export LSCOLORS=gxfxcxdxbxegedabagacag
+#export LS_COLORS='di=34:ln=35:so=32:pi=33:ex=32:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 
 # git設定
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
@@ -75,7 +75,6 @@ bindkey '^r' peco-select-history
  
 setopt auto_list
 setopt auto_menu
-zstyle ':completion:*:default' menu select=1 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
