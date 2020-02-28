@@ -1,14 +1,5 @@
-#補完機能
-if [ -e /usr/local/share/zsh-completions ]; then
-    fpath=(/usr/local/share/zsh-completions $fpath)
-fi
-autoload -Uz compinit
-compinit
 setopt nolistbeep
 setopt magic_equal_subst
-
-#kubectl complete
-source <(kubectl completion zsh)
 
 # プロンプト
 PROMPT="%F{green}%c %f%# "
@@ -77,5 +68,5 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
+ 
 source ~/.alias
