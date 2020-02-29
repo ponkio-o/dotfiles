@@ -1,6 +1,5 @@
 # 補完候補時にビープ音を鳴らさない
-setopt nolistbeep
-# 引数の補完を有効化　
+setopt nolistbeep # 引数の補完を有効化　
 setopt magic_equal_subst
 zstyle ':completion:*:default' menu select=1
 
@@ -72,10 +71,5 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
- 
-setopt auto_list
-setopt auto_menu
-# 補完候補もLS_COLORSに合わせて色が付くようにする
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
 source ~/.alias
