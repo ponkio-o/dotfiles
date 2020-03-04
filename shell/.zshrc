@@ -6,7 +6,7 @@ autoload -Uz _zplugin
 
 ### Complement ###
 zplugin load zsh-users/zsh-completions
-fpath=(~/.zsh-completions/src $fpath)
+fpath=(~/.zsh-completions $fpath)
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
