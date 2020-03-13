@@ -20,3 +20,12 @@ setopt list_types              # 補完候補にファイルの種類も表示�
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 autoload -U compinit; compinit
 source ~/.zprofile
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/r0364/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/r0364/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/r0364/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/r0364/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# aws cli
+complete -C aws_completer aws
