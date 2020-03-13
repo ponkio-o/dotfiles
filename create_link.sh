@@ -1,5 +1,7 @@
 ln -sf $(pwd)/shell/.alias ~/.alias
 ln -sf $(pwd)/shell/.zprofile ~/.zprofile
+ln -sf $(pwd)/shell/.zshenv ~/.zshenv
+ln -sf $(pwd)/shell/.zshrc ~/.zshrc
 ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 ln -sf $(pwd)/vim/colors/molokai.vim ~/.vim/colors/molokai.vim
