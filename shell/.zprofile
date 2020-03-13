@@ -2,6 +2,8 @@
 setopt nolistbeep # 引数の補完を有効化　
 setopt magic_equal_subst
 zstyle ':completion:*:default' menu select=1
+# complete cache
+zstyle ':completion::complete:*' use-cache true
 
 # プロンプト
 PROMPT="%F{green}%c %f%# "
