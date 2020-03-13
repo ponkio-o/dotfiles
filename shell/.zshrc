@@ -19,3 +19,4 @@ setopt list_types              # 補完候補にファイルの種類も表示�
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 autoload -U compinit; compinit
+source ~/.zprofile
