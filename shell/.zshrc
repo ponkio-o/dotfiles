@@ -29,3 +29,10 @@ if [ -f '/Users/r0364/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '
 
 # aws cli
 complete -C aws_completer aws
+
+#MySQL Client
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
+
+# kubectl completion
+source <(kubectl completion zsh)
+complete -o default -F __start_kubectl k
