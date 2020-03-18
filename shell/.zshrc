@@ -21,9 +21,6 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 autoload -U compinit; compinit
 source ~/.zprofile
 
-# aws cli
-complete -C aws_completer aws
-
 #MySQL Client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
@@ -36,3 +33,6 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
+
+# aws cli
+complete -C aws_completer aws
