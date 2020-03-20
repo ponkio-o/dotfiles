@@ -18,7 +18,7 @@ ln -sf $(pwd)/shell/.zshrc ~/.zshrc
 ln -sf $(pwd)/tmux/.tmux.conf ~/.tmux.conf
 ln -sf $(pwd)/vim/.vimrc ~/.vimrc
 ln -sf $(pwd)/vim/colors/molokai.vim ~/.vim/colors/molokai.vim
-ln -nsf $(pwd)/shell/zsh-completions ~/.zsh-completions
+ln -nsf $(pwd)/shell/zsh-completions/* ~/.zsh-completions
 ln -sf $(pwd)/peco/config.json ~/.peco/config.json
 
 cp $(pwd)/tmux-scripts/get_battery_tmux /usr/local/bin/
