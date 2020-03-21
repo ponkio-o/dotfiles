@@ -1,0 +1,21 @@
+[submodule "vim-plugins/open-browser.vim"]
+	path = vim-plugins/open-browser.vim
+	url = https://github.com/tyru/open-browser.vim.git
+[submodule "vim-plugins/Vundle.vim"]
+	path = vim-plugins/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "vim-plugins/vim-gitgutter"]
+	path = vim-plugins/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter.git
+[submodule "vim-plugins/vim-markdown"]
+	path = vim-plugins/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "vim-plugins/lightline.vim"]
+	path = vim-plugins/lightline.vim
+	url = https://github.com/itchyny/lightline.vim.git
+[submodule "vim-plugins/previm"]
+	path = vim-plugins/previm
+	url = https://github.com/previm/previm.git
+[submodule "vim-plugins/vim-indent-guides"]
+	path = vim-plugins/vim-indent-guides
+	url = https://github.com/msmhrt/vim-indent-guides.git
