@@ -35,8 +35,6 @@ set showcmd
 autocmd FileType * setlocal formatoptions-=ro
 " Esc変更
 noremap <C><Space> <Esc>
-" クリップボード共有
-set clipboard=unnamedplus
 
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
