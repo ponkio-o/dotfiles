@@ -90,3 +90,5 @@ linux*)
   alias open="xdg-open"
   ;;
 esac
+
+alias myip="curl ifconfig.io"
