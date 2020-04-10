@@ -57,21 +57,4 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
-#peco function
-function find_cd() {
-    cd "$(find . -type d | peco)"
-}
-
-function find_vim() {
-    vim "$(find . -type f | peco)"
-}
-
-function peco-select-history() {
-  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-
 source ~/.alias
