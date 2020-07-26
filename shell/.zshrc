@@ -40,6 +40,9 @@ if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/g
 # nodebrew
 export PATH=$HOME/.nodebrew/node/v12.16.1/bin:$PATH
 
+# krew
+export PATH="${PATH}:${HOME}/.krew/bin"
+
 ### peco function ####
 
 # kubectl config selector
