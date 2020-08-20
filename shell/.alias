@@ -36,7 +36,7 @@ alias dstop='docker stop $(docker ps | tail -n +2 | peco | cut -d " " -f 1)'
 alias k="kubectl"
 alias kgp="kubectl get pod"
 alias kgn="kubectl get node"
-alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1) /bin/bash'
+alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1)'
 
 alias cdf="find_cd"
 alias vimf="find_vim"
