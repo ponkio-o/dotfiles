@@ -46,12 +46,21 @@ export PATH="${PATH}:${HOME}/.krew/bin"
 ### peco function ####
 
 # kubectl config selector
-function kubeswitch() {
+function kx() {
     kcontext=$(kubectl config get-contexts  | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
     if [ -n "$kcontext" ]; then
         kubectl config use-context $kcontext
     fi
 }
+
+# kubectl ns
+function kns() {
+    knamespace=$(kubens | peco)
+    if [ -n "$knamespace" ]; then
+        kubens $knamespace
+    fi
+}
+    
 
 # find directory
 function find_cd() {
