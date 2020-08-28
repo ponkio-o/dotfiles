@@ -13,6 +13,7 @@ Plug 'kannokanno/previm'
 Plug 'tyru/open-browser.vim'
 Plug 'preservim/nerdtree'
 Plug 'mattn/vim-sonictemplate'
+Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 " Syntax
