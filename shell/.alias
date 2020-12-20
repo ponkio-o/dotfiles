@@ -91,4 +91,4 @@ linux*)
   ;;
 esac
 
-alias myip="curl ifconfig.io"
+alias myip="curl ifconfig.me"
