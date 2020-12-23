@@ -78,5 +78,10 @@ function peco-select-history() {
   CURSOR=$#BUFFER
   zle clear-screen
 }
+
+function tfx() {
+  tfenv use "$(tfenv list | peco)"
+}
+
 zle -N peco-select-history
 bindkey '^r' peco-select-history
