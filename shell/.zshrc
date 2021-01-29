@@ -84,7 +84,7 @@ function tfx() {
 }
 
 function gco() {
-  git checkout "$(git branch | peco)"
+  git branch -a --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
 }
 
 zle -N peco-select-history
