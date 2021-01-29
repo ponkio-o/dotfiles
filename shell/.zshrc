@@ -83,7 +83,7 @@ function tfx() {
   tfenv use "$(tfenv list | peco)"
 }
 
-function gcout() {
+function gco() {
   git checkout "$(git branch | peco)"
 }
 
