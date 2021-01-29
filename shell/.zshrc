@@ -83,5 +83,9 @@ function tfx() {
   tfenv use "$(tfenv list | peco)"
 }
 
+function gcout() {
+  git checkout "$(git branch | peco)"
+}
+
 zle -N peco-select-history
 bindkey '^r' peco-select-history
