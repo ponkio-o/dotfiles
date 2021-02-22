@@ -14,6 +14,8 @@ Plug 'tyru/open-browser.vim'
 Plug 'preservim/nerdtree'
 Plug 'mattn/vim-sonictemplate'
 Plug 'mechatroner/rainbow_csv'
+Plug 'yasuhiroki/circleci.vim'
+Plug 'hashivim/vim-terraform'
 call plug#end()
 
 " Syntax
