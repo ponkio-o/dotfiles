@@ -31,6 +31,8 @@ complete -o default -F __start_kubectl k
 # aws cli
 complete -C aws_completer aws
 
+eval "$(gh completion -s zsh)"
+
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/path.zsh.inc'; fi
 
