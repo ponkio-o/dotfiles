@@ -84,3 +84,6 @@ if has("autocmd")
   autocmd FileType python  setlocal sw=4 sts=4 ts=4 et
   autocmd BUfNewFile,BufRead */.ssh/ssh_conf/* setf sshconfig
 endif
+
+" クリップボードを共有
+set clipboard+=unnamed
