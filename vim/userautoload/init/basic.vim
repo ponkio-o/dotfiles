@@ -26,7 +26,7 @@ set wildmode=list:longest
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
-set listset listchars=tab:»-,trail:-,nbsp:%,eol:↲
+set list listchars=tab:»-,trail:-,nbsp:%,eol:↲
 " Tab文字を半角スペースにする
 set expandtab
 " 行頭以外のTab文字の表示幅（スペースいくつ分）
