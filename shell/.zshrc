@@ -29,6 +29,9 @@ if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-
 # GOPATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+# VMWare OVF Tool
+export OVF_TOOL="/Applications/VMware OVF Tool"
+export PATH=$PATH:$OVF_TOOL
 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
