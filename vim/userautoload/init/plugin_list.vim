@@ -13,4 +13,5 @@ Plug 'mechatroner/rainbow_csv'
 Plug 'yasuhiroki/circleci.vim'
 Plug 'hashivim/vim-terraform'
 Plug 'ConradIrwin/vim-bracketed-paste'
+Plug 'tpope/vim-fugitive'
 call plug#end()
