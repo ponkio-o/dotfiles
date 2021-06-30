@@ -29,7 +29,7 @@ alias tf="terraform"
 #docker alias
 alias dps="docker ps"
 alias dimages="docker images"
-alias dexec='docker exec -it $(docker ps | tail -n +2 | peco | cut -d " " -f 1) /bin/bash'
+alias dexec='docker exec -it $(docker ps | tail -n +2 | peco | cut -d " " -f 1) sh'
 alias dstop='docker stop $(docker ps | tail -n +2 | peco | cut -d " " -f 1)'
 
 #kubernetes alias
