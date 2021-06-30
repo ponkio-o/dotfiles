@@ -14,4 +14,5 @@ Plug 'yasuhiroki/circleci.vim'
 Plug 'hashivim/vim-terraform'
 Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'tpope/vim-fugitive'
+Plug 'tsandall/vim-rego'
 call plug#end()
