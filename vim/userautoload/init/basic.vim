@@ -90,3 +90,9 @@ set clipboard+=unnamed
 
 " キーコードシーケンスの時間
 set timeout timeoutlen=500
+
+" Undo の永続化
+if has('persistent_undo')
+  set undodir=~/.vim/.undo
+  set undofile
+endif
