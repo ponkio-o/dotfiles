@@ -11,7 +11,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 " Leader
 let mapleader = "\<Space>"
-nnoremap <leader>q :q!<cr>
 nnoremap <leader>w :w!<cr>
 nnoremap <leader>wq :wq!<cr>
 nnoremap <leader>r :source ~/.vimrc<cr>
