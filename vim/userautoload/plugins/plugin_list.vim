@@ -14,5 +14,6 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 Plug 'tpope/vim-fugitive'
 Plug 'tsandall/vim-rego'
 Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'andrewstuart/vim-kubernetes'
 call plug#end()
