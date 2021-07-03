@@ -96,3 +96,6 @@ if has('persistent_undo')
   set undodir=~/.vim/.undo
   set undofile
 endif
+
+" Backspace を有効化
+set backspace=2
