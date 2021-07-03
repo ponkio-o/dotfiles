@@ -14,6 +14,8 @@ let mapleader = "\<Space>"
 nnoremap <leader>w :w<cr>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>wq :wq<cr>
+nnoremap <leader>wqq :wq!<cr>
+nnoremap <leader>qq :q!<cr>
 nnoremap <leader>r :source ~/.vimrc<cr>
 
 " Leader for git commands
