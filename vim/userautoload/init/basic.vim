@@ -87,3 +87,6 @@ endif
 
 " クリップボードを共有
 set clipboard+=unnamed
+
+" キーコードシーケンスの時間
+set timeout timeoutlen=500
