@@ -96,3 +96,16 @@ function tfx() {
 function gco() {
   git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
 }
+
+# github repository open
+function open-git-remote() {
+  git rev-parse --git-dir >/dev/null 2>&1
+  if [[ $? == 0 ]]; then
+    git config --get remote.origin.url | sed -e 's#ssh://git@#https://#g' -e 's#git@#https://#g' -e 's#github.com:#github.com/#g' | xargs open
+  else
+    echo ".git not found.\n"
+  fi
+}
+
+zle -N open-git-remote
+bindkey '^o' open-git-remote
