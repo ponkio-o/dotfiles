@@ -14,6 +14,7 @@ zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 fpath=(~/.zsh-completions $fpath)
 
+
 # Key bind
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
@@ -56,6 +57,11 @@ kubectl() {
 eval "$(gh completion -s zsh)"
 # The next line enables shell command completion for gcloud.
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
+# aws cli
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+compinit
+complete -C '/usr/local/bin/aws_completer' aws
 
 ### peco function ###
 # kubectl config selector
