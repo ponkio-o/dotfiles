@@ -10,8 +10,8 @@ autoload -Uz _zinit
 
 ### Complement ###
 zinit load zsh-users/zsh-syntax-highlighting
-zinit ice wait'!0'; zplugin load zsh-users/zsh-completions
-zinit ice wait'!0'; zplugin load zsh-users/zsh-autosuggestions
+zinit ice wait'!0'; zinit load zsh-users/zsh-completions
+zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 fpath=(~/.zsh-completions $fpath)
 
 # Key bind
@@ -43,7 +43,6 @@ export PATH=$PATH:$OVF_TOOL
 
 # 補完候補もLS_COLORSに合わせて色が付くようにする
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-autoload -U compinit; compinit
 source ~/.zprofile
 
 ### completion ###
