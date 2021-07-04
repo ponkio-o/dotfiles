@@ -7,7 +7,7 @@ autoload -Uz _zinit
 zinit load zsh-users/zsh-syntax-highlighting
 zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
-fpath=(~/.zsh-completions $fpath)
+fpath=(~/.zsh-completions/src $fpath)
 
 # Key bind
 zmodload zsh/complist
