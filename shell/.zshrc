@@ -1,19 +1,13 @@
-### Added by Zplugin's installer
-#source "$HOME/.zplugin/bin/zplugin.zsh"
-#autoload -Uz _zplugin
-#(( ${+_comps} )) && _comps[zplugin]=_zplugin
-### End of Zplugin installer's chunk
-
+### zinit ###
 source "${HOME}/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
-### Complement ###
+### zinit plugin ###
 zinit load zsh-users/zsh-syntax-highlighting
 zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 fpath=(~/.zsh-completions $fpath)
-
 
 # Key bind
 zmodload zsh/complist
@@ -27,7 +21,7 @@ setopt list_packed             # 補完候補をできるだけ詰めて表示�
 setopt list_types              # 補完候補にファイルの種類も表示する
 
 ### PATH ###
-#MySQL Client
+# MySQL Client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 # nodebrew
 export PATH=$HOME/.nodebrew/node/v12.16.1/bin:$PATH
@@ -55,7 +49,7 @@ kubectl() {
 }
 # gh (GitHub CLI)
 eval "$(gh completion -s zsh)"
-# The next line enables shell command completion for gcloud.
+# gcloud
 if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
 # aws cli
 autoload bashcompinit && bashcompinit
