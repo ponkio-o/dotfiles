@@ -1,12 +1,20 @@
 ### Added by Zplugin's installer
-source "$HOME/.zplugin/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+#source "$HOME/.zplugin/bin/zplugin.zsh"
+#autoload -Uz _zplugin
+#(( ${+_comps} )) && _comps[zplugin]=_zplugin
 ### End of Zplugin installer's chunk
 
+source "${HOME}/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
 ### Complement ###
-zplugin load zsh-users/zsh-completions
+zinit load zsh-users/zsh-syntax-highlighting
+zinit ice wait'!0'; zplugin load zsh-users/zsh-completions
+zinit ice wait'!0'; zplugin load zsh-users/zsh-autosuggestions
 fpath=(~/.zsh-completions $fpath)
+
+# Key bind
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
@@ -40,10 +48,11 @@ source ~/.zprofile
 
 ### completion ###
 # kubectl completion
-source <(kubectl completion zsh)
-complete -o default -F __start_kubectl k
-# aws cli
-complete -C aws_completer aws
+kubectl() {
+  unfunction "$0"
+  source <(kubectl completion zsh)
+  $0 "$@"
+}
 # gh (GitHub CLI)
 eval "$(gh completion -s zsh)"
 # The next line enables shell command completion for gcloud.
@@ -57,7 +66,7 @@ function kx() {
         kubectl config use-context $kcontext
     fi
 }
-# kubectl ns
+# kubectl namespace selector
 function kns() {
     knamespace=$(kubens | peco)
     if [ -n "$knamespace" ]; then
