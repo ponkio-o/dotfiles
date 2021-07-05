@@ -85,10 +85,10 @@ if has("autocmd")
   autocmd BUfNewFile,BufRead */.ssh/ssh_conf/* setf sshconfig
 endif
 
-" クリップボードを共有
+" ヤンクとクリップボードを共有
 set clipboard+=unnamed
 
-" キーコードシーケンスの時間
+" キーコードシーケンスの時間(e.g. leader)
 set timeout timeoutlen=500
 
 " Undo の永続化
@@ -99,3 +99,6 @@ endif
 
 " Backspace を有効化
 set backspace=2
+
+" 保存時に行末のスペースを削除
+autocmd BufWritePre * :%s/\s\+$//ge
