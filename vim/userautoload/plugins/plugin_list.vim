@@ -16,4 +16,5 @@ Plug 'tsandall/vim-rego'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'andrewstuart/vim-kubernetes'
+Plug 'Chiel92/vim-autoformat'
 call plug#end()
