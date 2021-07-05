@@ -7,6 +7,9 @@ autoload -Uz _zinit
 zinit load zsh-users/zsh-syntax-highlighting
 zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
+
+### fpath ###
+zstyle ':completion:*:*:git:*' script ~/.zsh-completions/git-completion.bash
 fpath=(~/.zsh-completions/src $fpath)
 
 # Key bind
