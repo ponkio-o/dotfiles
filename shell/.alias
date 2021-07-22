@@ -1,17 +1,14 @@
 # command alias
 alias dirs="dirs -v"
-alias python="python3"
 alias ll="ls -all"
 alias agi="sudo apt-get -y install"
 alias mv="mv -i"
 alias rm="rm -i"
 alias cp="cp -i"
 alias c="pbcopy"
-alias n="tmux new-window"
 alias pwdc="pwd | tr -d "\n" | pbcopy"
 alias -g G="|grep --color=auto"
-alias cl="clear"
-alias cls="clear && ls"
+alias -g L="| less"
 alias ssh="ssh -A"
 alias lzd="lazydocker"
 
@@ -27,8 +24,8 @@ alias gpo="git push origin"
 alias tf="terraform"
 
 #docker alias
+alias d="docker"
 alias dps="docker ps"
-alias dimages="docker images"
 alias dexec='docker exec -it $(docker ps | tail -n +2 | peco | cut -d " " -f 1) sh'
 alias dstop='docker stop $(docker ps | tail -n +2 | peco | cut -d " " -f 1)'
 
