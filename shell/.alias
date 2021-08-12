@@ -11,6 +11,8 @@ alias -g G="|grep --color=auto"
 alias -g L="| less"
 alias ssh="ssh -A"
 alias lzd="lazydocker"
+alias myip="curl ifconfig.me"
+alias mux='pgrep -vxq tmux > /dev/null && tmux new -d -s delete-me && tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && tmux kill-session -t delete-me && tmux attach || tmux attach'
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -87,5 +89,3 @@ linux*)
   alias open="xdg-open"
   ;;
 esac
-
-alias myip="curl ifconfig.me"
