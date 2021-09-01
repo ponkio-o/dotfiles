@@ -43,6 +43,10 @@ export PATH=$PATH:$OVF_TOOL
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 source ~/.zprofile
 
+# direnv
+export EDITOR=vim
+eval "$(direnv hook zsh)"
+
 ### completion ###
 # kubectl completion
 kubectl() {
