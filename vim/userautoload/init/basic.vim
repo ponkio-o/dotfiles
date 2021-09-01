@@ -80,7 +80,7 @@ if has("autocmd")
   autocmd FileType yaml    setlocal sw=2 sts=2 ts=2 et
   autocmd FileType yml     setlocal sw=2 sts=2 ts=2 et
   autocmd FileType python  setlocal sw=4 sts=4 ts=4 et
-  autocmd BUfNewFile,BufRead */.ssh/ssh_conf/* setf sshconfig
+  autocmd BufNewFile,BufRead */.ssh/ssh_conf/* setf sshconfig
 endif
 
 " ヤンクとクリップボードを共有
@@ -99,4 +99,12 @@ endif
 set backspace=2
 
 " 保存時に行末のスペースを削除
-autocmd BufWritePre * :%s/\s\+$//ge
+fun! StripTrailingWhitespace()
+    " Don't strip on these filetypes
+    " 'markdow\|javascript\|...'
+    if &ft =~ 'markdown'
+        return
+    endif
+    %s/\s\+$//ge
+endfun
+autocmd BufWritePre * call StripTrailingWhitespace()
