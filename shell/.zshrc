@@ -116,3 +116,4 @@ function open-git-remote() {
 
 zle -N open-git-remote
 bindkey '^o' open-git-remote
+bindkey -e
