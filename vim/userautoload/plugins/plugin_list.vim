@@ -18,4 +18,5 @@ Plug 'honza/vim-snippets'
 Plug 'andrewstuart/vim-kubernetes'
 Plug 'Chiel92/vim-autoformat'
 Plug 'tyru/open-browser.vim'
+Plug 'fatih/vim-go'
 call plug#end()
