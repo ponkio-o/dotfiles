@@ -1,3 +1,4 @@
+bindkey -e
 ### zinit ###
 source "${HOME}/.zinit/bin/zinit.zsh"
 autoload -Uz _zinit
@@ -116,4 +117,3 @@ function open-git-remote() {
 
 zle -N open-git-remote
 bindkey '^o' open-git-remote
-bindkey -e
