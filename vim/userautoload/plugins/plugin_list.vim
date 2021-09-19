@@ -22,4 +22,5 @@ Plug 'tyru/open-browser.vim'
 Plug 'fatih/vim-go'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'machakann/vim-sandwich'
 call plug#end()
