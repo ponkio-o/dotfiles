@@ -117,3 +117,17 @@ function open-git-remote() {
 
 zle -N open-git-remote
 bindkey '^o' open-git-remote
+
+alias agg="_agAndVim"
+function _agAndVim() {
+    if [ -z "$1" ]; then
+        echo 'Usage: agg PATTERN'
+        return 0
+    fi
+    result=`ag $1 | fzf`
+    line=`echo "$result" | awk -F ':' '{print $2}'`
+    file=`echo "$result" | awk -F ':' '{print $1}'`
+    if [ -n "$file" ]; then
+        vim $file +$line
+    fi
+}
