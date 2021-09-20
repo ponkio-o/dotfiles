@@ -1,6 +1,7 @@
 set nocompatible
 filetype off
 filetype plugin indent on
+set encoding=UTF-8
 
 " 改行の自動コメントアウト無効化
 autocmd FileType * setlocal formatoptions-=ro
