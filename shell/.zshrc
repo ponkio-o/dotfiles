@@ -132,7 +132,7 @@ function _agAndVim() {
     fi
 }
 
-peco-src () {
+fzf-git-repo () {
     local repo=$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")
     if [ -n "$repo" ]; then
         repo=$(ghq list --full-path --exact $repo)
@@ -141,5 +141,5 @@ peco-src () {
     fi
     zle clear-screen
 }
-zle -N peco-src
-bindkey '^]' peco-src
+zle -N fzf-git-repo
+bindkey '^]' fzf-git-repo
