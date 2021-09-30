@@ -25,4 +25,5 @@ Plug 'junegunn/fzf.vim'
 Plug 'machakann/vim-sandwich'
 Plug 'vim-denops/denops.vim'
 Plug 'kat0h/dps-bufpreview.vim'
+Plug 'mattn/vim-maketable'
 call plug#end()
