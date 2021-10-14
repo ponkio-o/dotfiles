@@ -68,7 +68,7 @@ complete -C '/usr/local/bin/aws_completer' aws
 ### peco function ###
 # kubectl config selector
 function kx() {
-    kcontext=$(kubectl config get-contexts  | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
+    kcontext=$(kubectl config get-contexts --no-headers=true | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
     if [ -n "$kcontext" ]; then
         kubectl config use-context $kcontext
     fi
