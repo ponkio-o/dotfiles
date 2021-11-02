@@ -90,9 +90,12 @@ function find_vim() {
 }
 # zsh hisotry ( Ctrl + r )
 function peco-select-history() {
-  BUFFER=$(\history -n -r 1 | peco --query "$LBUFFER")
+  if (($+zle_bracketed_paste)); then
+        print $zle_bracketed_paste[2]
+  fi
+  BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
   CURSOR=$#BUFFER
-  zle clear-screen
+  zle reset-prompt
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
