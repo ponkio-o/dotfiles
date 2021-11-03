@@ -1,0 +1,38 @@
+function get_instance {
+    aws ec2 describe-instances --filter "Name=instance-state-name,Values=running" --profile $1 | jq ".Reservations[].Instances[]" | jq "{InstanceId, PrivateIpAddress, InstanceName: (.Tags[] | select(.Key==\"Name\").Value)}" | jq -r 'to_entries | [.[].value] | @tsv' | peco
+}
+
+function start_session {
+    start_ssm_session $1 $2
+
+    if [ $? = 254 ]; then
+        start_ssh_session $1 $2
+    fi
+}
+
+function start_ssm_session {
+    printf "\e[34mAttempt to connect using SessionManager.\n\e[m"
+    aws ssm start-session --target $1 --profile $2
+}
+
+function start_ssh_session {
+    printf "\e[34mAttempt to connect using SSH.\n\e[m"
+    instance=`aws ec2 describe-instances --instance-ids $1 --profile $2 | jq -r .Reservations[].Instances[]`
+    pub_key=$(echo $instance | jq -r .KeyName)
+    public_ip=$(echo $instance | jq -r .PublicIpAddress)
+    printf "\e[34mUsing PrivateKey: $pub_key.pem\n\e[m"
+    ssh -i ~/.ssh/$pub_key.pem ec2-user@$public_ip
+}
+
+function select_profile {
+    cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco
+}
+
+profile=$(select_profile)
+printf "\e[34mProfileName: %s\n\e[m" $profile
+printf "\e[34mLoading...\n\e[m"
+instance=$(get_instance $profile)
+instance_id=$(echo $instance | cut -f 1 -d " ")
+instance_global_ip=$(echo $instance | cut -f 2 -d " ")
+
+start_session $instance_id $profile
