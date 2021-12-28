@@ -28,7 +28,7 @@ setopt list_types              # 補完候補にファイルの種類も表示�
 # MySQL Client
 export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 # nodebrew
-export PATH=$HOME/.nodebrew/node/current/bin:$PATH
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 # krew
 export PATH="${PATH}:${HOME}/.krew/bin"
 # The next line updates PATH for the Google Cloud SDK.
