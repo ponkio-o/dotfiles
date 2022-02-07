@@ -27,4 +27,5 @@ Plug 'vim-denops/denops.vim'
 Plug 'kat0h/dps-bufpreview.vim'
 Plug 'mattn/vim-maketable'
 Plug 'tpope/vim-rhubarb'
+Plug 'fgsch/vim-varnish'
 call plug#end()
