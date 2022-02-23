@@ -103,6 +103,12 @@ bindkey '^r' peco-select-history
 function tfx() {
   tfenv use "$(tfenv list | peco)"
 }
+# aws cli config selector
+function awsx() {
+    profile=$(cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
+    export AWS_PROFILE=$profile
+    aws whoami
+}
 # git checkout
 function gco() {
   git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
