@@ -153,15 +153,15 @@ fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
-# create pull request
-function open-git-remote() {
-  git rev-parse --git-dir >/dev/null 2>&1
-  if [[ $? == 0 ]]; then
-    gh pr create -w --assignee @me
-  else
-    echo ".git not found."
-  fi
-}
-
-zle -N open-git-remote
-bindkey '^p' open-git-remote
+## create pull request
+#function open-git-remote() {
+#  git rev-parse --git-dir >/dev/null 2>&1
+#  if [[ $? == 0 ]]; then
+#    gh pr create -w --assignee @me
+#  else
+#    echo ".git not found."
+#  fi
+#}
+#
+#zle -N open-git-remote
+#bindkey '^p' open-git-remote
