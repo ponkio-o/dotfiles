@@ -80,14 +80,7 @@ function kns() {
         kubens $knamespace
     fi
 }
-# find directory
-function find_cd() {
-    cd "$(find . -type d | peco)"
-}
-# find file
-function find_vim() {
-    vim "$(find . -type f | peco)"
-}
+
 # zsh hisotry ( Ctrl + r )
 function peco-select-history() {
   if (($+zle_bracketed_paste)); then
