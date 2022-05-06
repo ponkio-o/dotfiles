@@ -153,6 +153,17 @@ fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
+function gclone()
+{
+  IFS='/' read -r _ _ host team repo <<< "$1";
+  to_dir="${GOPATH:-$HOME/go}/src/$host/$team/$repo";
+  if ! [ -d "$to_dir" ]; then
+    mkdir -p "$to_dir";
+    git clone "$1" "$to_dir";
+  fi
+  cd "$to_dir";
+}
+
 ## create pull request
 #function open-git-remote() {
 #  git rev-parse --git-dir >/dev/null 2>&1
@@ -165,3 +176,4 @@ bindkey '^]' fzf-git-repo
 #
 #zle -N open-git-remote
 #bindkey '^p' open-git-remote
+
