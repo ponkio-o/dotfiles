@@ -62,10 +62,68 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+# GOPATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# aws cli completion
+autoload bashcompinit && bashcompinit
+autoload -Uz compinit && compinit
+compinit
+complete -C '/usr/local/bin/aws_completer' aws
+
 ## zsh history
 HISTFILE=~/.zsh_history
 export HISTSIZE=1000
 export SAVEHIST=100000
 setopt histignorealldups # 同じコマンドを重複して記録しない
+
+# zsh hisotry ( Ctrl + r )
+function peco-select-history() {
+  if (($+zle_bracketed_paste)); then
+        print $zle_bracketed_paste[2]
+  fi
+  BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+  CURSOR=$#BUFFER
+  zle reset-prompt
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+# aws cli config selector
+function awsx() {
+    profile=$(cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
+    export AWS_PROFILE=$profile
+    aws whoami
+}
+
+# git checkout
+function gco() {
+  git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
+}
+
+# github repository open
+function open-git-remote() {
+  git rev-parse --git-dir >/dev/null 2>&1
+  if [[ $? == 0 ]]; then
+    git config --get remote.origin.url | sed -e 's#ssh://git@#https://#g' -e 's#git@#https://#g' -e 's#github.com:#github.com/#g' | xargs open
+  else
+    echo ".git not found.\n"
+  fi
+}
+zle -N open-git-remote
+bindkey '^o' open-git-remote
+
+function fzf-git-repo () {
+    local repo=$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")
+    if [ -n "$repo" ]; then
+        repo=$(ghq list --full-path --exact $repo)
+        BUFFER="cd ${repo}"
+        zle accept-line
+    fi
+    zle clear-screen
+}
+zle -N fzf-git-repo
+bindkey '^]' fzf-git-repo
 
 source ~/.alias
