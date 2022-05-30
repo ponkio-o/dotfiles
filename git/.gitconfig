@@ -1,6 +1,6 @@
 [user]
     name = ponkio-o
-    email = 2903815+ponkio-o@users.noreply.github.com
+    email = 29038315+ponkio-o@users.noreply.github.com
 # awslabs/git-secrets
 [secrets]
     providers = git secrets --aws-provider
