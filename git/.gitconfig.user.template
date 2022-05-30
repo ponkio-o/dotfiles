@@ -1,0 +1,2 @@
+[url "https://<PAT>:x-oauth-basic@github.com/"]
+    insteadOf = https://github.com/
