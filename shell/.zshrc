@@ -66,6 +66,9 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # aws cli completion
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
