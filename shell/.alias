@@ -39,6 +39,7 @@ alias kgn="kubectl get node"
 alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1)'
 
 alias emacs="vim"
+alias vim="nvim"
 
 # ls color
 case "${OSTYPE}" in
