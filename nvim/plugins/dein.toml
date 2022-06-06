@@ -33,3 +33,7 @@ on_ft = ['terraform','hcl']
 
 [[plugins]]
 repo = 'machakann/vim-sandwich'
+
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
+on_ft = 'csv'
