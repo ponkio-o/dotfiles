@@ -18,3 +18,11 @@ repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'yasuhiroki/circleci.vim'
+on_ft = ['yaml','yml']
+
+[[plugins]]
+repo = 'fgsch/vim-varnish'
+on_ft = 'vcl'
