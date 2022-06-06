@@ -26,3 +26,7 @@ on_ft = ['yaml','yml']
 [[plugins]]
 repo = 'fgsch/vim-varnish'
 on_ft = 'vcl'
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['terraform','hcl']
