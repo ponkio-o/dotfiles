@@ -13,3 +13,8 @@ repo = 'ryanoasis/vim-devicons'
 [[plugins]]
 repo = 'preservim/nerdtree'
 
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
