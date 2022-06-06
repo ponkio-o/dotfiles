@@ -48,6 +48,7 @@ endif
 
 "文字コードをUFT-8に設定
 set fenc=utf-8
+set encoding=utf8
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
 " バッファが編集中でもその他のファイルを開けるように

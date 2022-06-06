@@ -6,3 +6,10 @@ repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'preservim/nerdtree'
+
