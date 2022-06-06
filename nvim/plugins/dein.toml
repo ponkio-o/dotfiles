@@ -30,3 +30,6 @@ on_ft = 'vcl'
 [[plugins]]
 repo = 'hashivim/vim-terraform'
 on_ft = ['terraform','hcl']
+
+[[plugins]]
+repo = 'machakann/vim-sandwich'
