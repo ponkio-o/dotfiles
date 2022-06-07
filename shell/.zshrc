@@ -15,7 +15,10 @@ autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 ### End of Zinit's installer chunk
 
+# XDG Base Directory
 export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
 
 # zinit plugin
 zinit light zsh-users/zsh-syntax-highlighting
@@ -70,6 +73,9 @@ export PATH=$PATH:$GOPATH/bin
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# aqua
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
 
 # aws cli completion
 autoload bashcompinit && bashcompinit
