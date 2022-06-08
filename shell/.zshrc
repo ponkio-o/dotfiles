@@ -109,6 +109,21 @@ function awsx() {
     aws whoami
 }
 
+# kubectl config selector
+function kx() {
+    kcontext=$(kubectl config get-contexts --no-headers=true | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
+    if [ -n "$kcontext" ]; then
+        kubectl config use-context $kcontext
+    fi
+}
+# kubectl namespace selector
+function kns() {
+    knamespace=$(kubens | peco)
+    if [ -n "$knamespace" ]; then
+        kubens $knamespace
+    fi
+}
+
 # git checkout
 function gco() {
   git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
