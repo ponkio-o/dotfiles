@@ -37,3 +37,12 @@ repo = 'machakann/vim-sandwich'
 [[plugins]]
 repo = 'mechatroner/rainbow_csv'
 on_ft = 'csv'
+
+[[plugins]]
+repo = 'mattn/vim-maketable'
+on_ft = 'markdown'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && yarn install"'
