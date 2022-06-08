@@ -46,3 +46,6 @@ on_ft = 'markdown'
 repo = 'iamcco/markdown-preview.nvim'
 on_ft = ['markdown', 'pandoc.markdown', 'rmd']
 build = 'sh -c "cd app && yarn install"'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'

@@ -19,9 +19,3 @@ nnoremap <leader>wq :wq<cr>
 nnoremap <leader>wqq :wq!<cr>
 nnoremap <leader>qq :q!<cr>
 nnoremap <leader>r :source ~/.vimrc<cr>
-
-" Leader for fugitive(git) commands
-nnoremap [fugitive] <Nop>
-nmap <space>g [fugitive]
-nnoremap <silent> [fugitive]a :Gwrite<cr>>
-nnoremap <silent> [fugitive]s :Git<cr>>
