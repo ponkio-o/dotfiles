@@ -154,5 +154,3 @@ zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
 source ~/.alias
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
