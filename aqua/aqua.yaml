@@ -24,3 +24,5 @@ packages:
 - name: ahmetb/kubens
   version: v0.9.4
 - name: CircleCI-Public/circleci-cli@v0.1.18894
+- name: golang.org/x/tools/cmd/goimports
+  version: v0.1.10
