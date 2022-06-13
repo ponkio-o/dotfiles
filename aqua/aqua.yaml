@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v2.20.1 # renovate: depName=aquaproj/aqua-registry
+  ref: v2.24.0 # renovate: depName=aquaproj/aqua-registry
 
 packages:
 - name: tfutils/tfenv@v2.2.3
@@ -27,3 +27,4 @@ packages:
 - name: golang.org/x/tools/cmd/goimports
   version: v0.1.10
 - name: mvdan/sh@v3.5.1
+- name: fujiwara/tfstate-lookup@v0.4.4
