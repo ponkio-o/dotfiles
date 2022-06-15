@@ -24,6 +24,8 @@ set laststatus=2
 set wildmode=list:longest
 " vim-gitgutter などの反映速度を上げる
 set updatetime=100
+" 全てのモードでマウススクロールを有効化
+set mouse=a
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
