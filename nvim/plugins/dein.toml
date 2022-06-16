@@ -66,3 +66,10 @@ depends = 'fzf'
 
 [[plugins]]
 repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'andrewstuart/vim-kubernetes'
+depends = ['SirVer/ultisnips']
