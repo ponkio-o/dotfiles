@@ -12,16 +12,11 @@
         },
         "golang": {
           "command": "gopls",
-          "rootPatterns": ["go.mod"],
+          "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
           "filetypes": ["go"]
         }
     },
     "yaml.schemas": {
       "kubernetes": "/*.yaml"
-    },
-    "golang": {
-        "command": "gopls",
-        "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-        "filetypes": ["go"]
     }
 }
