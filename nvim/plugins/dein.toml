@@ -73,3 +73,7 @@ repo = 'SirVer/ultisnips'
 [[plugins]]
 repo = 'andrewstuart/vim-kubernetes'
 depends = ['SirVer/ultisnips']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = 'go'
