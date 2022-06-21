@@ -154,3 +154,5 @@ zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
 source ~/.alias
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
