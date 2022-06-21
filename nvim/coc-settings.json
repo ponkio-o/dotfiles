@@ -18,5 +18,8 @@
     },
     "yaml.schemas": {
       "kubernetes": "/*.yaml"
-    }
+    },
+    "coc.preferences.formatOnSaveFiletypes": [
+        "go"
+    ]
 }

@@ -44,7 +44,6 @@ mkdir -p $XDG_CONFIG_HOME/nvim
 mkdir -p $XDG_CONFIG_HOME/nvim/colors
 mkdir -p $XDG_CONFIG_HOME/nvim/plugins
 ln -sf $DIR/nvim/colors/molokai.vim $XDG_CONFIG_HOME/nvim/colors/molokai.vim
-ln -sf $DIR/nvim/plugins/* $XDG_CONFIG_HOME/nvim/plugins
 ln -sf $DIR/nvim/init.vim $XDG_CONFIG_HOME/nvim/init.vim
 ln -sf $DIR/nvim/basic.vimrc $XDG_CONFIG_HOME/nvim/basic.vimrc
 ln -sf $DIR/nvim/dein.vimrc $XDG_CONFIG_HOME/nvim/dein.vimrc
