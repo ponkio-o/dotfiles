@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v2.24.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v2.28.1 # renovate: depName=aquaproj/aqua-registry
 
 packages:
 - name: tfutils/tfenv@v2.2.3
