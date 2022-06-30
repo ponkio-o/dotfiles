@@ -1,7 +1,5 @@
-set nocompatible
 filetype off
 filetype plugin indent on
-set encoding=UTF-8
 
 " 改行の自動コメントアウト無効化
 autocmd FileType * setlocal formatoptions-=ro
@@ -24,6 +22,10 @@ set showmatch
 set laststatus=2
 " コマンドラインの補完
 set wildmode=list:longest
+" vim-gitgutter などの反映速度を上げる
+set updatetime=100
+" 全てのモードでマウススクロールを有効化
+set mouse=a
 
 " Tab系
 " 不可視文字を可視化(タブが「▸-」と表示される)
@@ -48,10 +50,7 @@ endif
 
 "文字コードをUFT-8に設定
 set fenc=utf-8
-" バックアップファイルを作らない
-set nobackup
-" スワップファイルを作らない
-set noswapfile
+set encoding=utf8
 " 編集中のファイルが変更されたら自動で読み直す
 set autoread
 " バッファが編集中でもその他のファイルを開けるように
@@ -85,7 +84,7 @@ if has("autocmd")
 endif
 
 " ヤンクとクリップボードを共有
-set clipboard+=unnamed
+set clipboard=unnamed
 
 " キーコードシーケンスの時間(e.g. leader)
 set timeout timeoutlen=500

@@ -1,9 +1,26 @@
 # My Dotfiles
-## Usage
-```sh:
-$ cd ~/github
-$ git clone https://github.com/ponkio-o/dotfiles.git
-$ sudo chmod +x create_link.sh
-$ ./create_link.sh
+
+## Install
+zsh
+```bash
+$ sh -c "$(curl -fsSL https://git.io/zinit-install)"
+$ source ~/.zshrc
+$ zinit self-update
 ```
 
+tmux plugin manager
+```bash
+$ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+```
+
+nvim
+```bash
+$ mkdir -p $HOME/.cache/dein
+$ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+$ sh ./installer.sh ~/.cache/dein
+```
+
+run setup script
+```bash
+$ ./setup.sh
+```

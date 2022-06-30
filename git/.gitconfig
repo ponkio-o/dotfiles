@@ -1,0 +1,20 @@
+[user]
+    name = ponkio-o
+    email = 29038315+ponkio-o@users.noreply.github.com
+# awslabs/git-secrets
+[secrets]
+    providers = git secrets --aws-provider
+    patterns = (A3T[A-Z0-9]|AKIA|AGPA|AIDA|AROA|AIPA|ANPA|ANVA|ASIA)[A-Z0-9]{16}
+    patterns = (\"|')?(AWS|aws|Aws)?_?(SECRET|secret|Secret)?_?(ACCESS|access|Access)?_?(KEY|key|Key)(\"|')?\\s*(:|=>|=)\\s*(\"|')?[A-Za-z0-9/\\+=]{40}(\"|')?
+    patterns = (\"|')?(AWS|aws|Aws)?_?(ACCOUNT|account|Account)_?(ID|id|Id)?(\"|')?\\s*(:|=>|=)\\s*(\"|')?[0-9]{4}\\-?[0-9]{4}\\-?[0-9]{4}(\"|')?
+    allowed = AKIAIOSFODNN7EXAMPLE
+    allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+[alias]
+    delete-mereged-branch = "!f () { git checkout $1 }; git branch --merged |egrep -v '\\*|develop|master|main'|xargs git branch -d; };f"
+# git grep で常に行番号を表示する
+[grep]
+    lineNumber = true
+[ghq]
+    root = ~/git
+[include]
+    path = ~/.gitconfig.user

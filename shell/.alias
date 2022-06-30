@@ -13,6 +13,7 @@ alias ssh="ssh -A"
 alias lzd="lazydocker"
 alias myip="curl ifconfig.me"
 alias mux='pgrep -vxq tmux > /dev/null && tmux new -d -s delete-me && tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && tmux kill-session -t delete-me && tmux attach || tmux attach'
+alias shfmt="shfmt -i 2 -ci -bn -s"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -40,6 +41,7 @@ alias kgn="kubectl get node"
 alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1)'
 
 alias emacs="vim"
+alias vim="nvim"
 
 # ls color
 case "${OSTYPE}" in

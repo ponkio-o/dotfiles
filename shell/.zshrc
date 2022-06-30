@@ -1,71 +1,114 @@
+# emacs のキーバインドを利用する
 bindkey -e
-### zinit ###
-source "${HOME}/.zinit/bin/zinit.zsh"
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "$HOME/.local/share/zinit" && command chmod g-rwX "$HOME/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "$HOME/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+source "$HOME/.local/share/zinit/zinit.git/zinit.zsh"
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
+### End of Zinit's installer chunk
 
-### zinit plugin ###
-zinit load zsh-users/zsh-syntax-highlighting
+# XDG Base Directory
+export XDG_CONFIG_HOME=~/.config
+export XDG_CACHE_HOME=~/.cache
+export XDG_DATA_HOME=~/.local/share
+
+# zinit plugin
+zinit light zsh-users/zsh-syntax-highlighting
 zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 
-### fpath ###
-zstyle ':completion:*:*:git:*' script ~/.zsh-completions/git-completion.bash
-fpath=(~/.zsh-completions/src $fpath)
+zmodload -i zsh/complist
+autoload -Uz compinit && compinit
+zstyle ':completion:*:default' menu select=2
 
-# Key bind
-zmodload zsh/complist
+# 補完時にhjklで選択
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
-setopt auto_list               # 補完候補を一覧で表示する(d)
-setopt auto_menu               # 補完キー連打で補完候補を順に表示する(d)
-setopt list_packed             # 補完候補をできるだけ詰めて表示する
-setopt list_types              # 補完候補にファイルの種類も表示する
 
-### PATH ###
-# MySQL Client
-export PATH="/usr/local/opt/mysql-client/bin:$PATH"
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
-# krew
-export PATH="${PATH}:${HOME}/.krew/bin"
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/usr/local/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/path.zsh.inc'; fi
+setopt auto_list           # 補完候補を一覧で表示する(d)
+setopt auto_menu           # 補完キー連打で補完候補を順に表示する(d)
+setopt list_packed         # 補完候補をできるだけ詰めて表示する
+setopt list_types          # 補完候補にファイルの種類も表示する
+setopt nolistbeep          # 補完候補時にビープ音を鳴らさない
+setopt magic_equal_subst   # 引数の補完を有効化
+setopt correct             # スペルミスの補完
+setopt auto_cd             # ディレクトリ名だけで cd
+setopt ignore_eof          # ^D で終了しない
+setopt rm_star_wait        # "rm *" の時に確認する
+setopt share_history       # 複数のタブで履歴を共有
+setopt nonomatch
+
+# color
+autoload colors
+colors
+
+# プロンプト
+PROMPT="%F{green}%c %f%# "
+
+# git の情報を右側に表示する
+RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
+zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
+
 # GOPATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-# VMWare OVF Tool
-export OVF_TOOL="/Applications/VMware OVF Tool"
-export PATH=$PATH:$OVF_TOOL
 
-# 補完候補もLS_COLORSに合わせて色が付くようにする
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-source ~/.zprofile
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
 
-# direnv
-export EDITOR=vim
-eval "$(direnv hook zsh)"
+# aqua
+export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
+export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.config}/aquaproj-aqua/aqua.yaml
 
-### completion ###
-# kubectl completion
-kubectl() {
-  unfunction "$0"
-  source <(kubectl completion zsh)
-  $0 "$@"
-}
-# gh (GitHub CLI)
-eval "$(gh completion -s zsh)"
-# gcloud
-if [ -f '/usr/local/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/google-cloud-sdk/completion.zsh.inc'; fi
-# aws cli
+# aws cli completion
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 compinit
 complete -C '/usr/local/bin/aws_completer' aws
 
-### peco function ###
+## zsh history
+HISTFILE=~/.zsh_history
+export HISTSIZE=1000
+export SAVEHIST=100000
+setopt histignorealldups # 同じコマンドを重複して記録しない
+
+# zsh hisotry ( Ctrl + r )
+function peco-select-history() {
+  if (($+zle_bracketed_paste)); then
+        print $zle_bracketed_paste[2]
+  fi
+  BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
+  CURSOR=$#BUFFER
+  zle reset-prompt
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
+
+# aws cli config selector
+function awsx() {
+    profile=$(cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
+    export AWS_PROFILE=$profile
+    aws whoami
+}
+
 # kubectl config selector
 function kx() {
     kcontext=$(kubectl config get-contexts --no-headers=true | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
@@ -81,27 +124,6 @@ function kns() {
     fi
 }
 
-# zsh hisotry ( Ctrl + r )
-function peco-select-history() {
-  if (($+zle_bracketed_paste)); then
-        print $zle_bracketed_paste[2]
-  fi
-  BUFFER=`history -n 1 | tail -r  | awk '!a[$0]++' | peco`
-  CURSOR=$#BUFFER
-  zle reset-prompt
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
-# select Terraform version
-function tfx() {
-  tfenv use "$(tfenv list | peco)"
-}
-# aws cli config selector
-function awsx() {
-    profile=$(cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
-    export AWS_PROFILE=$profile
-    aws whoami
-}
 # git checkout
 function gco() {
   git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
@@ -116,25 +138,10 @@ function open-git-remote() {
     echo ".git not found.\n"
   fi
 }
-
 zle -N open-git-remote
 bindkey '^o' open-git-remote
 
-alias agg="_agAndVim"
-function _agAndVim() {
-    if [ -z "$1" ]; then
-        echo 'Usage: agg PATTERN'
-        return 0
-    fi
-    result=`ag $1 | fzf`
-    line=`echo "$result" | awk -F ':' '{print $2}'`
-    file=`echo "$result" | awk -F ':' '{print $1}'`
-    if [ -n "$file" ]; then
-        vim $file +$line
-    fi
-}
-
-fzf-git-repo () {
+function fzf-git-repo () {
     local repo=$(ghq list | fzf --preview "bat --color=always --style=header,grid --line-range :80 $(ghq root)/{}/README.*")
     if [ -n "$repo" ]; then
         repo=$(ghq list --full-path --exact $repo)
@@ -146,27 +153,6 @@ fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
-function gclone()
-{
-  IFS='/' read -r _ _ host team repo <<< "$1";
-  to_dir="${GOPATH:-$HOME/go}/src/$host/$team/$repo";
-  if ! [ -d "$to_dir" ]; then
-    mkdir -p "$to_dir";
-    git clone "$1" "$to_dir";
-  fi
-  cd "$to_dir";
-}
+source ~/.alias
 
-## create pull request
-#function open-git-remote() {
-#  git rev-parse --git-dir >/dev/null 2>&1
-#  if [[ $? == 0 ]]; then
-#    gh pr create -w --assignee @me
-#  else
-#    echo ".git not found."
-#  fi
-#}
-#
-#zle -N open-git-remote
-#bindkey '^p' open-git-remote
-
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

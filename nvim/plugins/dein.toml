@@ -1,0 +1,75 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
+
+[[plugins]]
+repo = 'preservim/nerdtree'
+
+[[plugins]]
+repo = 'Xuyuanp/nerdtree-git-plugin'
+
+[[plugins]]
+repo = 'nathanaelkane/vim-indent-guides'
+
+[[plugins]]
+repo = 'yasuhiroki/circleci.vim'
+on_ft = ['yaml','yml']
+
+[[plugins]]
+repo = 'fgsch/vim-varnish'
+on_ft = 'vcl'
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+on_ft = ['terraform','hcl']
+
+[[plugins]]
+repo = 'machakann/vim-sandwich'
+
+[[plugins]]
+repo = 'mechatroner/rainbow_csv'
+on_ft = 'csv'
+
+[[plugins]]
+repo = 'mattn/vim-maketable'
+on_ft = 'markdown'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
+on_ft = ['markdown', 'pandoc.markdown', 'rmd']
+build = 'sh -c "cd app && yarn install"'
+
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'neoclide/coc.nvim'
+source = 'release'
+build = 'coc#util#install()'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --all'
+merged = 0
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+
+[[plugins]]
+repo = 'tpope/vim-rhubarb'
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+
+[[plugins]]
+repo = 'andrewstuart/vim-kubernetes'
+depends = ['SirVer/ultisnips']
