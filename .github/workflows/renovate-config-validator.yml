@@ -3,13 +3,13 @@ name: Renovate config linter
 on:
   pull_request:
     branches:
-      - main
+      - master
     paths:
       - .github/workflows/renovate-config-validator.yml
       - renovate.json
   push:
     branches:
-      - main
+      - master
     paths:
       - .github/workflows/renovate-config-validator.yml
       - renovate.json
