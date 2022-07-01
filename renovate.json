@@ -2,6 +2,6 @@
   "extends": [
     "github>aquaproj/aqua-renovate-config#1.1.0"
   ],
-  "labels": ["skip ci"],
+  "labels": ["dependencies"],
   "reviewers": ["ponkio-o"]
 }
