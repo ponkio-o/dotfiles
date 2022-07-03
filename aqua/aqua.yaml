@@ -30,5 +30,5 @@ packages:
 - name: fujiwara/tfstate-lookup@v0.4.4
 - name: cli/cli@v2.13.0
 - name: fullstorydev/grpcurl@v1.8.6
-- name: cosmtrek/air@v1.40.2
+- name: cosmtrek/air@v1.40.3
 - name: fujiwara/lambroll@v0.12.9
