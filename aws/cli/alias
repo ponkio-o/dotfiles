@@ -1,11 +1,4 @@
 [toplevel]
-# Put this in ~/.aws/cli/alias
-# and you'll have an "aws upgrade"
-# and an "aws check-upgrade" command.
-#
-# Only works on macOS and installs using
-# the .pkg installer.
-#
 upgrade = !f() {
     curl -s "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "/tmp/AWSCLIV2.pkg"
     sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
@@ -22,12 +15,6 @@ check-upgrade = !f() {
         grep 'Last-Modified' | cut -d':' -f 2- | tr '\r\n' ' ')
     echo "Current version: $(aws --version | cut -d' ' -f 1)"
     echo "    New version: aws-cli/${latest_cli_version} (${release_date})"
-  }; f
-
-install-version = !f() {
-    curl -s "https://awscli.amazonaws.com/AWSCLIV2-$1.pkg" -o "/tmp/AWSCLIV2.pkg"
-    sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
-    rm -f /tmp/AWSCLIV2.pkg
   }; f
 
 whoami = !f() {
