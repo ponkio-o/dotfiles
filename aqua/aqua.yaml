@@ -4,7 +4,6 @@
 registries:
 - type: standard
   ref: v3.9.0 # renovate: depName=aquaproj/aqua-registry
-
 packages:
 - name: tfutils/tfenv@v2.2.3
 - name: peco/peco@v0.5.10
@@ -32,3 +31,4 @@ packages:
 - name: fullstorydev/grpcurl@v1.8.6
 - name: cosmtrek/air@v1.40.3
 - name: fujiwara/lambroll@v0.12.9
+- name: awslabs/amazon-ecr-credential-helper@v0.6.0
