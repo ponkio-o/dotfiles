@@ -2,7 +2,9 @@
     "languageserver": {
         "terraform": {
             "command": "terraform-ls",
-            "args": ["serve"],
+            "args": [
+                "serve"
+            ],
             "filetypes": [
                 "terraform",
                 "tf"
@@ -12,9 +14,11 @@
         }
     },
     "yaml.schemas": {
-      "kubernetes": "/*.yaml"
+        "kubernetes": "/*.yaml"
     },
     "coc.preferences.formatOnSaveFiletypes": [
-        "go"
+        "go",
+        "json",
+        "yaml"
     ]
 }
