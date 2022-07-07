@@ -11,3 +11,9 @@ let splt = split(glob("~/.config/nvim/plugins/" . "*.vim"))
 for file in splt
 	execute 'source' file
 endfor
+
+let g:coc_global_extensions = [
+      \'coc-go',
+      \'coc-json',
+      \'coc-yaml'
+\]
