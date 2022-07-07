@@ -32,3 +32,5 @@ packages:
 - name: cosmtrek/air@v1.40.3
 - name: fujiwara/lambroll@v0.12.9
 - name: awslabs/amazon-ecr-credential-helper@v0.6.0
+- name: golang.org/x/tools/cmd/goimports
+  version: v0.1.0
