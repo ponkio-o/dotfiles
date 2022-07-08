@@ -50,6 +50,18 @@ ln -sf $DIR/nvim/dein.vimrc $XDG_CONFIG_HOME/nvim/dein.vimrc
 ln -sf $DIR/nvim/key_bind.vimrc $XDG_CONFIG_HOME/nvim/key_bind.vimrc
 ln -sf $DIR/nvim/coc-settings.json $XDG_CONFIG_HOME/nvim/coc-settings.json
 
+## vim plugin setting files
+NVIM_PLUGINS_DIR=$XDG_CONFIG_HOME/nvim/plugins
+ln -sf $DIR/nvim/plugins/dein.toml $NVIM_PLUGINS_DIR/dein.toml
+ln -sf $DIR/nvim/plugins/dein_lazy.toml $NVIM_PLUGINS_DIR/dein_lazy.toml
+ln -sf $DIR/nvim/plugins/coc-vim.vim $NVIM_PLUGINS_DIR/coc-vim.vim
+ln -sf $DIR/nvim/plugins/fugitive.vim $NVIM_PLUGINS_DIR/fugitive.vim
+ln -sf $DIR/nvim/plugins/fzf.vim $NVIM_PLUGINS_DIR/fzf.vim
+ln -sf $DIR/nvim/plugins/markdown-preview.vim $NVIM_PLUGINS_DIR/markdown-preview.vim
+ln -sf $DIR/nvim/plugins/nerdtree.vim $NVIM_PLUGINS_DIR/nerdtree.vim
+ln -sf $DIR/nvim/plugins/vim-goimports.vim $NVIM_PLUGINS_DIR/vim-goimports.vim
+ln -sf $DIR/nvim/plugins/vim-terraform.vim $NVIM_PLUGINS_DIR/vim-terraform.vim
+
 # script
 ln -sf $DIR/script/sshx /usr/local/bin/sshx
 ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
