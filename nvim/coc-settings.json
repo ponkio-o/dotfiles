@@ -14,12 +14,17 @@
         }
     },
     "yaml.schemas": {
-        "kubernetes": "/*.yaml",
+        "kubernetes": [
+            "deployment.ya?ml",
+            "service.ya?ml",
+            "ingress.ya?ml"
+        ],
         "https://json.schemastore.org/circleciconfig.json": ".circleci/config.ya?ml",
         "https://raw.githubusercontent.com/aquaproj/aqua/main/json-schema/aqua-yaml.json": "aqua.ya?ml",
         "https://raw.githubusercontent.com/compose-spec/compose-spec/master/schema/compose-spec.json": "/docker-compose.ya?ml"
     },
     "yaml.completion": true,
+    "yaml.validate": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "go",
         "json",
