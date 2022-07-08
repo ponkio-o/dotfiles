@@ -12,6 +12,7 @@ for file in splt
 	execute 'source' file
 endfor
 
+" :CocInstall で入れる extensions
 let g:coc_global_extensions = [
       \'coc-go',
       \'coc-json',
