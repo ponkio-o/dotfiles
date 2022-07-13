@@ -35,4 +35,4 @@ packages:
 - name: golang.org/x/tools/cmd/goimports
   version: v0.1.0
 - name: rhysd/actionlint@v1.6.15
-- name: Songmu/ecschedule@v0.6.1
+- name: Songmu/ecschedule@v0.6.3
