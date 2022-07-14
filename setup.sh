@@ -35,8 +35,8 @@ ln -sf $DIR/aws/cli/alias $HOME/.aws/cli/alias
 
 # git
 mkdir -p $XDG_CONFIG_HOME/git
-ln -sf $DIR/git/.gitconfig $HOME/.gitconfig
-ln -sf $DIR/git/.gitconfig.user $HOME/.gitconfig.user
+ln -sf $DIR/git/config $XDG_CONFIG_HOME/git/config
+ln -sf $DIR/git/config.user $XDG_CONFIG_HOME/git/config.user
 ln -sf $DIR/git/ignore $XDG_CONFIG_HOME/git/ignore
 
 # nvim

@@ -17,4 +17,4 @@
 [ghq]
     root = ~/git
 [include]
-    path = ~/.gitconfig.user
+    path = ~/.config/git/config.user
