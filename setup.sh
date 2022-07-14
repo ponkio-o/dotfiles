@@ -16,6 +16,9 @@ XDG_DATA_HOME=$HOME/.local/share
 mkdir -p $XDG_CONFIG_HOME/aquaproj-aqua
 ln -sf $DIR/aqua/aqua.yaml $XDG_CONFIG_HOME/aquaproj-aqua/aqua.yaml
 
+# docker
+mkdir -p $XDG_CONFIG_HOME/docker
+
 # zsh
 ln -sf $DIR/shell/.alias $HOME/.alias
 ln -sf $DIR/shell/.zprofile $HOME/.zprofile

@@ -67,6 +67,9 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
+# docker
+export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker
+
 # GOPATH
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
