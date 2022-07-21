@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.14.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.15.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.10
@@ -22,7 +22,7 @@ packages:
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubens
   version: v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.19878
+- name: CircleCI-Public/circleci-cli@v0.1.20144
 - name: golang.org/x/tools/cmd/goimports
   version: v0.1.10
 - name: mvdan/sh@v3.5.1
