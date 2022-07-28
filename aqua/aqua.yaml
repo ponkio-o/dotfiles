@@ -22,7 +22,7 @@ packages:
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubens
   version: v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.20374
+- name: CircleCI-Public/circleci-cli@v0.1.20397
 - name: golang.org/x/tools/cmd/goimports
   version: v0.1.10
 - name: mvdan/sh@v3.5.1
