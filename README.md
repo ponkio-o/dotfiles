@@ -1,6 +1,11 @@
 # My Dotfiles
 
 ## Install
+brew
+```bash
+$ brew bundle
+```
+
 zsh
 ```bash
 $ sh -c "$(curl -fsSL https://git.io/zinit-install)"
