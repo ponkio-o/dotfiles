@@ -14,6 +14,7 @@
     allowed = wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
 [alias]
     delete-mereged-branch = "!f () { git checkout $1 }; git branch --merged |egrep -v '\\*|develop|master|main'|xargs git branch -d; };f"
+    sha = "f() { git rev-parse "${1-HEAD}"; }; f"
 # git grep で常に行番号を表示する
 [grep]
     lineNumber = true
