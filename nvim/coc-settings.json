@@ -27,7 +27,6 @@
     "yaml.validate": true,
     "coc.preferences.formatOnSaveFiletypes": [
         "go",
-        "json",
         "yaml"
     ]
 }
