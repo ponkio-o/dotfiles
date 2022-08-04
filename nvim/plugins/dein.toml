@@ -77,3 +77,7 @@ depends = ['SirVer/ultisnips']
 [[plugins]]
 repo = 'mattn/vim-goimports'
 on_ft = ['go']
+
+[[plugins]]
+repo = 'gutenye/json5.vim'
+on_ft = ['json5']
