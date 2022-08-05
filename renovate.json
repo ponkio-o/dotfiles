@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>aquaproj/aqua-renovate-config#1.2.1"
+    "github>aquaproj/aqua-renovate-config#1.2.2"
   ],
   "labels": ["dependencies"],
   "reviewers": ["ponkio-o"],
