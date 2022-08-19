@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.31.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.32.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.10
@@ -23,7 +23,7 @@ packages:
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubens
   version: v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.20500
+- name: CircleCI-Public/circleci-cli@v0.1.20629
 - name: mvdan/sh@v3.5.1
 - name: fujiwara/tfstate-lookup@v0.4.4
 - name: cli/cli@v2.14.4
@@ -32,7 +32,7 @@ packages:
 - name: fujiwara/lambroll@v0.13.0
 - name: awslabs/amazon-ecr-credential-helper@v0.6.0
 - name: golang/tools/goimports@v0.1.12
-- name: rhysd/actionlint@v1.6.15
+- name: rhysd/actionlint@v1.6.16
 - name: Songmu/ecschedule@v0.6.3
 - name: owenthereal/upterm@v0.9.0
 - name: tomnomnom/gron@v0.7.1
