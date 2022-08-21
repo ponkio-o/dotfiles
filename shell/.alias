@@ -23,9 +23,9 @@ alias g="git"
 alias ga="git add"
 alias gc="git commit -m"
 alias gst="git status"
-alias gpo="git push origin"
 alias gch="git checkout"
 alias gpc="git pullcurrent"
+alias gpo="git pushcurrent"
 
 alias tf="terraform"
 
