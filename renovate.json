@@ -4,5 +4,11 @@
   ],
   "labels": ["dependencies"],
   "reviewers": ["ponkio-o"],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchPackageNames":["aquaproj/aqua-registry"],
+      "automerge": true
+    }
+  ]
 }
