@@ -16,5 +16,6 @@ endfor
 let g:coc_global_extensions = [
       \'coc-go',
       \'coc-json',
-      \'coc-yaml'
+      \'coc-yaml',
+      \'coc-tsserver'
 \]
