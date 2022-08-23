@@ -28,5 +28,7 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "go",
         "yaml"
-    ]
+    ],
+    "typescript.suggestionActions.enabled": false,
+    "javascript.suggestionActions.enabled": false
 }
