@@ -30,5 +30,6 @@
         "yaml"
     ],
     "typescript.suggestionActions.enabled": false,
-    "javascript.suggestionActions.enabled": false
+    "javascript.suggestionActions.enabled": false,
+    "javascript.validate.enable": false
 }
