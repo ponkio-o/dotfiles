@@ -16,7 +16,7 @@ packages:
 - name: neovim/neovim@v0.7.2
 - name: golang.org/x/tools/gopls
   version: v0.9.3
-- name: hashicorp/terraform-ls@v0.29.0
+- name: hashicorp/terraform-ls@v0.29.1
 - name: BurntSushi/ripgrep@13.0.0
 - name: kubernetes/kubectl
   version: v1.24.1
