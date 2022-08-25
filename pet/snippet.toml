@@ -1,0 +1,4 @@
+[[snippets]]
+  description = "Create tag and push origin (release command)"
+  command = "git tag release-`date \"+%Y%m%d%H%M\"` && git push origin --tags"
+  output = ""
