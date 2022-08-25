@@ -42,3 +42,4 @@ packages:
 - name: iann0036/iamlive@v0.49.0
 - name: suzuki-shunsuke/ci-info@v2.1.1
 - name: dandavison/delta@0.13.0
+- name: knqyf263/pet@v0.4.0
