@@ -69,3 +69,7 @@ ln -sf $DIR/nvim/plugins/vim-terraform.vim $NVIM_PLUGINS_DIR/vim-terraform.vim
 ln -sf $DIR/script/sshx /usr/local/bin/sshx
 ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
 ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
+
+# pet (snipet tool)
+ln -sf $DIR/pet/config.toml $XDG_CONFIG_HOME/pet/config.toml
+ln -sf $DIR/pet/snippet.toml $XDG_CONFIG_HOME/pet/snippet.toml
