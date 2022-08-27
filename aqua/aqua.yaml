@@ -43,3 +43,4 @@ packages:
 - name: suzuki-shunsuke/ci-info@v2.1.1
 - name: dandavison/delta@0.13.0
 - name: knqyf263/pet@v0.4.0
+- name: variadico/noti@3.5.0
