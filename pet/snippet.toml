@@ -2,3 +2,13 @@
   description = "Create tag and push origin (release command)"
   command = "git tag release-`date \"+%Y%m%d%H%M\"` && git push origin --tags"
   output = ""
+
+[[snippets]]
+  description = "SCP Upload"
+  command = "fillin scp -i {{scp_up:ssh_key}} -P {{scp_up:ssh_port}} {{scp_up:local_file}} {{scp_up:ssh_user}}@{{scp_up:ssh_host}}:{{scp_up:remote_file}}"
+  output = ""
+
+[[snippets]]
+  description = "SCP Download"
+  command = "fillin scp -i {{scp_down:ssh_key}} -P {{scp_down:ssh_port}} {{scp_down:ssh_user}}@{{scp_down:ssh_host}}:{{scp_down:remote_file}} {{scp_down:local_file}}"
+  output = ""
