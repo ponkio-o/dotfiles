@@ -87,6 +87,12 @@ autoload -Uz compinit && compinit
 compinit
 complete -C '/usr/local/bin/aws_completer' aws
 
+# fnm (Node.js version manager)
+eval "$(fnm env --use-on-cd)"
+
+# yarn
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 ## zsh history
 HISTFILE=~/.zsh_history
 export HISTSIZE=1000
@@ -157,12 +163,3 @@ zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
 source ~/.alias
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-export NVM_DIR="$HOME/.config/nvm"
-nvm() {
-    unset -f nvm
-    source "${NVM_DIR:-$HOME/.nvm}/nvm.sh"
-    nvm "$@"
-}
