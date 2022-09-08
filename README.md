@@ -18,7 +18,7 @@ tmux plugin manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
-nvim
+nvim plugin
 ```bash
 $ mkdir -p $HOME/.cache/dein
 $ curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
