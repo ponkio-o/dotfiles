@@ -17,5 +17,6 @@ let g:coc_global_extensions = [
       \'coc-go',
       \'coc-json',
       \'coc-yaml',
-      \'coc-tsserver'
+      \'coc-tsserver',
+      \'coc-phpls'
 \]
