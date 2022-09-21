@@ -24,7 +24,7 @@ jobs:
         working-directory: aqua
         run: aqua i --test
 
-  script:
+  install_script:
     name: Check install script
     runs-on: macos-latest
 
@@ -49,12 +49,12 @@ jobs:
 
   status_check:
     name: status check
-    needs: [aqua]
+    needs: [aqua, install_script]
     runs-on: ubuntu-latest
 
     steps:
       - name: Fail
-        if: (needs.aqua.result == 'failure')
+        if: (needs.aqua.result == 'failure' || needs.install_script.result == 'failure')
         run: |
           exit 1
 
