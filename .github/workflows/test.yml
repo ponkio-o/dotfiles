@@ -10,7 +10,7 @@ on:
 
 jobs:
   aqua:
-    name: aqua
+    name: Check aqua
     runs-on: macos-latest
 
     steps:
@@ -24,14 +24,39 @@ jobs:
         working-directory: aqua
         run: aqua i --test
 
+  install_script:
+    name: Check install script
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Run setup script
+        run: ./setup.sh
+
+          #- name: Setup zinit
+          #  run: |
+          #    sh -c "$(curl -fsSL https://git.io/zinit-install)"
+          #    source ~/.zshrc
+          #    zinit self-update
+
+
+          #      - name: Setup dein (nvim plugin manager)
+          #        run: |
+          #          mkdir -p $HOME/.cache/dein
+          #          curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+          #          sh ./installer.sh ~/.cache/dein
+          #
+
   status_check:
     name: status check
-    needs: [aqua]
+    needs: [aqua, install_script]
     runs-on: ubuntu-latest
 
     steps:
       - name: Fail
-        if: (needs.test.result == 'failure')
+        if: (needs.aqua.result == 'failure' || needs.install_script.result == 'failure')
         run: |
           exit 1
 
