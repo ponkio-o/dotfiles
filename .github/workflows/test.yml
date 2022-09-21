@@ -10,7 +10,7 @@ on:
 
 jobs:
   aqua:
-    name: aqua
+    name: Check aqua
     runs-on: macos-latest
 
     steps:
@@ -23,6 +23,29 @@ jobs:
       - name: aqua i
         working-directory: aqua
         run: aqua i --test
+
+  script:
+    name: Check install script
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup zinit
+        run: |
+          sh -c "$(curl -fsSL https://git.io/zinit-install)"
+          source ~/.zshrc
+          zinit self-update
+
+      - name: Setup dein (nvim plugin manager)
+        run: |
+          mkdir -p $HOME/.cache/dein
+          curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+          sh ./installer.sh ~/.cache/dein
+
+      - name: Run setup script
+        run: ./setup.sh
 
   status_check:
     name: status check
