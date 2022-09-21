@@ -35,23 +35,30 @@ jobs:
       - name: Run setup script
         run: ./setup.sh
 
-          #- name: Setup zinit
-          #  run: |
-          #    sh -c "$(curl -fsSL https://git.io/zinit-install)"
-          #    source ~/.zshrc
-          #    zinit self-update
+  zinit:
+    name: Check zinit
+    runs-on: macos-latest
 
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
 
-          #      - name: Setup dein (nvim plugin manager)
-          #        run: |
-          #          mkdir -p $HOME/.cache/dein
-          #          curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-          #          sh ./installer.sh ~/.cache/dein
-          #
+      - name: Install zsh
+        run: |
+          brew install zsh --ignore-dependencies
+          brew install pcre ncurses
+
+      - name: Setup zinit
+        shell: zsh {0}
+        run: |
+          ./setup.sh
+          sh -c "$(curl -fsSL https://git.io/zinit-install)"
+          source ~/.zshrc
+          zinit self-update
 
   status_check:
     name: status check
-    needs: [aqua, install_script]
+    needs: [aqua, install_script, zinit]
     runs-on: ubuntu-latest
 
     steps:
