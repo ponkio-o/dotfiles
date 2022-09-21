@@ -32,14 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup zinit
-        run: |
-          sh -c "$(curl -fsSL https://git.io/zinit-install)"
-          source ~/.zshrc
-          zinit self-update
-
       - name: Run setup script
         run: ./setup.sh
+
+          #- name: Setup zinit
+          #  run: |
+          #    sh -c "$(curl -fsSL https://git.io/zinit-install)"
+          #    source ~/.zshrc
+          #    zinit self-update
+
 
           #      - name: Setup dein (nvim plugin manager)
           #        run: |
