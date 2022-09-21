@@ -6,7 +6,6 @@ tap "homebrew/core"
 
 brew "grep"
 brew "htop"
-brew "nodebrew"
 brew "tmux"
 brew "aquaproj/aqua/aqua"
 brew "tree"
