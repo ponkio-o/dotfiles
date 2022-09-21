@@ -9,12 +9,31 @@ on:
       - main
 
 jobs:
-  tool-install:
+  test:
+    name: Test
     runs-on: macos-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: brew bundle
-        run: brew bundle
+      - name: Install aqua
+        run: brew install aquaproj/aqua/aqua
+
+      - name: aqua i
+        working-directory: aqua
+        run: aqua i --test
+
+  status_check:
+    name: status check
+    needs: [test]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Fail
+        if: (needs.test.result == 'failure')
+        run: |
+          exit 1
+
+      - name: Pass
+        run: echo "OK"
