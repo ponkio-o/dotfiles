@@ -38,14 +38,15 @@ jobs:
           source ~/.zshrc
           zinit self-update
 
-      - name: Setup dein (nvim plugin manager)
-        run: |
-          mkdir -p $HOME/.cache/dein
-          curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-          sh ./installer.sh ~/.cache/dein
-
       - name: Run setup script
         run: ./setup.sh
+
+          #      - name: Setup dein (nvim plugin manager)
+          #        run: |
+          #          mkdir -p $HOME/.cache/dein
+          #          curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
+          #          sh ./installer.sh ~/.cache/dein
+          #
 
   status_check:
     name: status check
