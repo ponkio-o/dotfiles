@@ -4,6 +4,7 @@
   ],
   "labels": ["dependencies"],
   "reviewers": ["ponkio-o"],
+  "platformAutomerge": true,
   "dependencyDashboard": true,
   "packageRules": [
     {
