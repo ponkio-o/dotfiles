@@ -43,11 +43,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Run setup script
-        run: ./setup.sh
-
       - name: Setup zinit
         run: |
+          ./setup.sh
           sh -c "$(curl -fsSL https://git.io/zinit-install)"
           source ~/.zshrc
           zinit self-update
