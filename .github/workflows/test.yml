@@ -43,8 +43,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Install zsh
+        run: brew install zsh --ignore-dependencies
+
       - name: Setup zinit
-        shell: zsh
+        shell: zsh {0}
         run: |
           ./setup.sh
           sh -c "$(curl -fsSL https://git.io/zinit-install)"
