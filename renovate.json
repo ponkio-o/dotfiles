@@ -6,6 +6,9 @@
   "reviewers": ["ponkio-o"],
   "platformAutomerge": true,
   "dependencyDashboard": true,
+  "patch": {
+      "automerge": true
+  },
   "packageRules": [
     {
       "matchPackageNames":["aquaproj/aqua-registry"],
