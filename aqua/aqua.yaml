@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.61.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.63.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.10
@@ -11,8 +11,8 @@ packages:
 - name: sharkdp/bat@v0.22.1
 - name: x-motemen/ghq@v1.3.0
 - name: awslabs/git-secrets@1.3.0
-- name: junegunn/fzf@0.33.0
-- name: denoland/deno@v1.25.4
+- name: junegunn/fzf@0.34.0
+- name: denoland/deno@v1.26.0
 - name: neovim/neovim@v0.7.2
 - name: golang.org/x/tools/gopls
   version: v0.9.3
