@@ -50,3 +50,4 @@ packages:
 - name: Schniz/fnm@v1.31.1
 - name: mikefarah/yq@v4.27.5
 - name: SpectralOps/teller@v1.5.5
+- name: minamijoyo/tfmigrate@v0.3.8
