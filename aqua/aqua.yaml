@@ -36,7 +36,7 @@ packages:
 - name: Songmu/ecschedule@v0.6.3
 - name: owenthereal/upterm@v0.9.0
 - name: tomnomnom/gron@v0.7.1
-- name: aquaproj/registry-tool@v0.1.4
+- name: aquaproj/registry-tool@v0.1.5
 - name: mvdan/gofumpt@v0.4.0
 - name: Mic-U/ecsher@v0.13.0
 - name: iann0036/iamlive@v0.49.0
