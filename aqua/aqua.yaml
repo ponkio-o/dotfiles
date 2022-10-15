@@ -51,3 +51,4 @@ packages:
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.8
 - name: mikefarah/yq@v4.28.1
+- name: clok/sm@v0.1.2
