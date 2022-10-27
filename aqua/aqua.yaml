@@ -52,3 +52,4 @@ packages:
 - name: minamijoyo/tfmigrate@v0.3.8
 - name: mikefarah/yq@v4.28.2
 - name: clok/sm@v0.1.2
+- name: ysugimoto/falco@v0.18.0
