@@ -1,5 +1,5 @@
 function get_instance {
-    aws ec2 describe-instances --filter "Name=instance-state-name,Values=running" --profile $1 | jq ".Reservations[].Instances[]" | jq "{InstanceId, PrivateIpAddress, InstanceName: (.Tags[] | select(.Key==\"Name\").Value)}" | jq -r 'to_entries | [.[].value] | @tsv' | peco
+    myaws ec2 ls --profile $1 | peco
 }
 
 function start_session {
