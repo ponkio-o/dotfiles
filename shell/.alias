@@ -14,6 +14,7 @@ alias lzd="lazydocker"
 alias myip="curl ifconfig.me"
 alias mux='pgrep -vxq tmux > /dev/null && tmux new -d -s delete-me && tmux run-shell ~/.tmux/plugins/tmux-resurrect/scripts/restore.sh && tmux kill-session -t delete-me && tmux attach || tmux attach'
 alias shfmt="shfmt -i 2 -ci -bn -s"
+alias tldr="tealdeer"
 
 alias ..="cd .."
 alias ...="cd ../.."
