@@ -55,3 +55,4 @@ packages:
 - name: ysugimoto/falco@v0.18.0
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.0
+- name: terraform-linters/tflint@v0.42.2
