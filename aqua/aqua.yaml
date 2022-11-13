@@ -38,7 +38,7 @@ packages:
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.1.5
 - name: mvdan/gofumpt@v0.4.0
-- name: Mic-U/ecsher@v0.13.0
+- name: Mic-U/ecsher@v0.13.1
 - name: iann0036/iamlive@v0.49.0
 - name: suzuki-shunsuke/ci-info@v2.1.1
 - name: dandavison/delta@0.14.0
