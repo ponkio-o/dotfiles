@@ -56,4 +56,4 @@ packages:
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
 - name: terraform-linters/tflint@v0.43.0
-- name: extrawurst/gitui@v0.21.0
+- name: extrawurst/gitui@v0.22.0
