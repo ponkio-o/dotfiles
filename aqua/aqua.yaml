@@ -58,3 +58,4 @@ packages:
 - name: terraform-linters/tflint@v0.43.0
 - name: extrawurst/gitui@v0.22.1
 - name: helm/helm@v3.10.3
+- name: kubernetes-sigs/krew@v0.4.3

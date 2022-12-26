@@ -74,8 +74,8 @@ export DOCKER_CONFIG=$XDG_CONFIG_HOME/docker
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# krew (kubectl plugins)
+export PATH="${PATH}:${HOME}/.krew/bin"
 
 # aqua
 export PATH="${AQUA_ROOT_DIR:-${XDG_DATA_HOME:-$HOME/.local/share}/aquaproj-aqua}/bin:$PATH"
