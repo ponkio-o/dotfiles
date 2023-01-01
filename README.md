@@ -18,6 +18,11 @@ tmux plugin manager
 $ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 
+`gh` extension
+```
+$ gh extension install kawarimidoll/gh-q
+```
+
 nvim plugin
 ```bash
 $ mkdir -p $HOME/.cache/dein
