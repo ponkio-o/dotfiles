@@ -60,3 +60,4 @@ packages:
 - name: helm/helm@v3.10.3
 - name: kubernetes-sigs/krew@v0.4.3
 - name: weaveworks/eksctl@v0.124.0
+- name: suzuki-shunsuke/github-comment@v5.0.0
