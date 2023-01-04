@@ -119,3 +119,9 @@ fun! ConvertTabToSpace()
     set expandtab
 endfun
 autocmd BufNewFile,BufRead * call ConvertTabToSpace()
+
+" Quickfix だけの場合は自動的に閉じる
+aug QFClose
+  au!
+  au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
+aug END
