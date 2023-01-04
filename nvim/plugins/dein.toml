@@ -84,3 +84,6 @@ on_ft = ['json5']
 
 [[plugins]]
 repo = 'thinca/vim-qfreplace'
+
+[[plugins]]
+repo = 'svermeulen/vim-easyclip'
