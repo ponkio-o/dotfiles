@@ -81,3 +81,6 @@ on_ft = ['go']
 [[plugins]]
 repo = 'gutenye/json5.vim'
 on_ft = ['json5']
+
+[[plugins]]
+repo = 'thinca/vim-qfreplace'
