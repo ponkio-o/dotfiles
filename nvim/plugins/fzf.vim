@@ -4,5 +4,5 @@ nnoremap <leader>f :Files<cr>
 nnoremap <leader>l :Rg<cr>
 nnoremap <leader>b :Buffers<cr>
 
-" ripgrep を使用して検索する
+" :Files で rg を利用して検索する際のオプション
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
