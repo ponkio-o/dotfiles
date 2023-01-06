@@ -6,3 +6,9 @@ nnoremap <leader>b :Buffers<cr>
 
 " :Files で rg を利用して検索する際のオプション
 let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
+
+" Rg で オプションを渡せるようにする
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --hidden --column --no-heading --color=always -- '.shellescape(<q-args>), 1,
+  \   fzf#vim#with_preview(), <bang>0)
