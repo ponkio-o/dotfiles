@@ -10,5 +10,5 @@ let $FZF_DEFAULT_COMMAND = 'rg --files --hidden --follow --glob "!.git/*"'
 " Rg で オプションを渡せるようにする
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
-  \   'rg --hidden --column --no-heading --color=always -- '.shellescape(<q-args>), 1,
+  \   'rg --hidden --column --no-heading --color=always --follow --glob "!.git/*" -- '.shellescape(<q-args>), 1,
   \   fzf#vim#with_preview(), <bang>0)
