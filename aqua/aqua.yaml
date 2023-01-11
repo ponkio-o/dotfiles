@@ -3,11 +3,11 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.117.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.119.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.10
-- name: golang/go@go1.19.4
+- name: golang/go@go1.19.5
 - name: sharkdp/bat@v0.22.1
 - name: x-motemen/ghq@v1.3.0
 - name: awslabs/git-secrets@1.3.0
@@ -60,4 +60,4 @@ packages:
 - name: helm/helm@v3.10.3
 - name: kubernetes-sigs/krew@v0.4.3
 - name: weaveworks/eksctl@v0.124.0
-- name: suzuki-shunsuke/github-comment@v5.0.1
+- name: suzuki-shunsuke/github-comment@v5.0.2
