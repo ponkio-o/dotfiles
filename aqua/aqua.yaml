@@ -61,3 +61,4 @@ packages:
 - name: kubernetes-sigs/krew@v0.4.3
 - name: weaveworks/eksctl@v0.124.0
 - name: suzuki-shunsuke/github-comment@v5.0.2
+- name: jamietsao/random-winner@v0.1
