@@ -87,3 +87,6 @@ repo = 'thinca/vim-qfreplace'
 
 [[plugins]]
 repo = 'svermeulen/vim-easyclip'
+
+[[plugins]]
+repo = 'google/vim-jsonnet'
