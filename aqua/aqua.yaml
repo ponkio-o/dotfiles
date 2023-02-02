@@ -20,7 +20,7 @@ packages:
 - name: kubernetes/kubectl@v1.26.1
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubectx/kubens@v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.23312
+- name: CircleCI-Public/circleci-cli@v0.1.23334
 - name: mvdan/sh@v3.6.0
 - name: fujiwara/tfstate-lookup@v1.0.0
 - name: cli/cli@v2.22.1
