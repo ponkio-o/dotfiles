@@ -25,6 +25,7 @@ alias ga="git add"
 alias gc="git commit -m"
 alias gst="git status"
 alias gpo="git push origin"
+alias gpoc="git push origin $(git rev-parse --abbrev-ref HEAD)"
 alias gch="git checkout"
 alias gpc="git pullcurrent"
 
