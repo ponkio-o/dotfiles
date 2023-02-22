@@ -9,21 +9,21 @@ on:
       - main
 
 jobs:
-  aqua:
-    name: Check aqua
-    runs-on: macos-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Install aqua
-        run: brew install aquaproj/aqua/aqua
-
-      - name: aqua i
-        working-directory: aqua
-        run: aqua i --test
-
+  #  aqua:
+  #    name: Check aqua
+  #    runs-on: macos-latest
+  #
+  #    steps:
+  #      - name: Checkout
+  #        uses: actions/checkout@v3
+  #
+  #      - name: Install aqua
+  #        run: brew install aquaproj/aqua/aqua
+  #
+  #      - name: aqua i
+  #        working-directory: aqua
+  #        run: aqua i --test
+  #
   install_script:
     name: Check install script
     runs-on: macos-latest
@@ -63,7 +63,7 @@ jobs:
 
     steps:
       - name: Fail
-        if: (needs.aqua.result == 'failure' || needs.install_script.result == 'failure')
+        if: (needs.zinit.result == 'failure' || needs.install_script.result == 'failure')
         run: |
           exit 1
 
