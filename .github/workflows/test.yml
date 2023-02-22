@@ -58,7 +58,7 @@ jobs:
 
   status_check:
     name: status check
-    needs: [aqua, install_script, zinit]
+    needs: [install_script, zinit]
     runs-on: ubuntu-latest
 
     steps:
