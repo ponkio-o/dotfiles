@@ -61,3 +61,4 @@ packages:
 - name: jamietsao/random-winner@v0.1
 - name: kayac/ecspresso@v2.0.4
 - name: stern/stern@v1.23.0
+- name: bitwarden/clients@cli-v2023.2.0
