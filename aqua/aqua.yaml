@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.136.1 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.138.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.10
@@ -12,7 +12,7 @@ packages:
 - name: x-motemen/ghq@v1.4.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@0.38.0
-- name: denoland/deno@v1.30.3
+- name: denoland/deno@v1.31.1
 - name: neovim/neovim@v0.8.3
 - name: golang.org/x/tools/gopls@v0.11.0
 - name: hashicorp/terraform-ls@v0.30.3
@@ -25,7 +25,7 @@ packages:
 - name: fujiwara/tfstate-lookup@v1.0.0
 - name: cli/cli@v2.23.0
 - name: fullstorydev/grpcurl@v1.8.7
-- name: cosmtrek/air@v1.41.0
+- name: cosmtrek/air@v1.42.0
 - name: fujiwara/lambroll@v0.14.2
 - name: awslabs/amazon-ecr-credential-helper@v0.6.0
 - name: golang/tools/goimports@v0.6.0
@@ -33,10 +33,10 @@ packages:
 - name: Songmu/ecschedule@v0.9.1
 - name: owenthereal/upterm@v0.10.0
 - name: tomnomnom/gron@v0.7.1
-- name: aquaproj/registry-tool@v0.1.7
+- name: aquaproj/registry-tool@v0.1.8
 - name: mvdan/gofumpt@v0.4.0
 - name: Mic-U/ecsher@v0.14.2
-- name: iann0036/iamlive@v0.51.1
+- name: iann0036/iamlive@v0.51.2
 - name: suzuki-shunsuke/ci-info@v2.1.2
 - name: dandavison/delta@0.15.1
 - name: knqyf263/pet@v0.4.0
@@ -56,7 +56,7 @@ packages:
 - name: extrawurst/gitui@v0.22.1
 - name: helm/helm@v3.11.1
 - name: kubernetes-sigs/krew@v0.4.3
-- name: weaveworks/eksctl@v0.130.0
+- name: weaveworks/eksctl@v0.131.0
 - name: suzuki-shunsuke/github-comment@v5.0.3
 - name: jamietsao/random-winner@v0.1
 - name: kayac/ecspresso@v2.0.4
