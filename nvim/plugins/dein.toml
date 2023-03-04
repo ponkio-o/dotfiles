@@ -90,3 +90,12 @@ repo = 'svermeulen/vim-easyclip'
 
 [[plugins]]
 repo = 'google/vim-jsonnet'
+
+[[plugins]]
+repo = 'sheerun/vim-polyglot'
+
+[[plugins]]
+repo = 'preservim/nerdcommenter'
+
+[[plugins]]
+repo = 'terryma/vim-expand-region'
