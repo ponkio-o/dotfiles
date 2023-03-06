@@ -43,7 +43,6 @@ setopt nolistbeep          # 補完候補時にビープ音を鳴らさない
 setopt magic_equal_subst   # 引数の補完を有効化
 setopt correct             # スペルミスの補完
 setopt auto_cd             # ディレクトリ名だけで cd
-setopt ignore_eof          # ^D で終了しない
 setopt rm_star_wait        # "rm *" の時に確認する
 setopt share_history       # 複数のタブで履歴を共有
 setopt nonomatch
