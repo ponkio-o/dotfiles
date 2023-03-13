@@ -60,6 +60,6 @@ packages:
 - name: suzuki-shunsuke/github-comment@v5.0.3
 - name: jamietsao/random-winner@v0.1
 - name: kayac/ecspresso@v2.0.4
-- name: stern/stern@v1.23.0
+- name: stern/stern@v1.24.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: crate-ci/typos@varcon-core-v2.2.8
