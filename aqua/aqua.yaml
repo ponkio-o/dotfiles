@@ -43,7 +43,7 @@ packages:
 - name: variadico/noti@3.7.0
 - name: nektos/act@v0.2.43
 - name: itchyny/fillin@v0.3.3
-- name: lindell/multi-gitter@v0.44.0
+- name: lindell/multi-gitter@v0.44.1
 - name: Schniz/fnm@v1.33.1
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.11
