@@ -125,3 +125,10 @@ aug QFClose
   au!
   au WinEnter * if winnr('$') == 1 && &buftype == "quickfix"|q|endif
 aug END
+
+" jq でフォーマットするためのコマンド
+fun! FormatJq()
+    %!jq '.'
+    set filetype=json
+endfun
+command! Jqf call FormatJq()
