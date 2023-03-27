@@ -3,27 +3,27 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.145.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.149.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
-- name: peco/peco@v0.5.10
+- name: peco/peco@v0.5.11
 - name: golang/go@go1.20.2
-- name: sharkdp/bat@v0.22.1
+- name: sharkdp/bat@v0.23.0
 - name: x-motemen/ghq@v1.4.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@0.38.0
-- name: denoland/deno@v1.31.2
+- name: denoland/deno@v1.32.1
 - name: neovim/neovim@v0.8.3
 - name: golang.org/x/tools/gopls@v0.11.0
 - name: hashicorp/terraform-ls@v0.30.3
 - name: BurntSushi/ripgrep@13.0.0
-- name: kubernetes/kubectl@v1.26.2
+- name: kubernetes/kubectl@v1.26.3
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubectx/kubens@v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.23845
+- name: CircleCI-Public/circleci-cli@v0.1.25085
 - name: mvdan/sh@v3.6.0
-- name: fujiwara/tfstate-lookup@v1.0.0
-- name: cli/cli@v2.24.3
+- name: fujiwara/tfstate-lookup@v1.1.0
+- name: cli/cli@v2.25.1
 - name: fullstorydev/grpcurl@v1.8.7
 - name: cosmtrek/air@v1.42.0
 - name: fujiwara/lambroll@v0.14.2
@@ -43,11 +43,11 @@ packages:
 - name: variadico/noti@3.7.0
 - name: nektos/act@v0.2.43
 - name: itchyny/fillin@v0.3.3
-- name: lindell/multi-gitter@v0.44.0
+- name: lindell/multi-gitter@v0.44.2
 - name: Schniz/fnm@v1.33.1
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.11
-- name: mikefarah/yq@v4.31.2
+- name: mikefarah/yq@v4.33.1
 - name: clok/sm@v0.1.2
 - name: ysugimoto/falco@v0.19.1
 - name: minamijoyo/myaws@v0.4.8
@@ -56,7 +56,7 @@ packages:
 - name: extrawurst/gitui@v0.22.1
 - name: helm/helm@v3.11.2
 - name: kubernetes-sigs/krew@v0.4.3
-- name: weaveworks/eksctl@v0.133.0
+- name: weaveworks/eksctl@v0.135.0
 - name: suzuki-shunsuke/github-comment@v5.0.3
 - name: jamietsao/random-winner@v0.1
 - name: kayac/ecspresso@v2.0.4
