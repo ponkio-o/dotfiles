@@ -1,6 +1,6 @@
 [[snippets]]
   description = "Create tag and push origin (release command)"
-  command = 'printf "\e[33m!!!!! [WARNING] deploy to production environment !!!!!\n\e[m" && sleep 5 && git tag release-`date "+%Y%m%d%H%M"` && git push origin --tags'
+  command = 'printf "======================\n        diff         \n======================\n" && git log --pretty=format:"[%ad] %h %an : %s" $(git describe --tags --abbrev=0)..HEAD && printf "========================\n\e[33m\nDo you want to deploy? (y/N): \e[m"; read -q && echo "\nProgress..." && sleep 5 && git tag release-`date "+%Y%m%d%H%M"` && git push origin --tags || echo "\ncancel"'
   output = ""
 
 [[snippets]]
