@@ -63,3 +63,4 @@ packages:
 - name: stern/stern@v1.24.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: crate-ci/typos@varcon-core-v2.2.8
+- name: Songmu/gitsemvers@v0.0.3
