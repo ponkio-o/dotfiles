@@ -64,3 +64,4 @@ packages:
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
 - name: crate-ci/typos@v1.14.3
+- name: kyoshidajp/ghkw@v0.2.1
