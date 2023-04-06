@@ -161,4 +161,10 @@ function fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
+# tunnel command config selector
+function tnlx() {
+    CONFIG_DIR=~/.config/sshtunnel
+    ls $CONFIG_DIR | peco | xargs printf "$CONFIG_DIR/%s" | xargs tunnel -c
+}
+
 source ~/.alias
