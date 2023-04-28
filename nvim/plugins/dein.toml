@@ -99,3 +99,6 @@ repo = 'preservim/nerdcommenter'
 
 [[plugins]]
 repo = 'terryma/vim-expand-region'
+
+[[plugins]]
+repo = 'itkq/fluentd-vim'
