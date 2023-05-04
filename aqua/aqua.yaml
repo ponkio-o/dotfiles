@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v3.159.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v3.160.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -20,7 +20,7 @@ packages:
 - name: kubernetes/kubectl@v1.27.1
 - name: stedolan/jq@jq-1.6
 - name: ahmetb/kubectx/kubens@v0.9.4
-- name: CircleCI-Public/circleci-cli@v0.1.26255
+- name: CircleCI-Public/circleci-cli@v0.1.26343
 - name: mvdan/sh@v3.6.0
 - name: fujiwara/tfstate-lookup@v1.1.1
 - name: cli/cli@v2.28.0
