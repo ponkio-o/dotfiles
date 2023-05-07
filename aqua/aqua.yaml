@@ -67,4 +67,4 @@ packages:
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.1
 - name: fastly/cli@v9.0.3
-- name: k1LoW/runn@v0.69.0
+- name: k1LoW/runn@v0.69.1
