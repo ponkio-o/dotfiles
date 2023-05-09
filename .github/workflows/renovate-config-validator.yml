@@ -9,7 +9,7 @@ on:
       - renovate.json
   push:
     branches:
-      - master
+      - main
     paths:
       - .github/workflows/renovate-config-validator.yml
       - renovate.json
