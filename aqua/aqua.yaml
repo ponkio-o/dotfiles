@@ -66,5 +66,5 @@ packages:
 - name: crate-ci/typos@v1.14.9
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.1
-- name: fastly/cli@v9.0.3
+- name: fastly/cli@v10.0.0
 - name: k1LoW/runn@v0.70.1
