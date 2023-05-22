@@ -68,3 +68,4 @@ packages:
 - name: fullstorydev/grpcui@v1.3.1
 - name: fastly/cli@v10.0.0
 - name: k1LoW/runn@v0.71.0
+- name: derailed/k9s@v0.27.4
