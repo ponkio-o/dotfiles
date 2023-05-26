@@ -174,3 +174,5 @@ function gpr() {
     BRANCH=$(git branch -r --no-merged | peco | sed -e 's/ //g' | sed -e 's/^origin\///g')
     git fetch origin $BRANCH && git switch $BRANCH
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
