@@ -49,7 +49,7 @@ packages:
 - name: minamijoyo/tfmigrate@v0.3.11
 - name: mikefarah/yq@v4.34.1
 - name: clok/sm@v0.1.2
-- name: ysugimoto/falco@v0.20.2
+- name: ysugimoto/falco@v0.20.3
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
 - name: terraform-linters/tflint@v0.46.1
