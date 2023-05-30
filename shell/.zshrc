@@ -171,6 +171,7 @@ source ~/.alias
 
 # get remote branch
 function gpr() {
+    git fetch origin
     BRANCH=$(git branch -r --no-merged | peco | sed -e 's/ //g' | sed -e 's/^origin\///g')
     git fetch origin $BRANCH && git switch $BRANCH
 }
