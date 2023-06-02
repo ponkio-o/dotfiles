@@ -15,5 +15,5 @@
 
 [[snippets]]
   description = "Create draft release"
-  command = "gh release create --draft --generate-notes release-`date "+%Y%m%d%H%M"`"
+  command = 'gh release create --draft --generate-notes release-`date "+%Y%m%d%H%M"`'
   output = ""
