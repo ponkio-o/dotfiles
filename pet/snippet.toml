@@ -12,3 +12,8 @@
   description = "SCP Download"
   command = "fillin scp -i {{scp_down:ssh_key}} -P {{scp_down:ssh_port}} {{scp_down:ssh_user}}@{{scp_down:ssh_host}}:{{scp_down:remote_file}} {{scp_down:local_file}}"
   output = ""
+
+[[snippets]]
+  description = "Create draft release"
+  command = "gh release create --draft --generate-notes release-`date "+%Y%m%d%H%M"`"
+  output = ""
