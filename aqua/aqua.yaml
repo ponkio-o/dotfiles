@@ -72,3 +72,4 @@ packages:
 - name: fastly/cli@v10.2.1
 - name: k1LoW/runn@v0.75.3
 - name: enokawa/taskdiff@v0.0.1
+- name: aereal/jsondiff@v0.2.3
