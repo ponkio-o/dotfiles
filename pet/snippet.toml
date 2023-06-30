@@ -1,9 +1,4 @@
 [[snippets]]
-  description = "Create tag and push origin (release command)"
-  command = 'printf "\e[33m!!!!! [WARNING] deploy to production environment !!!!!\n\e[m" && sleep 5 && git tag release-`date "+%Y%m%d%H%M"` && git push origin --tags'
-  output = ""
-
-[[snippets]]
   description = "SCP Upload"
   command = "fillin scp -i {{scp_up:ssh_key}} -P {{scp_up:ssh_port}} {{scp_up:local_file}} {{scp_up:ssh_user}}@{{scp_up:ssh_host}}:{{scp_up:remote_file}}"
   output = ""
