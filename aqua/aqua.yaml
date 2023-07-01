@@ -75,3 +75,4 @@ packages:
 - name: aereal/jsondiff@v0.2.3
 - name: minamijoyo/hcledit@v0.2.9
 - name: hadolint/hadolint@v2.12.0
+- name: Pluralith/pluralith-cli@v0.2.2
