@@ -77,3 +77,4 @@ packages:
 - name: hadolint/hadolint@v2.12.0
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: snyk/driftctl@v0.39.0
+- name: aws/aws-cli@2.13.4
