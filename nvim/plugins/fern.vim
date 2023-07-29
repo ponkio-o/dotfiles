@@ -17,7 +17,6 @@ function! FernInit() abort
   nmap <buffer> <S-i> <Plug>(fern-action-hidden:toggle)
   nmap <buffer> - <Plug>(fern-action-mark:toggle)
   vmap <buffer> - <Plug>(fern-action-mark:toggle)
-  nmap <buffer> X <Plug>(fern-action-clipboard-move)
   nmap <buffer> h <Plug>(fern-action-collapse)
   nmap <buffer> <S-u> <Plug>(fern-action-leave)
   nmap <buffer> m <Plug>(fern-action-move)
