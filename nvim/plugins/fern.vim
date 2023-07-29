@@ -7,6 +7,9 @@ nnoremap <C-n> :Fern . -reveal=% -drawer -toggle -width=30<CR>
 " 隠しファイルをデフォルトで表示
 let g:fern#default_hidden=1
 
+" nerdfornt の有効化
+let g:fern#renderer = "nerdfont"
+
 function! FernInit() abort
   nmap <buffer> s <Plug>(fern-action-open:side)
   nmap <buffer> M <Plug>(fern-action-new-dir)
@@ -24,7 +27,7 @@ function! FernInit() abort
   nmap <buffer> <cr> <Plug>(fern-action-open-or-enter)
   nmap <buffer> <Enter> <Plug>(fern-action-open-or-expand)
   nmap <buffer> t <Plug>(fern-action-open:tabedit)
-  nmap <buffer> <C-r> <Plug>(fern-action-reload)
+  nmap <buffer> <S-r> <Plug>(fern-action-reload)
   nmap <buffer> r <Plug>(fern-action-rename)
   nmap <buffer> i <Plug>(fern-action-reveal)
   nmap <buffer> D <Plug>(fern-action-trash)
