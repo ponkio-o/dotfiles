@@ -1,10 +1,4 @@
 [toplevel]
-upgrade = !f() {
-    curl -s "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "/tmp/AWSCLIV2.pkg"
-    sudo installer -pkg /tmp/AWSCLIV2.pkg -target /
-    rm -f /tmp/AWSCLIV2.pkg
-  }; f
-
 check-upgrade = !f() {
     rm -f /tmp/AWSCLIV2.pkg
     curl -s "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "/tmp/AWSCLIV2.pkg"
