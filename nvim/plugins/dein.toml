@@ -11,12 +11,6 @@ repo = 'airblade/vim-gitgutter'
 repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
-repo = 'preservim/nerdtree'
-
-[[plugins]]
-repo = 'Xuyuanp/nerdtree-git-plugin'
-
-[[plugins]]
 repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
@@ -102,3 +96,15 @@ repo = 'terryma/vim-expand-region'
 
 [[plugins]]
 repo = 'itkq/fluentd-vim'
+
+[[plugins]]
+repo = 'lambdalisue/fern.vim'
+
+[[plugins]]
+repo = 'lambdalisue/fern-git-status.vim'
+
+[[plugins]]
+repo = 'lambdalisue/fern-renderer-nerdfont.vim'
+
+[[plugins]]
+repo = 'lambdalisue/nerdfont.vim'
