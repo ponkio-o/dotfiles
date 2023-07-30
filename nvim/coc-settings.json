@@ -30,12 +30,6 @@
     "yaml.schemaStore.enable": false,
     "yaml.completion": true,
     "yaml.validate": true,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "go",
-        "yaml",
-        "typescript",
-        "javascript"
-    ],
     "typescript.suggestionActions.enabled": false,
     "javascript.suggestionActions.enabled": false,
     "javascript.validate.enable": false
