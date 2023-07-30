@@ -12,6 +12,7 @@ let g:fern#renderer = "nerdfont"
 
 function! FernInit() abort
   nmap <buffer> s <Plug>(fern-action-open:side)
+  nmap <buffer> i <Plug>(fern-action-open:split)
   nmap <buffer> <S-c> <Plug>(fern-action-new-dir)
   nmap <buffer> c <Plug>(fern-action-new-file)
   nmap <buffer> <S-i> <Plug>(fern-action-hidden:toggle)
