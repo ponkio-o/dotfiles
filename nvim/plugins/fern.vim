@@ -11,6 +11,17 @@ let g:fern#default_hidden=1
 let g:fern#renderer = "nerdfont"
 
 function! FernInit() abort
+  " https://github.com/lambdalisue/fern.vim/wiki/Tips#perform-expand-or-collapse-directory
+  nmap <buffer><expr>
+      \ <Plug>(fern-my-expand-or-collapse)
+      \ fern#smart#leaf(
+      \   "\<Plug>(fern-action-collapse)",
+      \   "\<Plug>(fern-action-expand)",
+      \   "\<Plug>(fern-action-collapse)",
+      \ )
+  nmap <buffer><nowait> l <Plug>(fern-my-expand-or-collapse)
+
+  " keymap
   nmap <buffer> s <Plug>(fern-action-open:side)
   nmap <buffer> i <Plug>(fern-action-open:split)
   nmap <buffer> <S-c> <Plug>(fern-action-new-dir)
