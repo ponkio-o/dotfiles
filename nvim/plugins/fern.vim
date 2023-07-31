@@ -34,5 +34,5 @@ function! FernInit() abort
 endfunction
 augroup FernEvents
   autocmd!
-  autocmd FileType fern call FernInit()
+  autocmd FileType fern setlocal norelativenumber | setlocal nonumber | call FernInit()
 augroup END
