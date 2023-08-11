@@ -47,7 +47,7 @@ packages:
 - name: Schniz/fnm@v1.35.0
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.14
-- name: mikefarah/yq@v4.34.2
+- name: mikefarah/yq@v4.35.1
 - name: clok/sm@v0.1.2
 - name: ysugimoto/falco@v0.22.0
 - name: minamijoyo/myaws@v0.4.8
