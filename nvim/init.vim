@@ -18,5 +18,6 @@ let g:coc_global_extensions = [
       \'coc-json',
       \'coc-yaml',
       \'coc-tsserver',
-      \'coc-phpls'
+      \'coc-phpls',
+      \'coc-snippets'
 \]

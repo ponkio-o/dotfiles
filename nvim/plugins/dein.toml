@@ -108,3 +108,10 @@ repo = 'lambdalisue/fern-renderer-nerdfont.vim'
 
 [[plugins]]
 repo = 'lambdalisue/nerdfont.vim'
+
+[[plugins]]
+ repo = 'SirVer/ultisnips'
+ hook_add = '''
+   let g:UltiSnipsSnippetDirectories=[$HOME.'/.local/share/nvim/plugins/UltiSnips']
+   let g:UltiSnipsExpandTrigger="<Down>"
+ '''

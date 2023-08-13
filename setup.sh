@@ -46,6 +46,7 @@ ln -sf $DIR/git/ignore $XDG_CONFIG_HOME/git/ignore
 mkdir -p $XDG_CONFIG_HOME/nvim
 mkdir -p $XDG_CONFIG_HOME/nvim/colors
 mkdir -p $XDG_CONFIG_HOME/nvim/plugins
+mkdir -p $XDG_DATA_HOME/nvim/plugins/UltiSnips
 ln -sf $DIR/nvim/colors/molokai.vim $XDG_CONFIG_HOME/nvim/colors/molokai.vim
 ln -sf $DIR/nvim/init.vim $XDG_CONFIG_HOME/nvim/init.vim
 ln -sf $DIR/nvim/basic.vimrc $XDG_CONFIG_HOME/nvim/basic.vimrc
@@ -53,11 +54,18 @@ ln -sf $DIR/nvim/dein.vimrc $XDG_CONFIG_HOME/nvim/dein.vimrc
 ln -sf $DIR/nvim/key_bind.vimrc $XDG_CONFIG_HOME/nvim/key_bind.vimrc
 ln -sf $DIR/nvim/coc-settings.json $XDG_CONFIG_HOME/nvim/coc-settings.json
 
-## vim plugin setting files
+## nvim plugin setting files
 NVIM_PLUGINS_DIR=$XDG_CONFIG_HOME/nvim/plugins
 files=$(ls -1F nvim/plugins | grep -v "/")
 for file in $files; do
     ln -sf $DIR/nvim/plugins/$file $NVIM_PLUGINS_DIR/$file
+done
+
+## nvim snippets for SirVer/ultisnips
+SNIPPETS_DIR=$XDG_DATA_HOME/nvim/plugins/UltiSnips
+files=$(ls -1F nvim/snippets | grep -v "/")
+for file in $files; do
+    ln -sf $DIR/nvim/snippets/$file $SNIPPETS_DIR/$file
 done
 
 # script
