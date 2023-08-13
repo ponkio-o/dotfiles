@@ -62,7 +62,7 @@ for file in $files; do
 done
 
 ## nvim snippets for SirVer/ultisnips
-SNIPPETS_DIR=$XDG_DATA_HOME/nvim/plugins/UltiSnips
+SNIPPETS_DIR=$XDG_CONFIG_HOME/nvim/UltiSnips
 files=$(ls -1F nvim/snippets | grep -v "/")
 for file in $files; do
     ln -sf $DIR/nvim/snippets/$file $SNIPPETS_DIR/$file
