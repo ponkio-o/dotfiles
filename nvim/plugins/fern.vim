@@ -32,6 +32,7 @@ function! FernInit() abort
   nmap <buffer> h <Plug>(fern-action-collapse)
   nmap <buffer> <S-u> <Plug>(fern-action-leave)
   nmap <buffer> m <Plug>(fern-action-move)
+  nmap <buffer> <S-m> <Plug>(fern-action-copy)
   nmap <buffer> <cr> <Plug>(fern-action-open-or-enter)
   nmap <buffer> <Enter> <Plug>(fern-action-open-or-expand)
   nmap <buffer> t <Plug>(fern-action-open:tabedit)
