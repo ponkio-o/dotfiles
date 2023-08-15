@@ -14,7 +14,7 @@ packages:
 - name: junegunn/fzf@0.42.0
 - name: denoland/deno@v1.36.1
 - name: neovim/neovim@v0.9.1
-- name: golang.org/x/tools/gopls@v0.13.1
+- name: golang.org/x/tools/gopls@v0.13.2
 - name: hashicorp/terraform-ls@v0.31.4
 - name: BurntSushi/ripgrep@13.0.0
 - name: kubernetes/kubectl@v1.27.4
@@ -63,14 +63,14 @@ packages:
 - name: stern/stern@v1.25.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.16.4
+- name: crate-ci/typos@v1.16.5
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.1
 - name: fastly/cli@v10.2.4
 - name: derailed/k9s@v0.27.4
 - name: google/yamlfmt@v0.9.0
 - name: fastly/cli@v10.2.4
-- name: k1LoW/runn@v0.80.2
+- name: k1LoW/runn@v0.80.3
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff@v0.2.3
 - name: minamijoyo/hcledit@v0.2.9
