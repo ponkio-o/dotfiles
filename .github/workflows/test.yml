@@ -58,14 +58,11 @@ jobs:
 
   status_check:
     name: status check
-    needs: [install_script, zinit]
+    needs:
+      - install_script
+      - zinit
     runs-on: ubuntu-latest
 
     steps:
-      - name: Fail
-        if: (needs.zinit.result == 'failure' || needs.install_script.result == 'failure')
-        run: |
-          exit 1
-
-      - name: Pass
-        run: echo "OK"
+      - run: exit 1
+        if: failure()
