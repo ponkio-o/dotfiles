@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.37.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.40.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -44,7 +44,7 @@ packages:
 - name: nektos/act@v0.2.49
 - name: itchyny/fillin@v0.3.3
 - name: lindell/multi-gitter@v0.47.3
-- name: Schniz/fnm@v1.35.0
+- name: Schniz/fnm@v1.35.1
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.14
 - name: mikefarah/yq@v4.35.1
@@ -63,7 +63,7 @@ packages:
 - name: stern/stern@v1.25.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.16.5
+- name: crate-ci/typos@v1.16.6
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.1
 - name: fastly/cli@v10.2.4
