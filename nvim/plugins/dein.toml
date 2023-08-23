@@ -62,9 +62,6 @@ depends = 'fzf'
 repo = 'tpope/vim-rhubarb'
 
 [[plugins]]
-repo = 'SirVer/ultisnips'
-
-[[plugins]]
 repo = 'mattn/vim-goimports'
 on_ft = ['go']
 
