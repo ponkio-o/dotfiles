@@ -108,3 +108,18 @@ hook_add = '''
   let g:UltiSnipsSnippetDirectories=["~/.config/nvim/UltiSnips"]
   let g:UltiSnipsExpandTrigger="<Down>"
  '''
+
+[[plugins]]
+repo = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'lambdalisue/kensaku.vim'
+depends = 'vim-denops/denops.vim'
+
+[[plugins]]
+repo = 'lambdalisue/kensaku-command.vim'
+depends = 'lambdalisue/kensaku.vim'
+
+[[plugins]]
+repo = 'lambdalisue/kensaku-search.vim'
+depends = 'lambdalisue/kensaku.vim'
