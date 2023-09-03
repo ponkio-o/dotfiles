@@ -53,7 +53,7 @@ packages:
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
 - name: terraform-linters/tflint@v0.47.0
-- name: extrawurst/gitui@v0.24.1
+- name: extrawurst/gitui@v0.24.2
 - name: helm/helm@v3.12.3
 - name: kubernetes-sigs/krew@v0.4.4
 - name: weaveworks/eksctl@v0.154.0
