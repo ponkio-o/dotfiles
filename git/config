@@ -1,6 +1,3 @@
-[user]
-    name = ponkio-o
-    email = 29038315+ponkio-o@users.noreply.github.com
 # 行末のキャリッジリターンを許容
 [core]
     whitespace = cr-at-eol
@@ -22,4 +19,6 @@
 [ghq]
     root = ~/git
 [include]
+    path = ~/.config/git/config.work
+[includeif "gitdir:~/git/github.com/**"]
     path = ~/.config/git/config.user

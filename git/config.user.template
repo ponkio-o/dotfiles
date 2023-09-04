@@ -1,2 +1,5 @@
 [url "https://<PAT>:x-oauth-basic@github.com/"]
     insteadOf = https://github.com/
+[user]
+    name = ponkio-o
+    email = 29038315+ponkio-o@users.noreply.github.com
