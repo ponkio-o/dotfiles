@@ -82,3 +82,4 @@ packages:
 - name: aws/aws-cli@2.13.4
 - name: barnybug/cli53@0.8.22
 - name: gruntwork-io/terragrunt@v0.50.14
+- name: Versent/saml2aws@v2.36.10
