@@ -115,7 +115,7 @@ bindkey '^r' peco-select-history
 
 # aws cli config selector
 function awsx() {
-    profile=$(cat ~/.aws/config | grep profile | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
+    profile=$(cat ~/.aws/config | grep '\[profile' | sed -e 's/\[//g' -e 's/\]//g' | cut -f 2 -d " " | peco)
     export AWS_PROFILE=$profile
     aws whoami
 }
