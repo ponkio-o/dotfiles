@@ -87,7 +87,7 @@ export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.conf
 autoload bashcompinit && bashcompinit
 autoload -Uz compinit && compinit
 compinit
-complete -C '/usr/local/bin/aws_completer' aws
+complete -C 'aws_completer' aws
 
 # fnm (Node.js version manager)
 eval "$(fnm env --use-on-cd)"
