@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
@@ -6,7 +5,7 @@ tap "homebrew/core"
 brew "grep"
 brew "htop"
 brew "tmux"
-brew "aquaproj/aqua"
+brew "aquaproj/aqua/aqua"
 brew "tree"
 brew "cfn-lint"
 
