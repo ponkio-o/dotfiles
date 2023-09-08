@@ -69,9 +69,9 @@ for file in $files; do
 done
 
 # script
-ln -sf $DIR/script/sshx /usr/local/bin/sshx
-ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
-ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
+sudo ln -sf $DIR/script/sshx /usr/local/bin/sshx
+sudo ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
+sudo ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
 
 # bin
 cp $DIR/bin/realpath /usr/local/bin/realpath
