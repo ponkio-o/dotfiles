@@ -7,6 +7,16 @@ $ brew tap Homebrew/bundle
 $ brew bundle
 ```
 
+run setup script
+```bash
+$ ./setup.sh
+```
+
+aqua
+```bash
+$ aqua i
+```
+
 zsh
 ```bash
 $ sh -c "$(curl -fsSL https://git.io/zinit-install)"
@@ -29,9 +39,4 @@ nvim plugin
 $ mkdir -p $HOME/.cache/dein
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Shougo/dein-installer.vim/master/installer.sh)"
 $ sh ./installer.sh ~/.cache/dein
-```
-
-run setup script
-```bash
-$ ./setup.sh
 ```
