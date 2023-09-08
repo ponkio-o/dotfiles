@@ -74,7 +74,7 @@ sudo ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
 sudo ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
 
 # bin
-cp $DIR/bin/realpath /usr/local/bin/realpath
+sudo cp $DIR/bin/realpath /usr/local/bin/realpath
 
 # pet (snipet tool)
 mkdir -p $XDG_CONFIG_HOME/pet
