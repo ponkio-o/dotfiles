@@ -83,3 +83,6 @@ ln -sf $DIR/pet/snippet.toml $XDG_CONFIG_HOME/pet/snippet.toml
 
 # myaws
 ln -sf $DIR/myaws/.myaws.yml $HOME/.myaws.yml
+
+# python3 for neovim
+pip3 install pynvim
