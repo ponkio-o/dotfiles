@@ -12,5 +12,4 @@ brew "cfn-lint"
 
 cask "font-hack-nerd-font"
 cask "gitify"
-cask "discord"
 cask "docker"
