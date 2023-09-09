@@ -18,7 +18,6 @@ packages:
 - name: hashicorp/terraform-ls@v0.31.5
 - name: BurntSushi/ripgrep@13.0.0
 - name: kubernetes/kubectl@v1.28.1
-#- name: stedolan/jq@jq-1.6
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.28995
 - name: mvdan/sh@v3.7.0
@@ -83,3 +82,4 @@ packages:
 - name: barnybug/cli53@0.8.22
 - name: gruntwork-io/terragrunt@v0.50.14
 - name: Versent/saml2aws@v2.36.10
+- name: aws/session-manager-plugin@1.2.497.0
