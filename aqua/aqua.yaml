@@ -83,3 +83,4 @@ packages:
 - name: gruntwork-io/terragrunt@v0.50.14
 - name: Versent/saml2aws@v2.36.10
 - name: aws/session-manager-plugin@1.2.497.0
+- name: ponkio-o/ec2x@v0.0.11
