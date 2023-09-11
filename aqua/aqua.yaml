@@ -84,3 +84,4 @@ packages:
 - name: Versent/saml2aws@v2.36.10
 - name: aws/session-manager-plugin@1.2.497.0
 - name: ponkio-o/ec2x@v0.0.11
+- name: jqlang/jq@jq-1.7
