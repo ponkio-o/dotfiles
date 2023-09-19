@@ -85,3 +85,4 @@ packages:
 - name: aws/session-manager-plugin@1.2.497.0
 - name: ponkio-o/ec2x@v0.0.11
 - name: jqlang/jq@jq-1.7
+- name: okta/okta-aws-cli@v1.2.2
