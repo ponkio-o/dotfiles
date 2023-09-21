@@ -86,3 +86,4 @@ packages:
 - name: ponkio-o/ec2x@v0.0.12
 - name: jqlang/jq@jq-1.7
 - name: okta/okta-aws-cli@v1.2.2
+- name: terraform-docs/terraform-docs@v0.16.0
