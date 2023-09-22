@@ -144,7 +144,7 @@ function gco() {
 function open-git-remote() {
   git rev-parse --git-dir >/dev/null 2>&1
   if [[ $? == 0 ]]; then
-    git config --get remote.origin.url | sed -e 's#ssh://git@#https://#g' -e 's#git@#https://#g' -e 's#github.com:#github.com/#g' | xargs open
+    git config --get remote.origin.url | sed -re 's#git@(.*.(jp|com)):#https://\1/#g' -e 's#ssh://git@#https://#g' -e 's#git@#https://#g' -e 's#github.com:#github.com/#g' | xargs open
   else
     echo ".git not found.\n"
   fi
