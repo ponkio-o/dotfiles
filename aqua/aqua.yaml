@@ -58,7 +58,7 @@ packages:
 - name: weaveworks/eksctl@v0.160.0
 - name: suzuki-shunsuke/github-comment@v6.0.1
 - name: jamietsao/random-winner@v0.1
-- name: kayac/ecspresso@v2.2.3
+- name: kayac/ecspresso@v2.2.4
 - name: stern/stern@v1.26.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
