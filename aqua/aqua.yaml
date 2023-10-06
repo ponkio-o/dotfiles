@@ -21,7 +21,7 @@ packages:
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.29041
 - name: mvdan/sh@v3.7.0
-- name: fujiwara/tfstate-lookup@v1.1.3
+- name: fujiwara/tfstate-lookup@v1.1.4
 - name: cli/cli@v2.36.0
 - name: fullstorydev/grpcurl@v1.8.8
 - name: cosmtrek/air@v1.45.0
