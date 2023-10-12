@@ -3,12 +3,12 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.61.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.63.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
-- name: golang/go@go1.21.2
-- name: sharkdp/bat@v0.23.0
+- name: golang/go@go1.21.3
+- name: sharkdp/bat@v0.24.0
 - name: x-motemen/ghq@v1.4.2
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@0.42.0
@@ -30,13 +30,13 @@ packages:
 - name: golang/tools/goimports@v0.14.0
 - name: rhysd/actionlint@v1.6.26
 - name: Songmu/ecschedule@v0.11.0
-- name: owenthereal/upterm@v0.12.0
+- name: owenthereal/upterm@v0.13.0
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.1.10
 - name: mvdan/gofumpt@v0.5.0
 - name: Mic-U/ecsher@v0.14.2
 - name: iann0036/iamlive@v1.1.1
-- name: suzuki-shunsuke/ci-info@v2.1.2
+- name: suzuki-shunsuke/ci-info@v2.1.3
 - name: dandavison/delta@0.16.5
 - name: knqyf263/pet@v0.5.0
 - name: variadico/noti@3.7.0
@@ -56,20 +56,20 @@ packages:
 - name: helm/helm@v3.13.0
 - name: kubernetes-sigs/krew@v0.4.4
 - name: weaveworks/eksctl@v0.161.0
-- name: suzuki-shunsuke/github-comment@v6.0.1
+- name: suzuki-shunsuke/github-comment@v6.0.2
 - name: jamietsao/random-winner@v0.1
 - name: kayac/ecspresso@v2.2.4
 - name: stern/stern@v1.26.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.16.18
+- name: crate-ci/typos@v1.16.19
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.2
 - name: fastly/cli@v10.4.0
 - name: derailed/k9s@v0.27.4
 - name: google/yamlfmt@v0.10.0
 - name: fastly/cli@v10.4.0
-- name: k1LoW/runn@v0.84.1
+- name: k1LoW/runn@v0.84.2
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff@v0.2.3
 - name: minamijoyo/hcledit@v0.2.10
