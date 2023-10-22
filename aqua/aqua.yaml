@@ -83,3 +83,4 @@ packages:
 - name: golangci/golangci-lint@v1.54.2
 - name: okta/okta-aws-cli@v1.2.2
 - name: terraform-docs/terraform-docs@v0.16.0
+- name: protocolbuffers/protobuf/protoc@v24.4
