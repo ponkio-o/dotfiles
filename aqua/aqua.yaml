@@ -62,7 +62,7 @@ packages:
 - name: Songmu/gitsemvers@v0.0.3
 - name: crate-ci/typos@v1.16.20
 - name: kyoshidajp/ghkw@v0.2.1
-- name: fullstorydev/grpcui@v1.3.2
+- name: fullstorydev/grpcui@v1.3.3
 - name: fastly/cli@v10.5.0
 - name: derailed/k9s@v0.27.4
 - name: google/yamlfmt@v0.10.0
