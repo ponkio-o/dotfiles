@@ -32,9 +32,5 @@
     "yaml.validate": true,
     "typescript.suggestionActions.enabled": false,
     "javascript.suggestionActions.enabled": false,
-    "javascript.validate.enable": false,
-    "coc.preferences.formatOnSaveFiletypes": [
-        "typescript",
-        "javascript"
-    ],
+    "javascript.validate.enable": false
 }
