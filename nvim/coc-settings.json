@@ -32,5 +32,6 @@
     "yaml.validate": true,
     "typescript.suggestionActions.enabled": false,
     "javascript.suggestionActions.enabled": false,
-    "javascript.validate.enable": false
+    "javascript.validate.enable": false,
+    "coc.preferences.formatOnSave": true
 }
