@@ -123,3 +123,6 @@ depends = 'lambdalisue/kensaku.vim'
 [[plugins]]
 repo = 'lambdalisue/kensaku-search.vim'
 depends = 'lambdalisue/kensaku.vim'
+
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
