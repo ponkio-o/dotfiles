@@ -164,6 +164,19 @@ function fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
+# dops
+# https://github.com/Mikescher/better-docker-ps#usage-as-drop-in-replacement
+docker() {
+  case $1 in
+    ps)
+      shift
+      command dops "$@"
+      ;;
+    *)
+      command docker "$@";;
+  esac
+}
+
 # tunnel command config selector
 function tnlx() {
     CONFIG_DIR=~/.config/sshtunnel

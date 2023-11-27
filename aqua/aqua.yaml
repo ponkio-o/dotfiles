@@ -84,3 +84,4 @@ packages:
 - name: okta/okta-aws-cli@v1.2.2
 - name: terraform-docs/terraform-docs@v0.16.0
 - name: protocolbuffers/protobuf/protoc@v25.0
+- name: Mikescher/better-docker-ps@v1.11
