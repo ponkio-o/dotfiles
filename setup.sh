@@ -75,6 +75,7 @@ sudo ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
 
 # bin
 sudo cp $DIR/bin/realpath /usr/local/bin/realpath
+sudo cp $DIR/bin/docker-credential-gh /usr/local/bin/docker-credential-gh
 
 # pet (snipet tool)
 mkdir -p $XDG_CONFIG_HOME/pet
