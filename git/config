@@ -1,6 +1,7 @@
 # 行末のキャリッジリターンを許容
 [core]
     whitespace = cr-at-eol
+    autocrlf = input
 # awslabs/git-secrets
 [secrets]
     providers = git secrets --aws-provider
