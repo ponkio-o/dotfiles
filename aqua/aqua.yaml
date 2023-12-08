@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.98.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.99.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -22,7 +22,7 @@ packages:
 - name: CircleCI-Public/circleci-cli@v0.1.29314
 - name: mvdan/sh@v3.7.0
 - name: fujiwara/tfstate-lookup@v1.1.5
-- name: cli/cli@v2.39.2
+- name: cli/cli@v2.40.0
 - name: fullstorydev/grpcurl@v1.8.9
 - name: cosmtrek/air@v1.49.0
 - name: fujiwara/lambroll@v0.14.7
@@ -64,7 +64,7 @@ packages:
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.3
 - name: fastly/cli@v10.7.0
-- name: derailed/k9s@v0.28.2
+- name: derailed/k9s@v0.29.1
 - name: google/yamlfmt@v0.10.0
 - name: fastly/cli@v10.7.0
 - name: k1LoW/runn@v0.91.1
