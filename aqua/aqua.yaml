@@ -86,3 +86,4 @@ packages:
 - name: Mikescher/better-docker-ps@v1.11
 - name: protocolbuffers/protobuf/protoc@v25.1
 - name: oven-sh/bun@bun-v1.0.16
+- name: traviswt/gke-auth-plugin@0.1.1
