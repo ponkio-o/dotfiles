@@ -17,7 +17,7 @@ packages:
 - name: golang.org/x/tools/gopls@v0.14.2
 - name: hashicorp/terraform-ls@v0.32.4
 - name: BurntSushi/ripgrep@14.0.3
-- name: kubernetes/kubectl@v1.28.4
+- name: kubernetes/kubectl@v1.29.0
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.29658
 - name: mvdan/sh@v3.7.0
