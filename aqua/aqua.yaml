@@ -67,7 +67,7 @@ packages:
 - name: derailed/k9s@v0.29.1
 - name: google/yamlfmt@v0.10.0
 - name: fastly/cli@v10.7.0
-- name: k1LoW/runn@v0.91.2
+- name: k1LoW/runn@v0.91.3
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff@v0.2.3
 - name: minamijoyo/hcledit@v0.2.10
