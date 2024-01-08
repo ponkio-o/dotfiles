@@ -87,3 +87,4 @@ packages:
 - name: protocolbuffers/protobuf/protoc@v25.1
 - name: oven-sh/bun@bun-v1.0.21
 - name: traviswt/gke-auth-plugin@0.1.1
+- name: rajatjindal/kubectl-whoami@v0.0.46
