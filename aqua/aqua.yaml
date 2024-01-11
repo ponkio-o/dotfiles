@@ -46,7 +46,7 @@ packages:
 - name: SpectralOps/teller@v1.5.6
 - name: minamijoyo/tfmigrate@v0.3.20
 - name: mikefarah/yq@v4.40.5
-- name: clok/sm@v0.1.2
+- name: clok/sm@v0.1.3
 - name: ysugimoto/falco@v1.3.0
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
