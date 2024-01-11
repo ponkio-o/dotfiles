@@ -132,3 +132,6 @@ fun! FormatJq()
     set filetype=json
 endfun
 command! Jqf call FormatJq()
+
+" コメントがあるとエラーになるので json5 の場合には jsonc に設定する
+autocmd BufNewFile,BufRead *.json5 setlocal filetype=jsonc
