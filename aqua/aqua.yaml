@@ -88,3 +88,4 @@ packages:
 - name: oven-sh/bun@bun-v1.0.22
 - name: traviswt/gke-auth-plugin@0.1.1
 - name: rajatjindal/kubectl-whoami@v0.0.46
+- name: mike-engel/jwt-cli@6.0.0
