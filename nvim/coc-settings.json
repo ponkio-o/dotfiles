@@ -25,5 +25,11 @@
   "javascript.suggestionActions.enabled": false,
   "javascript.validate.enable": false,
   "coc.preferences.formatOnSave": true,
-  "json.validate.enable": false
+  "json.validate.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["default.json"],
+      "url": "https://docs.renovatebot.com/renovate-schema.json"
+    }
+  ]
 }
