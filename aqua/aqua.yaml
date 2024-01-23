@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.117.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.122.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -15,14 +15,14 @@ packages:
 - name: denoland/deno@v1.39.4
 - name: neovim/neovim@v0.9.5
 - name: golang.org/x/tools/gopls@v0.14.2
-- name: hashicorp/terraform-ls@v0.32.4
+- name: hashicorp/terraform-ls@v0.32.5
 - name: BurntSushi/ripgrep@14.1.0
-- name: kubernetes/kubectl@v1.29.0
+- name: kubernetes/kubectl@v1.29.1
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.29936
 - name: mvdan/sh@v3.7.0
 - name: fujiwara/tfstate-lookup@v1.1.6
-- name: cli/cli@v2.42.0
+- name: cli/cli@v2.42.1
 - name: fullstorydev/grpcurl@v1.8.9
 - name: cosmtrek/air@v1.49.0
 - name: fujiwara/lambroll@v0.14.7
@@ -50,32 +50,32 @@ packages:
 - name: ysugimoto/falco@v1.3.0
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
-- name: terraform-linters/tflint@v0.50.1
+- name: terraform-linters/tflint@v0.50.2
 - name: extrawurst/gitui@v0.24.3
-- name: helm/helm@v3.13.3
+- name: helm/helm@v3.14.0
 - name: kubernetes-sigs/krew@v0.4.4
-- name: weaveworks/eksctl@v0.167.0
+- name: weaveworks/eksctl@v0.168.0
 - name: suzuki-shunsuke/github-comment@v6.0.3
-- name: kayac/ecspresso@v2.3.1
+- name: kayac/ecspresso@v2.3.2
 - name: stern/stern@v1.28.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.17.1
+- name: crate-ci/typos@v1.17.2
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.3
-- name: fastly/cli@v10.7.0
-- name: derailed/k9s@v0.31.5
+- name: fastly/cli@v10.8.0
+- name: derailed/k9s@v0.31.7
 - name: google/yamlfmt@v0.10.0
-- name: fastly/cli@v10.7.0
-- name: k1LoW/runn@v0.95.2
+- name: fastly/cli@v10.8.0
+- name: k1LoW/runn@v0.98.0
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff@v0.2.3
 - name: minamijoyo/hcledit@v0.2.10
 - name: hadolint/hadolint@v2.12.0
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.9.0
-- name: aws/aws-cli@2.15.10
-- name: gruntwork-io/terragrunt@v0.54.17
+- name: aws/aws-cli@2.15.12
+- name: gruntwork-io/terragrunt@v0.54.21
 - name: Versent/saml2aws@v2.36.13
 - name: aws/session-manager-plugin@1.2.497.0
 - name: ponkio-o/ec2x@v0.0.19
@@ -84,9 +84,11 @@ packages:
 - name: okta/okta-aws-cli@v1.2.2
 - name: terraform-docs/terraform-docs@v0.17.0
 - name: Mikescher/better-docker-ps@v1.11
-- name: protocolbuffers/protobuf/protoc@v25.1
-- name: oven-sh/bun@bun-v1.0.22
+- name: protocolbuffers/protobuf/protoc@v25.2
+- name: oven-sh/bun@bun-v1.0.25
 - name: traviswt/gke-auth-plugin@0.1.1
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.0.0
+- name: hairyhenderson/gomplate@v3.11.6
 - name: helmfile/helmfile@v0.160.0
+- name: cue-lang/cue@v0.7.0

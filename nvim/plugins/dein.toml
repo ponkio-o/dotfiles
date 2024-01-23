@@ -126,3 +126,6 @@ depends = 'lambdalisue/kensaku.vim'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
+repo = 'jjo/vim-cue'
