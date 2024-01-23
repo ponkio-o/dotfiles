@@ -136,7 +136,7 @@ function kns() {
 }
 
 # kubectl rollout deploy selector
-function krdx() {
+function krrdx() {
     deployment=$(kubectl get deploy -o json --all-namespaces | jq -r .items[].metadata.name | peco)
     kubectl rollout deploy $deployment
 }
