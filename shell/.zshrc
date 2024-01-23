@@ -135,6 +135,12 @@ function kns() {
     fi
 }
 
+# kubectl rollout deploy selector
+function krdx() {
+    deployment=$(kubectl get deploy -o json --all-namespaces | jq -r .items[].metadata.name | peco)
+    kubectl rollout deploy $deployment
+}
+
 # git checkout
 function gco() {
   git branch --sort=-authordate | grep -v -e '->' -e '*' | perl -pe 's/^\h+//g' | perl -pe 's#^remotes/origin/###' | perl -nle 'print if !$c{$_}++' | peco | xargs git checkout
