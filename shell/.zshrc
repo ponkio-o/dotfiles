@@ -137,8 +137,8 @@ function kns() {
 
 # kubectl rollout deploy selector
 function krrdx() {
-    deployment=$(kubectl get deploy -o json --all-namespaces | jq -r .items[].metadata.name | peco)
-    kubectl rollout deploy $deployment
+    deployment=$(kubectl get deploy -o json | jq -r .items[].metadata.name | peco)
+    kubectl rollout restart deploy $deployment
 }
 
 # git checkout
