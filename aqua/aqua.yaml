@@ -60,7 +60,7 @@ packages:
 - name: stern/stern@v1.28.0
 - name: bitwarden/clients@cli-v2023.2.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.17.2
+- name: crate-ci/typos@v1.18.0
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.3
 - name: fastly/cli@v10.8.0
