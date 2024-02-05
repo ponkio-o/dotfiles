@@ -50,7 +50,7 @@ packages:
 - name: ysugimoto/falco@v1.4.0
 - name: minamijoyo/myaws@v0.4.8
 - name: dbrgn/tealdeer@v1.6.1
-- name: terraform-linters/tflint@v0.50.2
+- name: terraform-linters/tflint@v0.50.3
 - name: extrawurst/gitui@v0.24.3
 - name: helm/helm@v3.14.0
 - name: kubernetes-sigs/krew@v0.4.4
