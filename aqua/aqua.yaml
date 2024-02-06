@@ -93,3 +93,4 @@ packages:
 - name: helmfile/helmfile@v0.161.0
 - name: cue-lang/cue@v0.7.0
 - name: suzuki-shunsuke/pinact@v0.1.2
+- name: ajeetdsouza/zoxide@v0.9.2
