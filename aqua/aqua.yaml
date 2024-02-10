@@ -64,7 +64,7 @@ packages:
 - name: fullstorydev/grpcui@v1.3.3
 - name: fastly/cli@v10.8.0
 - name: derailed/k9s@v0.31.8
-- name: google/yamlfmt@v0.10.0
+- name: google/yamlfmt@v0.11.0
 - name: fastly/cli@v10.8.0
 - name: k1LoW/runn@v0.98.4
 - name: enokawa/taskdiff@v0.0.1
