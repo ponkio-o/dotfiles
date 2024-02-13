@@ -23,3 +23,7 @@
     path = ~/.config/git/config.work
 [includeif "gitdir:~/git/github.com/**"]
     path = ~/.config/git/config.user
+[commit]
+	gpgsign = true
+[user]
+	signingkey = 41AA4A609B74A831
