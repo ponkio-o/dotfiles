@@ -27,3 +27,5 @@
 	gpgsign = true
 [user]
 	signingkey = 41AA4A609B74A831
+[log]
+	date = iso
