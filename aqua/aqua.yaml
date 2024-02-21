@@ -92,6 +92,6 @@ packages:
 - name: helmfile/helmfile@v0.162.0
 - name: cue-lang/cue@v0.7.1
 - name: suzuki-shunsuke/pinact@v0.1.2
-- name: ajeetdsouza/zoxide@v0.9.3
+- name: ajeetdsouza/zoxide@v0.9.4
 - name: k1LoW/gh-do@v0.4.0
 - name: bitwarden/clients@cli-v2024.2.0
