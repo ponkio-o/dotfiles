@@ -95,4 +95,4 @@ packages:
 - name: ajeetdsouza/zoxide@v0.9.4
 - name: k1LoW/gh-do@v0.4.0
 - name: bitwarden/clients@cli-v2024.2.0
-- name: dominikh/go-tools/staticcheck@2023.1.6
+- name: dominikh/go-tools/staticcheck@2023.1.7
