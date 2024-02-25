@@ -20,5 +20,6 @@ let g:coc_global_extensions = [
       \'coc-tsserver',
       \'coc-prettier',
       \'coc-phpls',
-      \'coc-snippets'
+      \'coc-snippets',
+      \'coc-toml'
 \]
