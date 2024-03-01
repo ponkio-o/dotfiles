@@ -96,4 +96,4 @@ packages:
 - name: k1LoW/gh-do@v0.4.0
 - name: bitwarden/clients@cli-v2024.2.0
 - name: dominikh/go-tools/staticcheck@2023.1.7
-- name: gohugoio/hugo@v0.123.6
+- name: gohugoio/hugo@v0.123.7
