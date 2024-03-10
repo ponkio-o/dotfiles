@@ -55,7 +55,7 @@ packages:
 - name: helm/helm@v3.14.2
 - name: kubernetes-sigs/krew@v0.4.4
 - name: weaveworks/eksctl@v0.173.0
-- name: suzuki-shunsuke/github-comment@v6.0.3
+- name: suzuki-shunsuke/github-comment@v6.0.4
 - name: kayac/ecspresso@v2.3.2
 - name: stern/stern@v1.28.0
 - name: Songmu/gitsemvers@v0.0.3
