@@ -98,3 +98,4 @@ packages:
 - name: dominikh/go-tools/staticcheck@2023.1.7
 - name: gohugoio/hugo@v0.123.8
 - name: kubernetes-sigs/kustomize@kustomize/v5.3.0
+- name: argoproj/argo-cd@v2.10.2
