@@ -99,4 +99,4 @@ packages:
 - name: gohugoio/hugo@v0.124.0
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.3.0
-- name: argoproj/argo-cd@v2.10.3
+- name: argoproj/argo-cd@v2.10.4
