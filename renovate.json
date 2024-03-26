@@ -1,17 +1,14 @@
 {
-  "extends": [
-    "github>aquaproj/aqua-renovate-config#2.2.0"
-  ],
+  "extends": ["github>aquaproj/aqua-renovate-config#2.2.0"],
   "labels": ["dependencies"],
-  "reviewers": ["ponkio-o"],
   "platformAutomerge": true,
   "dependencyDashboard": true,
   "patch": {
-      "automerge": true
+    "automerge": true
   },
   "packageRules": [
     {
-      "matchPackageNames":["aquaproj/aqua-registry"],
+      "matchPackageNames": ["aquaproj/aqua-registry"],
       "automerge": true
     }
   ]
