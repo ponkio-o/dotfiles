@@ -6,6 +6,13 @@
   "patch": {
     "automerge": true
   },
+  "minor": {
+    "automerge": true
+  },
+  "major": {
+    "automerge": false,
+    "reviewers": ["ponkio-o"]
+  },
   "packageRules": [
     {
       "matchPackageNames": ["aquaproj/aqua-registry"],
