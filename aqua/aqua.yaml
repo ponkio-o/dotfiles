@@ -62,10 +62,10 @@ packages:
 - name: crate-ci/typos@v1.19.0
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.3.3
-- name: fastly/cli@v10.8.8
+- name: fastly/cli@v10.8.9
 - name: derailed/k9s@v0.32.4
 - name: google/yamlfmt@v0.11.0
-- name: fastly/cli@v10.8.8
+- name: fastly/cli@v10.8.9
 - name: k1LoW/runn@v0.101.2
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
