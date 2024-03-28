@@ -100,7 +100,7 @@ packages:
 - name: gohugoio/hugo@v0.124.1
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.3.0
-- name: argoproj/argo-cd@v2.10.4
+- name: argoproj/argo-cd@v2.10.5
 - name: homeport/dyff@v1.7.1
 - name: suzuki-shunsuke/ghalint@v0.2.9
 - name: ynqa/jnv@v0.2.0
