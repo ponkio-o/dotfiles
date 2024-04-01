@@ -104,3 +104,4 @@ packages:
 - name: homeport/dyff@v1.7.1
 - name: suzuki-shunsuke/ghalint@v0.2.9
 - name: ynqa/jnv@v0.2.1
+- name: wagoodman/dive@v0.12.0
