@@ -105,3 +105,4 @@ packages:
 - name: suzuki-shunsuke/ghalint@v0.2.9
 - name: ynqa/jnv@v0.2.1
 - name: wagoodman/dive@v0.12.0
+- name: reproducible-containers/diffoci@v0.1.4
