@@ -12,7 +12,7 @@ packages:
 - name: x-motemen/ghq@v1.6.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@0.49.0
-- name: denoland/deno@v1.42.2
+- name: denoland/deno@v1.42.3
 - name: neovim/neovim@v0.9.5
 - name: golang.org/x/tools/gopls@v0.15.2
 - name: hashicorp/terraform-ls@v0.33.0
