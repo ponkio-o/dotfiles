@@ -78,7 +78,7 @@ packages:
 - name: gruntwork-io/terragrunt@v0.57.13
 - name: Versent/saml2aws@v2.36.15
 - name: aws/session-manager-plugin@1.2.497.0
-- name: ponkio-o/ec2x@v0.0.21
+- name: ponkio-o/ec2x@v0.0.22
 - name: jqlang/jq@jq-1.7.1
 - name: golangci/golangci-lint@v1.57.2
 - name: okta/okta-aws-cli@v2.1.2
