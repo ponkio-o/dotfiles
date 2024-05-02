@@ -108,3 +108,4 @@ packages:
 - name: reproducible-containers/diffoci@v0.1.4
 - name: suzuki-shunsuke/tfcmt@v4.9.0
 - name: pipe-cd/pipecd/pipectl@v0.47.1
+- name: simeji/jid@v0.7.6
