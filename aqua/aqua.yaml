@@ -28,7 +28,7 @@ packages:
 - name: fujiwara/lambroll@v1.0.4
 - name: awslabs/amazon-ecr-credential-helper@v0.7.1
 - name: golang/tools/goimports@v0.21.0
-- name: rhysd/actionlint@v1.6.27
+- name: rhysd/actionlint@v1.7.0
 - name: Songmu/ecschedule@v0.11.4
 - name: owenthereal/upterm@v0.13.5
 - name: tomnomnom/gron@v0.7.1
