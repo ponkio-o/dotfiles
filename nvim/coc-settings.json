@@ -37,5 +37,9 @@
       "fileMatch": ["default.json"],
       "url": "https://docs.renovatebot.com/renovate-schema.json"
     }
-  ]
+  ],
+  "go.goplsPath": "gopls",
+  "go.goplsOptions": {
+    "gofumpt": true
+  }
 }
