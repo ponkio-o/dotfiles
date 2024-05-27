@@ -39,6 +39,9 @@ jobs:
     name: Check zinit
     runs-on: macos-latest
 
+    env:
+      PYTHON_VENV_ROOT: ${{ github.workspace }}/src/python-venv
+
     steps:
       - name: Checkout
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
@@ -51,6 +54,8 @@ jobs:
       - name: Setup zinit
         shell: zsh {0}
         run: |
+          python3 -m venv ${PYTHON_VENV_ROOT}
+          source ${PYTHON_VENV_ROOT}/bin/activate
           ./setup.sh
           sh -c "$(curl -fsSL https://git.io/zinit-install)"
           source ~/.zshrc
