@@ -12,21 +12,22 @@ env:
   PYTHON_VENV_ROOT: ${{ github.workspace }}/src/python-venv
 
 jobs:
-  #  aqua:
-  #    name: Check aqua
-  #    runs-on: macos-latest
-  #
-  #    steps:
-  #      - name: Checkout
-  #        uses: actions/checkout@v3
-  #
-  #      - name: Install aqua
-  #        run: brew install aquaproj/aqua/aqua
-  #
-  #      - name: aqua i
-  #        working-directory: aqua
-  #        run: aqua i --test
-  #
+  aqua:
+    name: Check aqua
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - uses: aquaproj/aqua-installer@6ce1f8848ec8e61f14d57bd5d7597057a6dd187c # v3.0.1
+        with:
+          aqua_version: v2.28.0
+
+      - name: aqua install
+        working-directory: aqua
+        run: aqua i -l
+
   install_script:
     name: Check install script
     runs-on: macos-latest
@@ -67,6 +68,7 @@ jobs:
   status_check:
     name: status check
     needs:
+      - aqua
       - install_script
       - zinit
     runs-on: ubuntu-latest
