@@ -8,6 +8,9 @@ on:
     branches:
       - main
 
+env:
+  PYTHON_VENV_ROOT: ${{ github.workspace }}/src/python-venv
+
 jobs:
   #  aqua:
   #    name: Check aqua
@@ -33,14 +36,14 @@ jobs:
         uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
       - name: Run setup script
-        run: ./setup.sh
+        run: |
+          python3 -m venv ${PYTHON_VENV_ROOT}
+          source ${PYTHON_VENV_ROOT}/bin/activate
+          ./setup.sh
 
   zinit:
     name: Check zinit
     runs-on: macos-latest
-
-    env:
-      PYTHON_VENV_ROOT: ${{ github.workspace }}/src/python-venv
 
     steps:
       - name: Checkout
