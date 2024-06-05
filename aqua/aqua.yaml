@@ -101,7 +101,7 @@ packages:
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.4.2
 - name: argoproj/argo-cd@v2.11.2
-- name: homeport/dyff@v1.7.1
+- name: homeport/dyff@v1.8.0
 - name: suzuki-shunsuke/ghalint@v0.2.9
 - name: ynqa/jnv@v0.3.0
 - name: wagoodman/dive@v0.12.0
