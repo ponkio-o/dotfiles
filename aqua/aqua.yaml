@@ -14,7 +14,7 @@ packages:
 - name: junegunn/fzf@0.53.0
 - name: denoland/deno@v1.44.4
 - name: neovim/neovim@v0.10.0
-- name: golang.org/x/tools/gopls@v0.15.3
+- name: golang.org/x/tools/gopls@v0.16.0
 - name: hashicorp/terraform-ls@v0.33.2
 - name: BurntSushi/ripgrep@14.1.0
 - name: kubernetes/kubectl@v1.30.2
