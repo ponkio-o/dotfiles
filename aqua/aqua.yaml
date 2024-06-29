@@ -110,3 +110,4 @@ packages:
 - name: simeji/jid@v0.7.6
 - name: argoproj-labs/argocd-image-updater@v0.13.1
 - name: kubernetes-sigs/kind@v0.23.0
+- name: suzuki-shunsuke/ghatm@v0.3.0
