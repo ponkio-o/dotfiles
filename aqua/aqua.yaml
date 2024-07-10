@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.202.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.202.1 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -14,7 +14,7 @@ packages:
 - name: junegunn/fzf@v0.54.0
 - name: denoland/deno@v1.44.4
 - name: neovim/neovim@v0.10.0
-- name: golang.org/x/tools/gopls@v0.16.1
+- name: golang.org/x/tools/gopls@gopls/v0.16.1
 - name: hashicorp/terraform-ls@v0.33.3
 - name: BurntSushi/ripgrep@14.1.0
 - name: kubernetes/kubectl@v1.30.2
@@ -27,7 +27,7 @@ packages:
 - name: cosmtrek/air@v1.52.3
 - name: fujiwara/lambroll@v1.0.4
 - name: awslabs/amazon-ecr-credential-helper@v0.8.0
-- name: golang/tools/goimports@v0.21.0
+- name: golang/tools/goimports@v0.23.0
 - name: rhysd/actionlint@v1.7.1
 - name: Songmu/ecschedule@v0.12.0
 - name: owenthereal/upterm@v0.14.3
