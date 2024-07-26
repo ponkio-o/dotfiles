@@ -21,5 +21,6 @@ let g:coc_global_extensions = [
       \'coc-prettier',
       \'coc-phpls',
       \'coc-snippets',
-      \'coc-toml'
+      \'coc-toml' ,
+      \'coc-rust-analyzer'
 \]
