@@ -114,3 +114,4 @@ packages:
 - name: go-delve/delve@v1.23.0
 - name: uzimaru0000/oglens@v0.1.1
 - name: rust-lang/rust-analyzer@2024-07-22
+- name: earthly/earthly@v0.8.15
