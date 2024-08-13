@@ -95,7 +95,7 @@ packages:
 - name: ajeetdsouza/zoxide@v0.9.4
 - name: k1LoW/gh-do@v0.5.0
 - name: bitwarden/clients@cli-v2024.2.0
-- name: dominikh/go-tools/staticcheck@2023.1.7
+- name: dominikh/go-tools/staticcheck@2024.1
 - name: gohugoio/hugo@v0.132.1
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.4.3
