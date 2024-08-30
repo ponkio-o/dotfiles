@@ -55,7 +55,7 @@ packages:
 - name: kubernetes-sigs/krew@v0.4.4
 - name: weaveworks/eksctl@v0.189.0
 - name: suzuki-shunsuke/github-comment@v6.2.0
-- name: kayac/ecspresso@v2.4.0
+- name: kayac/ecspresso@v2.4.1
 - name: stern/stern@v1.30.0
 - name: Songmu/gitsemvers@v0.0.3
 - name: crate-ci/typos@v1.24.1
