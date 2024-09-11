@@ -51,7 +51,7 @@ packages:
 - name: dbrgn/tealdeer@v1.6.1
 - name: terraform-linters/tflint@v0.53.0
 - name: extrawurst/gitui@v0.26.3
-- name: helm/helm@v3.15.4
+- name: helm/helm@v3.16.0
 - name: kubernetes-sigs/krew@v0.4.4
 - name: weaveworks/eksctl@v0.190.0
 - name: suzuki-shunsuke/github-comment@v6.2.0
