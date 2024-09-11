@@ -36,7 +36,7 @@ packages:
 - name: mvdan/gofumpt@v0.7.0
 - name: Mic-U/ecsher@v0.15.1
 - name: suzuki-shunsuke/ci-info@v2.3.0
-- name: dandavison/delta@0.18.1
+- name: dandavison/delta@0.18.2
 - name: knqyf263/pet@v0.9.0
 - name: variadico/noti@3.7.0
 - name: nektos/act@v0.2.67
