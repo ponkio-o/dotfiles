@@ -58,7 +58,7 @@ packages:
 - name: kayac/ecspresso@v2.4.1
 - name: stern/stern@v1.30.0
 - name: Songmu/gitsemvers@v0.0.3
-- name: crate-ci/typos@v1.24.5
+- name: crate-ci/typos@v1.24.6
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.1
 - name: fastly/cli@v10.14.1
