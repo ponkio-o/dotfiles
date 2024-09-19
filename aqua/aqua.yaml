@@ -92,7 +92,7 @@ packages:
 - name: helmfile/helmfile@v0.168.0
 - name: cue-lang/cue@v0.10.0
 - name: suzuki-shunsuke/pinact@v0.2.1
-- name: ajeetdsouza/zoxide@v0.9.5
+- name: ajeetdsouza/zoxide@v0.9.6
 - name: k1LoW/gh-do@v0.5.0
 - name: bitwarden/clients@cli-v2024.2.0
 - name: dominikh/go-tools/staticcheck@2024.1.1
