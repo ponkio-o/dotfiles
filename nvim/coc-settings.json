@@ -22,6 +22,9 @@
     "https://raw.githubusercontent.com/awslabs/goformation/master/schema/cloudformation.schema.json": [
       "*cfn*.yaml",
       "*cfn*.yml"
+    ],
+    "https://json.schemastore.org/github-workflow.json": [
+      ".github/workflows/*.ya?ml"
     ]
   },
   "yaml.schemaStore.enable": false,
