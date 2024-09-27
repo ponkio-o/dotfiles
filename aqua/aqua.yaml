@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.225.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.226.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -53,7 +53,7 @@ packages:
 - name: extrawurst/gitui@v0.26.3
 - name: helm/helm@v3.16.1
 - name: kubernetes-sigs/krew@v0.4.4
-- name: weaveworks/eksctl@v0.190.0
+- name: weaveworks/eksctl@v0.191.0
 - name: suzuki-shunsuke/github-comment@v6.2.0
 - name: kayac/ecspresso@v2.4.1
 - name: stern/stern@v1.30.0
@@ -73,8 +73,8 @@ packages:
 - name: hadolint/hadolint@v2.12.0
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
-- name: aws/aws-cli@2.17.58
-- name: gruntwork-io/terragrunt@v0.67.12
+- name: aws/aws-cli@2.17.60
+- name: gruntwork-io/terragrunt@v0.67.14
 - name: Versent/saml2aws@v2.36.17
 - name: aws/session-manager-plugin@1.2.497.0
 - name: ponkio-o/ec2x@v0.0.26
@@ -99,10 +99,10 @@ packages:
 - name: gohugoio/hugo@v0.134.3
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.4.3
-- name: argoproj/argo-cd@v2.12.3
+- name: argoproj/argo-cd@v2.12.4
 - name: homeport/dyff@v1.9.1
 - name: suzuki-shunsuke/ghalint@v0.2.12
-- name: ynqa/jnv@v0.4.0
+- name: ynqa/jnv@v0.4.1
 - name: wagoodman/dive@v0.12.0
 - name: reproducible-containers/diffoci@v0.1.5
 - name: suzuki-shunsuke/tfcmt@v4.13.0
