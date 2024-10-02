@@ -73,7 +73,7 @@ packages:
 - name: hadolint/hadolint@v2.12.0
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
-- name: aws/aws-cli@2.17.63
+- name: aws/aws-cli@2.17.64
 - name: gruntwork-io/terragrunt@v0.67.15
 - name: Versent/saml2aws@v2.36.17
 - name: aws/session-manager-plugin@1.2.497.0
