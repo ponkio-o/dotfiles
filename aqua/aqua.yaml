@@ -116,3 +116,4 @@ packages:
 - name: rust-lang/rust-analyzer@2024-07-22
 - name: earthly/earthly@v0.8.15
 - name: hashicorp/packer@v1.11.2
+- name: iann0036/iamlive@v1.1.11
