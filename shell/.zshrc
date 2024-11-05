@@ -313,3 +313,6 @@ fi
 # To initialize zoxide, add this to your configuration (usually ~/.zshrc):
 #
 # eval "$(zoxide init zsh)"
+
+# for pipx
+export PATH="$PATH:/Users/yuya.koda/.local/bin"
