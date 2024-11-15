@@ -15,7 +15,7 @@ packages:
 - name: denoland/deno@v2.0.6
 - name: neovim/neovim@v0.10.2
 - name: golang.org/x/tools/gopls@v0.16.2
-- name: hashicorp/terraform-ls@v0.35.0
+- name: hashicorp/terraform-ls@v0.36.0
 - name: BurntSushi/ripgrep@14.1.1
 - name: kubernetes/kubectl@v1.31.2
 - name: ahmetb/kubectx/kubens@v0.9.5
