@@ -70,7 +70,6 @@ packages:
 - name: aereal/jsondiff
   version: v0.2.3
 - name: minamijoyo/hcledit@v0.2.15
-- name: hadolint/hadolint@v2.12.0
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
 - name: aws/aws-cli@2.21.3
