@@ -118,3 +118,4 @@ packages:
 - name: iann0036/iamlive@v1.1.11
 - name: istio/istio/istioctl@1.24.0
 - name: aws/amazon-ecs-cli@v1.21.0
+- name: txn2/kubefwd@1.22.5
