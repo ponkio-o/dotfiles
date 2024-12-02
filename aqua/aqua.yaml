@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.261.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.265.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -12,7 +12,7 @@ packages:
 - name: x-motemen/ghq@v1.7.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@v0.56.3
-- name: denoland/deno@v2.1.1
+- name: denoland/deno@v2.1.2
 - name: neovim/neovim@v0.10.2
 - name: golang.org/x/tools/gopls@v0.16.2
 - name: hashicorp/terraform-ls@v0.36.0
@@ -22,8 +22,8 @@ packages:
 - name: CircleCI-Public/circleci-cli@v0.1.31151
 - name: mvdan/sh@v3.10.0
 - name: fujiwara/tfstate-lookup@v1.4.2
-- name: cli/cli@v2.62.0
-- name: fullstorydev/grpcurl@v1.9.1
+- name: cli/cli@v2.63.0
+- name: fullstorydev/grpcurl@v1.9.2
 - name: cosmtrek/air@v1.61.1
 - name: fujiwara/lambroll@v1.1.3
 - name: awslabs/amazon-ecr-credential-helper@v0.9.0
@@ -37,9 +37,9 @@ packages:
 - name: Mic-U/ecsher@v0.15.2
 - name: suzuki-shunsuke/ci-info@v2.3.1
 - name: dandavison/delta@0.18.2
-- name: knqyf263/pet@v0.9.1
+- name: knqyf263/pet@v1.0.0
 - name: variadico/noti@3.7.0
-- name: nektos/act@v0.2.69
+- name: nektos/act@v0.2.70
 - name: itchyny/fillin@v0.3.3
 - name: lindell/multi-gitter@v0.54.1
 - name: Schniz/fnm@v1.38.1
@@ -60,42 +60,42 @@ packages:
 - name: Songmu/gitsemvers@v0.0.3
 - name: crate-ci/typos@v1.28.1
 - name: kyoshidajp/ghkw@v0.2.1
-- name: fullstorydev/grpcui@v1.4.1
+- name: fullstorydev/grpcui@v1.4.2
 - name: fastly/cli@v10.17.0
 - name: derailed/k9s@v0.32.7
 - name: google/yamlfmt@v0.14.0
 - name: fastly/cli@v10.17.0
-- name: k1LoW/runn@v0.121.1
+- name: k1LoW/runn@v0.122.1
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
   version: v0.2.3
 - name: minamijoyo/hcledit@v0.2.15
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
-- name: aws/aws-cli@2.22.6
-- name: gruntwork-io/terragrunt@v0.69.1
+- name: aws/aws-cli@2.22.8
+- name: gruntwork-io/terragrunt@v0.69.3
 - name: Versent/saml2aws@v2.36.18
 - name: aws/session-manager-plugin@1.2.497.0
-- name: ponkio-o/ec2x@v0.1.1
+- name: ponkio-o/ec2x@v0.1.2
 - name: jqlang/jq@jq-1.7.1
 - name: golangci/golangci-lint@v1.62.2
 - name: okta/okta-aws-cli@v2.3.1
 - name: terraform-docs/terraform-docs@v0.19.0
 - name: Mikescher/better-docker-ps@v1.12
-- name: protocolbuffers/protobuf/protoc@v28.3
-- name: oven-sh/bun@bun-v1.1.37
+- name: protocolbuffers/protobuf/protoc@v29.0
+- name: oven-sh/bun@bun-v1.1.38
 - name: traviswt/gke-auth-plugin@0.1.1
 - name: rajatjindal/kubectl-whoami@v0.0.46
-- name: mike-engel/jwt-cli@6.1.1
+- name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v4.2.0
 - name: helmfile/helmfile@v0.169.1
 - name: cue-lang/cue@v0.11.0
 - name: suzuki-shunsuke/pinact@v1.0.0
 - name: ajeetdsouza/zoxide@v0.9.6
-- name: k1LoW/gh-do@v0.5.1
+- name: k1LoW/gh-do@v0.5.2
 - name: bitwarden/clients@cli-v2024.11.1
 - name: dominikh/go-tools/staticcheck@2024.1.1
-- name: gohugoio/hugo@v0.139.2
+- name: gohugoio/hugo@v0.139.3
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.5.0
 - name: argoproj/argo-cd@v2.13.1
