@@ -115,7 +115,7 @@ packages:
 - name: rust-lang/rust-analyzer@2024-07-22
 - name: earthly/earthly@v0.8.15
 - name: hashicorp/packer@v1.11.2
-- name: iann0036/iamlive@v1.1.11
+- name: iann0036/iamlive@v1.1.12
 - name: istio/istio/istioctl@1.24.1
 - name: aws/amazon-ecs-cli@v1.21.0
 - name: txn2/kubefwd@1.22.5
