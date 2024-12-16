@@ -24,7 +24,7 @@ packages:
 - name: fujiwara/tfstate-lookup@v1.4.2
 - name: cli/cli@v2.63.2
 - name: fullstorydev/grpcurl@v1.9.2
-- name: cosmtrek/air@v1.61.1
+- name: cosmtrek/air@v1.61.4
 - name: fujiwara/lambroll@v1.1.3
 - name: awslabs/amazon-ecr-credential-helper@v0.9.0
 - name: golang/tools/goimports@v0.23.0
