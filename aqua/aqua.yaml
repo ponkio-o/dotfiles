@@ -84,7 +84,7 @@ packages:
 - name: Mikescher/better-docker-ps@v1.12
 - name: protocolbuffers/protobuf/protoc@v29.2
 - name: oven-sh/bun@bun-v1.1.40
-- name: traviswt/gke-auth-plugin@0.1.1
+- name: traviswt/gke-auth-plugin@0.2.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v4.3.0
