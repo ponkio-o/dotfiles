@@ -73,7 +73,7 @@ packages:
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
 - name: aws/aws-cli@2.22.21
-- name: gruntwork-io/terragrunt@v0.70.4
+- name: gruntwork-io/terragrunt@v0.71.1
 - name: Versent/saml2aws@v2.36.18
 - name: aws/session-manager-plugin@1.2.497.0
 - name: ponkio-o/ec2x@v0.1.2
