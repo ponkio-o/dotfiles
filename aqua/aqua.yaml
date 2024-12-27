@@ -120,5 +120,5 @@ packages:
 - name: aws/amazon-ecs-cli@v1.21.0
 - name: txn2/kubefwd@1.22.5
 - name: uber-go/mock@v0.5.0
-- name: suzuki-shunsuke/disable-checkout-persist-credentials@v0.1.1
+- name: suzuki-shunsuke/disable-checkout-persist-credentials@v0.1.2
 - name: gotestyourself/gotestsum@v1.12.0
