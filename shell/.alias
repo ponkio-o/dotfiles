@@ -28,6 +28,7 @@ alias gst="git status"
 alias gpo="git push origin"
 alias gch="git checkout"
 alias gpc="git pullcurrent"
+alias gpu="git-pull-upstream"
 alias gss="git stash save"
 alias gsa="git stash apply"
 

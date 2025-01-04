@@ -124,6 +124,13 @@ function awsx() {
     aws whoami
 }
 
+# git fetch fork
+function git-pull-upstream() {
+  REPO=$(git remote get-url origin | sed -E 's%.+github.com/(.*).git$%\1%')
+  echo "Syncing ${REPO}...\\n"
+  gh repo sync ${REPO} && git pull
+}
+
 # kubectl config selector
 function kx() {
     kcontext=$(kubectl config get-contexts --no-headers=true | peco --initial-index=1 --prompt='kubectl config use-context > ' |  sed -e 's/^\*//' | awk '{print $1}')
