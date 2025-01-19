@@ -83,7 +83,7 @@ packages:
 - name: terraform-docs/terraform-docs@v0.19.0
 - name: Mikescher/better-docker-ps@v1.12
 - name: protocolbuffers/protobuf/protoc@v29.3
-- name: oven-sh/bun@bun-v1.1.44
+- name: oven-sh/bun@bun-v1.1.45
 - name: traviswt/gke-auth-plugin@0.2.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
