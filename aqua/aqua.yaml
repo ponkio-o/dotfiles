@@ -67,7 +67,8 @@ packages:
 - name: fastly/cli@v10.18.0
 - name: k1LoW/runn@v0.127.4
 - name: enokawa/taskdiff@v0.0.1
-- name: aereal/jsondiff@v0.4.0
+- name: aereal/jsondiff
+  version: v0.2.3
 - name: minamijoyo/hcledit@v0.2.15
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
