@@ -99,6 +99,18 @@ eval "$(fnm env --use-on-cd)"
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
+# tfenv
+ARCH=$(uname -m)
+if [ "$ARCH" = "x86_64" ]; then
+  TFENV_ARCH="amd64"
+elif [ "$ARCH" = "arm64" ]; then
+  TFENV_ARCH="arm64"
+else
+  echo "Unsupported architecture: $ARCH"
+  exit 1
+fi
+export TFENV_ARCH
+
 ## zsh history
 HISTFILE=~/.zsh_history
 export HISTSIZE=1000
