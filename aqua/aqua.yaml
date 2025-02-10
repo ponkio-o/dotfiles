@@ -72,7 +72,7 @@ packages:
 - name: minamijoyo/hcledit@v0.2.16
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
-- name: aws/aws-cli@2.24.0
+- name: aws/aws-cli@2.24.1
 - name: gruntwork-io/terragrunt@v0.72.9
 - name: Versent/saml2aws@v2.36.18
 - name: aws/session-manager-plugin@1.2.694.0
