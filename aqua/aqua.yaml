@@ -69,7 +69,7 @@ packages:
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
   version: v0.2.3
-- name: minamijoyo/hcledit@v0.2.16
+- name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.10.0
 - name: aws/aws-cli@2.24.2
