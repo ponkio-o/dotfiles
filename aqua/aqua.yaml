@@ -127,3 +127,4 @@ packages:
 - name: open-policy-agent/opa@v1.1.0
 - name: sorah/mairu@v0.7.0
 - name: jscaltreto/eks-auth@v0.1.0
+- name: telepresenceio/telepresence@v2.21.3
