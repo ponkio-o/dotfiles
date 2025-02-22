@@ -135,3 +135,6 @@ repo = 'github/copilot.vim'
 
 [[plugins]]
 repo = 'tsandall/vim-rego'
+
+[[plugins]]
+repo = 'sbdchd/neoformat'
