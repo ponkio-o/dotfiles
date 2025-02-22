@@ -15,7 +15,7 @@ repo = 'nathanaelkane/vim-indent-guides'
 
 [[plugins]]
 repo = 'yasuhiroki/circleci.vim'
-on_ft = ['yaml','yml']
+on_ft = ['yaml', 'yml']
 
 [[plugins]]
 repo = 'fgsch/vim-varnish'
@@ -23,7 +23,7 @@ on_ft = 'vcl'
 
 [[plugins]]
 repo = 'hashivim/vim-terraform'
-on_ft = ['terraform','hcl']
+on_ft = ['terraform', 'hcl']
 
 [[plugins]]
 repo = 'machakann/vim-sandwich'
@@ -132,3 +132,6 @@ repo = 'jjo/vim-cue'
 
 [[plugins]]
 repo = 'github/copilot.vim'
+
+[[plugins]]
+repo = 'tsandall/vim-rego'
