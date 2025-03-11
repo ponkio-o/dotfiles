@@ -60,7 +60,7 @@ packages:
 - name: Songmu/gitsemvers@v0.0.3
 - name: crate-ci/typos@v1.30.2
 - name: kyoshidajp/ghkw@v0.2.1
-- name: fullstorydev/grpcui@v1.4.2
+- name: fullstorydev/grpcui@v1.4.3
 - name: fastly/cli@v10.19.0
 - name: derailed/k9s@v0.40.7
 - name: google/yamlfmt@v0.16.0
