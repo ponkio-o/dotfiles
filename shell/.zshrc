@@ -334,4 +334,7 @@ fi
 # eval "$(zoxide init zsh)"
 
 # for pipx
-export PATH="$PATH:/Users/yuya.koda/.local/bin"
+export PATH="$PATH:/Users/$USER/.local/bin"
+
+# for deno
+export PATH="/Users/$USER/.deno/bin:$PATH"
