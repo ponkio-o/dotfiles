@@ -101,7 +101,7 @@ packages:
 - name: argoproj/argo-cd@v2.14.8
 - name: homeport/dyff@v1.10.1
 - name: suzuki-shunsuke/ghalint@v1.3.0
-- name: ynqa/jnv@v0.5.0
+- name: ynqa/jnv@v0.6.0
 - name: wagoodman/dive@v0.13.1
 - name: reproducible-containers/diffoci@v0.1.6
 - name: suzuki-shunsuke/tfcmt@v4.14.2
