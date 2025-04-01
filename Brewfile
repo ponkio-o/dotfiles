@@ -5,7 +5,7 @@ tap "homebrew/core"
 brew "grep"
 brew "htop"
 brew "tmux"
-brew "aquaproj/aqua/aqua"
+brew "aqua"
 brew "tree"
 brew "cfn-lint"
 
