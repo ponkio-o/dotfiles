@@ -49,6 +49,9 @@ alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f
 alias emacs="vim"
 alias vim="nvim"
 
+# gcloud
+alias gcl="gcloud"
+
 # ls color
 case "${OSTYPE}" in
 darwin*)
