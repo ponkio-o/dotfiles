@@ -48,7 +48,7 @@ alias kgd="kubectl get deployment"
 alias kgs="kubectl get service"
 alias kgn="kubectl get node"
 alias kexec='kubectl iexec $(kubectl get pod | tail -n +2 | peco | cut -d " " -f 1)'
-alias -g OY="-o yaml | kubectl neat"
+alias -g Y="-o yaml | kubectl neat"
 
 alias emacs="vim"
 alias vim="nvim"
