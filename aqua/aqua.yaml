@@ -130,3 +130,4 @@ packages:
 - name: telepresenceio/telepresence@v2.22.2
 - name: tamasfe/taplo@0.9.3
 - name: itaysk/kubectl-neat@v2.0.4
+- name: gabeduke/kubectl-iexec@v1.19.14
