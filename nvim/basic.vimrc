@@ -109,17 +109,6 @@ fun! StripTrailingWhitespace()
 endfun
 autocmd BufWritePre * call StripTrailingWhitespace()
 
-" 特定のファイルタイプ以外でタブをスペースに変換する設定を有効化
-fun! ConvertTabToSpace()
-    " Don't strip on these filetypes
-    " 'markdow\|javascript\|...'
-    if &ft =~ 'go'
-        return
-    endif
-    set expandtab
-endfun
-autocmd BufNewFile,BufRead * call ConvertTabToSpace()
-
 " Quickfix だけの場合は自動的に閉じる
 aug QFClose
   au!
