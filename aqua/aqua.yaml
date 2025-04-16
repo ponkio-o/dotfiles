@@ -131,3 +131,4 @@ packages:
 - name: tamasfe/taplo@0.9.3
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
+- name: prometheus/alertmanager@v0.28.1
