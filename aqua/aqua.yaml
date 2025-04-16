@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.345.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.346.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -22,7 +22,7 @@ packages:
 - name: CircleCI-Public/circleci-cli@v0.1.31543
 - name: mvdan/sh@v3.11.0
 - name: fujiwara/tfstate-lookup@v1.5.0
-- name: cli/cli@v2.69.0
+- name: cli/cli@v2.70.0
 - name: fullstorydev/grpcurl@v1.9.3
 - name: cosmtrek/air@v1.61.7
 - name: fujiwara/lambroll@v1.2.2
@@ -65,7 +65,7 @@ packages:
 - name: derailed/k9s@v0.50.3
 - name: google/yamlfmt@v0.16.0
 - name: fastly/cli@v11.2.0
-- name: k1LoW/runn@v0.129.3
+- name: k1LoW/runn@v0.129.4
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
   version: v0.2.3
@@ -78,7 +78,7 @@ packages:
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.2
 - name: jqlang/jq@jq-1.7.1
-- name: golangci/golangci-lint@v2.1.1
+- name: golangci/golangci-lint@v2.1.2
 - name: okta/okta-aws-cli@v2.4.1
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: Mikescher/better-docker-ps@v1.14
@@ -95,7 +95,7 @@ packages:
 - name: k1LoW/gh-do@v0.5.3
 - name: bitwarden/clients@cli-v2025.3.0
 - name: dominikh/go-tools/staticcheck@2025.1.1
-- name: gohugoio/hugo@v0.146.4
+- name: gohugoio/hugo@v0.146.5
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.6.0
 - name: argoproj/argo-cd@v2.14.10
@@ -116,7 +116,7 @@ packages:
 - name: earthly/earthly@v0.8.15
 - name: hashicorp/packer@v1.12.0
 - name: iann0036/iamlive@v1.1.23
-- name: istio/istio/istioctl@1.25.1
+- name: istio/istio/istioctl@1.25.2
 - name: aws/amazon-ecs-cli@v1.21.0
 - name: txn2/kubefwd@1.22.5
 - name: uber-go/mock@v0.5.1
