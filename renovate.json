@@ -1,5 +1,5 @@
 {
-  "extends": ["github>aquaproj/aqua-renovate-config#2.7.5"],
+  "extends": ["github>aquaproj/aqua-renovate-config#2.8.0"],
   "labels": ["dependencies"],
   "platformAutomerge": true,
   "dependencyDashboard": true,
