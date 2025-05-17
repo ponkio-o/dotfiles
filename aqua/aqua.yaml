@@ -108,7 +108,7 @@ packages:
 - name: pipe-cd/pipecd/pipectl@v0.51.3
 - name: simeji/jid@v0.7.6
 - name: argoproj-labs/argocd-image-updater@v0.16.0
-- name: kubernetes-sigs/kind@v0.27.0
+- name: kubernetes-sigs/kind@v0.28.0
 - name: suzuki-shunsuke/ghatm@v0.3.5
 - name: go-delve/delve@v1.24.2
 - name: uzimaru0000/oglens@v0.1.1
