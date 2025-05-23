@@ -89,7 +89,7 @@ packages:
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v4.3.2
 - name: helmfile/helmfile@v1.1.0
-- name: cue-lang/cue@v0.12.1
+- name: cue-lang/cue@v0.13.0
 - name: suzuki-shunsuke/pinact@v3.1.2
 - name: ajeetdsouza/zoxide@v0.9.7
 - name: k1LoW/gh-do@v0.5.3
