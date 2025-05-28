@@ -113,7 +113,7 @@ export TFENV_ARCH
 
 ## zsh history
 HISTFILE=~/.zsh_history
-export HISTSIZE=1000
+export HISTSIZE=5000
 export SAVEHIST=100000
 setopt histignorealldups # 同じコマンドを重複して記録しない
 
