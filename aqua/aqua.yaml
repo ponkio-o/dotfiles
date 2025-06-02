@@ -114,7 +114,7 @@ packages:
 - name: uzimaru0000/oglens@v0.1.1
 - name: rust-lang/rust-analyzer@2024-12-23
 - name: earthly/earthly@v0.8.15
-- name: hashicorp/packer@v1.12.0
+- name: hashicorp/packer@v1.13.0
 - name: iann0036/iamlive@v1.1.24
 - name: istio/istio/istioctl@1.26.1
 - name: aws/amazon-ecs-cli@v1.21.0
