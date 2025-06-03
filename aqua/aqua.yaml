@@ -26,7 +26,7 @@ packages:
 - name: fullstorydev/grpcurl@v1.9.3
 - name: cosmtrek/air@v1.62.0
 - name: fujiwara/lambroll@v1.3.0
-- name: awslabs/amazon-ecr-credential-helper@v0.9.1
+- name: awslabs/amazon-ecr-credential-helper@v0.10.0
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.7
 - name: Songmu/ecschedule@v0.13.0
