@@ -19,8 +19,6 @@
     lineNumber = true
 [ghq]
     root = ~/git
-[include]
-    path = ~/.config/git/config.work
 [includeif "gitdir:~/git/github.com/**"]
     path = ~/.config/git/config.user
 [commit]
