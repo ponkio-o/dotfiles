@@ -121,7 +121,7 @@ packages:
 - name: txn2/kubefwd@1.22.5
 - name: uber-go/mock@v0.5.2
 - name: suzuki-shunsuke/disable-checkout-persist-credentials@v0.1.2
-- name: gotestyourself/gotestsum@v1.12.2
+- name: gotestyourself/gotestsum@v1.12.3
 - name: suzuki-shunsuke/cmdx@v2.0.1
 - name: suzuki-shunsuke/nllint@v0.1.0
 - name: open-policy-agent/opa@v1.5.1
