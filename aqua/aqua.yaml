@@ -124,7 +124,7 @@ packages:
 - name: gotestyourself/gotestsum@v1.12.3
 - name: suzuki-shunsuke/cmdx@v2.0.1
 - name: suzuki-shunsuke/nllint@v0.1.0
-- name: open-policy-agent/opa@v1.5.1
+- name: open-policy-agent/opa@v1.6.0
 - name: sorah/mairu@v0.8.0
 - name: jscaltreto/eks-auth@v0.1.0
 - name: telepresenceio/telepresence@v2.23.2
