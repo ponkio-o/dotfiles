@@ -127,7 +127,7 @@ packages:
 - name: open-policy-agent/opa@v1.6.0
 - name: sorah/mairu@v0.8.0
 - name: jscaltreto/eks-auth@v0.1.0
-- name: telepresenceio/telepresence@v2.23.2
+- name: telepresenceio/telepresence@v2.23.3
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
