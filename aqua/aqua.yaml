@@ -113,7 +113,7 @@ packages:
 - name: go-delve/delve@v1.25.0
 - name: uzimaru0000/oglens@v0.1.1
 - name: rust-lang/rust-analyzer@2024-12-23
-- name: earthly/earthly@v0.8.15
+- name: earthly/earthly@v0.8.16
 - name: hashicorp/packer@v1.13.1
 - name: iann0036/iamlive@v1.1.26
 - name: istio/istio/istioctl@1.26.2
