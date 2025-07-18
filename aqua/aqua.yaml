@@ -110,7 +110,7 @@ packages:
 - name: argoproj-labs/argocd-image-updater@v0.16.0
 - name: kubernetes-sigs/kind@v0.29.0
 - name: suzuki-shunsuke/ghatm@v0.3.7
-- name: go-delve/delve@v1.25.0
+- name: go-delve/delve@v1.25.1
 - name: uzimaru0000/oglens@v0.1.1
 - name: rust-lang/rust-analyzer@2024-12-23
 - name: earthly/earthly@v0.8.16
