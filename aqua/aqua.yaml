@@ -133,7 +133,7 @@ packages:
 - name: gabeduke/kubectl-iexec@v1.19.14
 - name: prometheus/alertmanager@v0.28.1
 - name: bufbuild/buf@v1.56.0
-- name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.6
+- name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.7
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
 - name: johanhaleby/kubetail@1.6.20
 - name: minamijoyo/tfupdate@v0.9.1
