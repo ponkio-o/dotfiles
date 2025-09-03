@@ -29,7 +29,7 @@ packages:
 - name: awslabs/amazon-ecr-credential-helper@v0.10.1
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.7
-- name: Songmu/ecschedule@v0.15.2
+- name: Songmu/ecschedule@v0.15.3
 - name: owenthereal/upterm@v0.15.3
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
