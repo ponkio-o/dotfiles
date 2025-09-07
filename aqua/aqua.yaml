@@ -33,7 +33,7 @@ packages:
 - name: owenthereal/upterm@v0.15.3
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
-- name: mvdan/gofumpt@v0.9.0
+- name: mvdan/gofumpt@v0.9.1
 - name: Mic-U/ecsher@v0.15.3
 - name: suzuki-shunsuke/ci-info@v2.3.6
 - name: dandavison/delta@0.18.2
