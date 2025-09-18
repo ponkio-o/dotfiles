@@ -62,7 +62,7 @@ packages:
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.3
 - name: fastly/cli@v12.0.0
-- name: derailed/k9s@v0.50.9
+- name: derailed/k9s@v0.50.10
 - name: google/yamlfmt@v0.17.2
 - name: k1LoW/runn@v0.136.1
 - name: enokawa/taskdiff@v0.0.1
