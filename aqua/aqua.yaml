@@ -3,34 +3,34 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.426.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.428.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
-- name: golang/go@go1.25.2
-- name: sharkdp/bat@v0.25.0
+- name: golang/go@go1.25.3
+- name: sharkdp/bat@v0.26.0
 - name: x-motemen/ghq@v1.8.0
 - name: awslabs/git-secrets@1.3.0
-- name: junegunn/fzf@v0.65.2
+- name: junegunn/fzf@v0.66.0
 - name: denoland/deno@v2.5.4
 - name: neovim/neovim@v0.11.4
 - name: golang.org/x/tools/gopls@v0.20.0
 - name: hashicorp/terraform-ls@v0.38.2
-- name: BurntSushi/ripgrep@14.1.1
+- name: BurntSushi/ripgrep@15.0.0
 - name: kubernetes/kubectl@v1.34.1
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.33494
 - name: mvdan/sh@v3.12.0
 - name: fujiwara/tfstate-lookup@v1.7.1
-- name: cli/cli@v2.81.0
+- name: cli/cli@v2.82.0
 - name: fullstorydev/grpcurl@v1.9.3
 - name: cosmtrek/air@v1.63.0
 - name: fujiwara/lambroll@v1.3.2
 - name: awslabs/amazon-ecr-credential-helper@v0.10.1
 - name: golang/tools/goimports@v0.28.0
-- name: rhysd/actionlint@v1.7.7
+- name: rhysd/actionlint@v1.7.8
 - name: Songmu/ecschedule@v0.15.3
-- name: owenthereal/upterm@v0.15.3
+- name: owenthereal/upterm@v0.17.0
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
 - name: mvdan/gofumpt@v0.9.1
@@ -45,7 +45,7 @@ packages:
 - name: Schniz/fnm@v1.38.1
 - name: SpectralOps/teller@v2.0.7
 - name: minamijoyo/tfmigrate@v0.4.3
-- name: mikefarah/yq@v4.47.2
+- name: mikefarah/yq@v4.48.1
 - name: clok/sm@v0.1.3
 - name: ysugimoto/falco@v1.20.0
 - name: dbrgn/tealdeer@v1.8.0
@@ -62,17 +62,17 @@ packages:
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.3
 - name: fastly/cli@v12.1.0
-- name: derailed/k9s@v0.50.15
-- name: google/yamlfmt@v0.17.2
-- name: k1LoW/runn@v0.139.0
+- name: derailed/k9s@v0.50.16
+- name: google/yamlfmt@v0.19.0
+- name: k1LoW/runn@v0.140.1
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
   version: v0.2.3
 - name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.31.12
-- name: gruntwork-io/terragrunt@v0.89.4
+- name: aws/aws-cli@2.31.18
+- name: gruntwork-io/terragrunt@v0.91.2
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.4
@@ -82,22 +82,22 @@ packages:
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: Mikescher/better-docker-ps@v1.15
 - name: protocolbuffers/protobuf/protoc@v32.1
-- name: oven-sh/bun@bun-v1.2.23
+- name: oven-sh/bun@bun-v1.3.0
 - name: traviswt/gke-auth-plugin@0.3.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v4.3.3
 - name: helmfile/helmfile@v1.1.7
-- name: cue-lang/cue@v0.14.1
+- name: cue-lang/cue@v0.14.2
 - name: suzuki-shunsuke/pinact@v3.4.2
 - name: ajeetdsouza/zoxide@v0.9.8
 - name: k1LoW/gh-do@v0.5.4
-- name: bitwarden/clients@cli-v2025.9.0
+- name: bitwarden/clients@cli-v2025.10.0
 - name: dominikh/go-tools/staticcheck@2025.1.1
-- name: gohugoio/hugo@v0.151.0
+- name: gohugoio/hugo@v0.151.2
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.7.1
-- name: argoproj/argo-cd@v3.1.8
+- name: argoproj/argo-cd@v3.1.9
 - name: homeport/dyff@v1.10.2
 - name: suzuki-shunsuke/ghalint@v1.5.3
 - name: ynqa/jnv@v0.6.1
@@ -115,7 +115,7 @@ packages:
 - name: earthly/earthly@v0.8.16
 - name: hashicorp/packer@v1.14.2
 - name: iann0036/iamlive@v1.1.26
-- name: istio/istio/istioctl@1.27.1
+- name: istio/istio/istioctl@1.27.3
 - name: aws/amazon-ecs-cli@v1.21.0
 - name: txn2/kubefwd@1.22.5
 - name: uber-go/mock@v0.6.0
@@ -126,12 +126,12 @@ packages:
 - name: open-policy-agent/opa@v1.9.0
 - name: sorah/mairu@v0.9.0
 - name: jscaltreto/eks-auth@v0.1.0
-- name: telepresenceio/telepresence@v2.24.1
+- name: telepresenceio/telepresence@v2.25.0
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
 - name: prometheus/alertmanager@v0.28.1
-- name: bufbuild/buf@v1.58.0
+- name: bufbuild/buf@v1.59.0
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.10
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
 - name: johanhaleby/kubetail@1.6.21
