@@ -3,3 +3,6 @@
 
 # vim
 .vim/
+
+# Claude
++**/.claude/settings.local.json
