@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.428.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.429.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
@@ -16,13 +16,13 @@ packages:
 - name: neovim/neovim@v0.11.4
 - name: golang.org/x/tools/gopls@v0.20.0
 - name: hashicorp/terraform-ls@v0.38.2
-- name: BurntSushi/ripgrep@15.0.0
+- name: BurntSushi/ripgrep@15.1.0
 - name: kubernetes/kubectl@v1.34.1
 - name: ahmetb/kubectx/kubens@v0.9.5
 - name: CircleCI-Public/circleci-cli@v0.1.33494
 - name: mvdan/sh@v3.12.0
 - name: fujiwara/tfstate-lookup@v1.7.1
-- name: cli/cli@v2.82.0
+- name: cli/cli@v2.82.1
 - name: fullstorydev/grpcurl@v1.9.3
 - name: cosmtrek/air@v1.63.0
 - name: fujiwara/lambroll@v1.3.2
@@ -33,7 +33,7 @@ packages:
 - name: owenthereal/upterm@v0.17.0
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
-- name: mvdan/gofumpt@v0.9.1
+- name: mvdan/gofumpt@v0.9.2
 - name: Mic-U/ecsher@v0.15.3
 - name: suzuki-shunsuke/ci-info@v2.4.0
 - name: dandavison/delta@0.18.2
@@ -63,7 +63,7 @@ packages:
 - name: fullstorydev/grpcui@v1.4.3
 - name: fastly/cli@v12.1.0
 - name: derailed/k9s@v0.50.16
-- name: google/yamlfmt@v0.19.0
+- name: google/yamlfmt@v0.20.0
 - name: k1LoW/runn@v0.140.1
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
@@ -71,8 +71,8 @@ packages:
 - name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.31.18
-- name: gruntwork-io/terragrunt@v0.91.2
+- name: aws/aws-cli@2.31.21
+- name: gruntwork-io/terragrunt@v0.91.4
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.4
@@ -81,8 +81,8 @@ packages:
 - name: okta/okta-aws-cli@v2.5.0
 - name: terraform-docs/terraform-docs@v0.20.0
 - name: Mikescher/better-docker-ps@v1.15
-- name: protocolbuffers/protobuf/protoc@v32.1
-- name: oven-sh/bun@bun-v1.3.0
+- name: protocolbuffers/protobuf/protoc@v33.0
+- name: oven-sh/bun@bun-v1.3.1
 - name: traviswt/gke-auth-plugin@0.3.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
@@ -94,7 +94,7 @@ packages:
 - name: k1LoW/gh-do@v0.5.4
 - name: bitwarden/clients@cli-v2025.10.0
 - name: dominikh/go-tools/staticcheck@2025.1.1
-- name: gohugoio/hugo@v0.151.2
+- name: gohugoio/hugo@v0.152.1
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.7.1
 - name: argoproj/argo-cd@v3.1.9
