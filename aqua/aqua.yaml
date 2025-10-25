@@ -35,7 +35,7 @@ packages:
 - name: aquaproj/registry-tool@v0.3.6
 - name: mvdan/gofumpt@v0.9.2
 - name: Mic-U/ecsher@v0.15.3
-- name: suzuki-shunsuke/ci-info@v2.4.0
+- name: suzuki-shunsuke/ci-info@v2.4.1
 - name: dandavison/delta@0.18.2
 - name: knqyf263/pet@v1.0.1
 - name: variadico/noti@3.8.0
