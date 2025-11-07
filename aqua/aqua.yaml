@@ -137,3 +137,4 @@ packages:
 - name: johanhaleby/kubetail@1.6.21
 - name: minamijoyo/tfupdate@v0.9.2
 - name: tmccombs/hcl2json@v0.6.8
+- name: kubernetes-sigs/ingress2gateway@v0.4.0
