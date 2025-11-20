@@ -135,6 +135,6 @@ packages:
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.10
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
 - name: johanhaleby/kubetail@1.6.22
-- name: minamijoyo/tfupdate@v0.9.2
+- name: minamijoyo/tfupdate@v0.9.3
 - name: tmccombs/hcl2json@v0.6.8
 - name: kubernetes-sigs/ingress2gateway@v0.4.0
