@@ -15,7 +15,7 @@ packages:
 - name: denoland/deno@v2.5.6
 - name: neovim/neovim@v0.11.5
 - name: golang.org/x/tools/gopls@v0.20.0
-- name: hashicorp/terraform-ls@v0.38.2
+- name: hashicorp/terraform-ls@v0.38.3
 - name: BurntSushi/ripgrep@15.1.0
 - name: kubernetes/kubectl@v1.34.2
 - name: ahmetb/kubectx/kubens@v0.9.5
@@ -29,8 +29,8 @@ packages:
 - name: awslabs/amazon-ecr-credential-helper@v0.11.0
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.9
-- name: Songmu/ecschedule@v0.17.0
-- name: owenthereal/upterm@v0.18.0
+- name: Songmu/ecschedule@v0.17.1
+- name: owenthereal/upterm@v0.19.0
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
 - name: mvdan/gofumpt@v0.9.2
@@ -45,7 +45,7 @@ packages:
 - name: Schniz/fnm@v1.38.1
 - name: SpectralOps/teller@v2.0.7
 - name: minamijoyo/tfmigrate@v0.4.3
-- name: mikefarah/yq@v4.49.1
+- name: mikefarah/yq@v4.49.2
 - name: clok/sm@v0.1.3
 - name: ysugimoto/falco@v1.20.0
 - name: dbrgn/tealdeer@v1.8.1
@@ -53,7 +53,7 @@ packages:
 - name: extrawurst/gitui@v0.27.0
 - name: helm/helm@v3.19.2
 - name: kubernetes-sigs/krew@v0.4.5
-- name: weaveworks/eksctl@v0.217.0
+- name: weaveworks/eksctl@v0.218.0
 - name: suzuki-shunsuke/github-comment@v6.3.5
 - name: kayac/ecspresso@v2.6.4
 - name: stern/stern@v1.33.1
@@ -71,8 +71,8 @@ packages:
 - name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.32.3
-- name: gruntwork-io/terragrunt@v0.93.10
+- name: aws/aws-cli@2.32.4
+- name: gruntwork-io/terragrunt@v0.93.11
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.5
@@ -87,7 +87,7 @@ packages:
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v4.3.3
-- name: helmfile/helmfile@v1.2.0
+- name: helmfile/helmfile@v1.2.1
 - name: cue-lang/cue@v0.15.1
 - name: suzuki-shunsuke/pinact@v3.4.4
 - name: ajeetdsouza/zoxide@v0.9.8
