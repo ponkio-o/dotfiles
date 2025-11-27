@@ -139,4 +139,4 @@ packages:
 - name: tmccombs/hcl2json@v0.6.8
 - name: kubernetes-sigs/ingress2gateway@v0.4.0
 - name: google/go-containerregistry@v0.20.7
-- name: open-policy-agent/conftest@v0.64.0
+- name: open-policy-agent/conftest@v0.65.0
