@@ -99,7 +99,7 @@ packages:
 - name: kubernetes-sigs/kustomize@kustomize/v5.8.0
 - name: argoproj/argo-cd@v3.2.1
 - name: homeport/dyff@v1.10.2
-- name: suzuki-shunsuke/ghalint@v1.5.3
+- name: suzuki-shunsuke/ghalint@v1.5.4
 - name: ynqa/jnv@v0.6.1
 - name: wagoodman/dive@v0.13.1
 - name: reproducible-containers/diffoci@v0.1.7
