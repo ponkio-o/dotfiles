@@ -130,7 +130,7 @@ packages:
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
-- name: prometheus/alertmanager@v0.29.0
+- name: prometheus/alertmanager@v0.30.0
 - name: bufbuild/buf@v1.61.0
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.11
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
