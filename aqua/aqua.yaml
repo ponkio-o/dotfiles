@@ -44,7 +44,7 @@ packages:
 - name: lindell/multi-gitter@v0.61.0
 - name: Schniz/fnm@v1.38.1
 - name: SpectralOps/teller@v2.0.7
-- name: minamijoyo/tfmigrate@v0.4.3
+- name: minamijoyo/tfmigrate@v0.4.4
 - name: mikefarah/yq@v4.50.1
 - name: clok/sm@v0.1.3
 - name: ysugimoto/falco@v1.21.1
