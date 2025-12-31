@@ -141,3 +141,4 @@ packages:
 - name: google/go-containerregistry@v0.20.7
 - name: open-policy-agent/conftest@v0.66.0
 - name: fluxcd/flux2@v2.7.5
+- name: argoproj/argo-rollouts@v1.8.3
