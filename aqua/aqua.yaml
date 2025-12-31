@@ -89,7 +89,7 @@ packages:
 - name: hairyhenderson/gomplate@v4.3.3
 - name: helmfile/helmfile@v1.2.3
 - name: cue-lang/cue@v0.15.3
-- name: suzuki-shunsuke/pinact@v3.7.4
+- name: suzuki-shunsuke/pinact@v3.8.0
 - name: ajeetdsouza/zoxide@v0.9.8
 - name: k1LoW/gh-do@v0.5.4
 - name: bitwarden/clients@cli-v2025.12.0
