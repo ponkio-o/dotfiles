@@ -30,7 +30,7 @@ packages:
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.10
 - name: Songmu/ecschedule@v0.17.2
-- name: owenthereal/upterm@v0.21.0
+- name: owenthereal/upterm@v0.21.1
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.3.6
 - name: mvdan/gofumpt@v0.9.2
