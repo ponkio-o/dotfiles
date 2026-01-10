@@ -81,7 +81,7 @@ packages:
 - name: okta/okta-aws-cli@v2.5.2
 - name: terraform-docs/terraform-docs@v0.21.0
 - name: Mikescher/better-docker-ps@v1.16
-- name: protocolbuffers/protobuf/protoc@v33.2
+- name: protocolbuffers/protobuf/protoc@v33.3
 - name: oven-sh/bun@bun-v1.3.5
 - name: traviswt/gke-auth-plugin@0.3.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
