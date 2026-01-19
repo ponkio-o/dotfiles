@@ -19,8 +19,6 @@
     lineNumber = true
 [ghq]
     root = ~/git
-[includeif "gitdir:~/git/github.com/**"]
-    path = ~/.config/git/config.user
 [commit]
 	gpgsign = true
 [user]
@@ -29,3 +27,6 @@
 	date = iso
 [http]
 	postBuffer = 524288000
+[user]
+	name = ponkio-o
+	email = 29038315+ponkio-o@users.noreply.github.com
