@@ -144,3 +144,4 @@ packages:
 - name: argoproj/argo-rollouts@v1.8.3
 - name: yonahd/kor@v0.6.7
 - name: biomejs/biome@@biomejs/biome@2.3.11
+- name: d-kuro/gwq@v0.0.11
