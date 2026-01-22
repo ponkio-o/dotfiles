@@ -30,3 +30,8 @@
 [user]
 	name = ponkio-o
 	email = 29038315+ponkio-o@users.noreply.github.com
+[wt]
+	copyignored = false
+	copyuntracked = false
+	nocd = create
+	basedir = /tmp/git-worktrees/{gitroot}-wt
