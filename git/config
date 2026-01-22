@@ -33,5 +33,4 @@
 [wt]
 	copyignored = false
 	copyuntracked = false
-	nocd = create
 	basedir = /tmp/git-worktrees/{gitroot}-wt
