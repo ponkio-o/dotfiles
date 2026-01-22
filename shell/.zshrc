@@ -194,6 +194,12 @@ zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
 function peco-git-wt () {
+    git rev-parse --git-dir >/dev/null 2>&1
+    if [[ $? != 0 ]]; then
+        echo "Not a git repository"
+        zle reset-prompt
+        return 1
+    fi
     local selected=$(git wt | tail -n +2 | peco)
     if [ -n "$selected" ]; then
         local wt=$(git wt $(echo "$selected" | awk '{print $(NF-1)}'))
