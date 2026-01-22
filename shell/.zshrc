@@ -193,6 +193,21 @@ function fzf-git-repo () {
 zle -N fzf-git-repo
 bindkey '^]' fzf-git-repo
 
+function peco-git-wt () {
+    local selected=$(git wt | tail -n +2 | peco)
+    if [ -n "$selected" ]; then
+        local wt=$(git wt $(echo "$selected" | awk '{print $(NF-1)}'))
+        if [ -n "$wt" ]; then
+            BUFFER="cd ${wt}"
+            zle accept-line
+        fi
+    fi
+    zle clear-screen
+    zle reset-prompt
+}
+zle -N peco-git-wt
+bindkey '^[' peco-git-wt
+
 function gcloud-activate() {
   name="$1"
   project="$2"
