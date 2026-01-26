@@ -86,7 +86,7 @@ ln -sf $DIR/pet/snippet.toml $XDG_CONFIG_HOME/pet/snippet.toml
 ln -sf $DIR/myaws/.myaws.yml $HOME/.myaws.yml
 
 # yazi config
-ln -sf $DIR/yazi/config.toml $XDG_CONFIG_HOME/yazi/config.toml
+ln -sf $DIR/yazi/yazi.toml $XDG_CONFIG_HOME/yazi/yazi.toml
 
 # python3 for neovim
 pip3 install pynvim
