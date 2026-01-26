@@ -1,3 +1,7 @@
+# Cursor を強制的にアンダースコアに戻す設定
+# https://stackoverflow.com/questions/4416909/anyway-change-the-cursor-vertical-line-instead-of-a-box
+echo -e -n "\x1b[\x34 q"
+
 # emacs のキーバインドを利用する
 bindkey -e
 
@@ -235,6 +239,17 @@ function gx() {
   gcloud-activate "${name}" "${project}"
 }
 compdef gx-complete gx
+
+function y() {
+    local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+    yazi "$@" --cwd-file="$tmp"
+    # Add the following line to reset the cursor
+    echo -e -n "\x1b[\x34 q"
+    if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+        builtin cd -- "$cwd"
+    fi
+    rm -f -- "$tmp"
+}
 
 # dops
 # https://github.com/Mikescher/better-docker-ps#usage-as-drop-in-replacement
