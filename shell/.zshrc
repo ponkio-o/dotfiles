@@ -1,7 +1,3 @@
-# Cursor を強制的にアンダースコアに戻す設定
-# https://stackoverflow.com/questions/4416909/anyway-change-the-cursor-vertical-line-instead-of-a-box
-echo -e -n "\x1b[\x34 q"
-
 # emacs のキーバインドを利用する
 bindkey -e
 
