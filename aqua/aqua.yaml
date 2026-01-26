@@ -37,7 +37,6 @@ packages:
 - name: Mic-U/ecsher@v0.15.3
 - name: suzuki-shunsuke/ci-info@v2.4.3
 - name: dandavison/delta@0.18.2
-- name: knqyf263/pet@v1.0.1
 - name: variadico/noti@3.8.0
 - name: nektos/act@v0.2.84
 - name: itchyny/fillin@v0.3.3

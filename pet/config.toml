@@ -1,7 +1,0 @@
-[General]
-  snippetfile = "/Users/yuya-koda/.config/pet/snippet.toml"
-  editor = "vim"
-  column = 40
-  selectcmd = "peco"
-  backend = "gist"
-  sortby = ""
