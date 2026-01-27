@@ -144,5 +144,5 @@ packages:
 - name: yonahd/kor@v0.6.7
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.0.11
-- name: k1LoW/git-wt@v0.15.1
+- name: k1LoW/git-wt@v0.16.0
 - name: sxyazi/yazi@v26.1.22
