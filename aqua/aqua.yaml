@@ -146,3 +146,4 @@ packages:
 - name: d-kuro/gwq@v0.0.11
 - name: k1LoW/git-wt@v0.16.1
 - name: sxyazi/yazi@v26.1.22
+- name: pnpm/pnpm@v10.28.2
