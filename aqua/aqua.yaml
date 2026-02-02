@@ -93,7 +93,7 @@ packages:
 - name: k1LoW/gh-do@v0.5.4
 - name: bitwarden/clients@cli-v2025.12.1
 - name: dominikh/go-tools/staticcheck@2025.1.1
-- name: gohugoio/hugo@v0.155.1
+- name: gohugoio/hugo@v0.155.2
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.8.0
 - name: argoproj/argo-cd@v3.3.0
