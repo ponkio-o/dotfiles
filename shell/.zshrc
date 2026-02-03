@@ -26,7 +26,15 @@ zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
 
 zmodload -i zsh/complist
-autoload -Uz compinit && compinit
+
+# compinit with cache (run compaudit only once per day)
+autoload -Uz compinit
+if [[ -n ${HOME}/.zcompdump(#qN.mh+24) ]]; then
+  compinit
+else
+  compinit -C
+fi
+
 zstyle ':completion:*:default' menu select=2
 
 # 補完時にhjklで選択
@@ -87,14 +95,38 @@ export AQUA_GLOBAL_CONFIG=${AQUA_GLOBAL_CONFIG:-}:${XDG_CONFIG_HOME:-$HOME/.conf
 export DOTNET_ROOT=$HOME/.dotnet
 export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 
-# aws cli completion
-autoload bashcompinit && bashcompinit
-autoload -Uz compinit && compinit
-compinit
-complete -C 'aws_completer' aws
+# aws cli completion - lazy load
+aws() {
+  unfunction aws
+  autoload bashcompinit && bashcompinit
+  complete -C 'aws_completer' aws
+  aws "$@"
+}
 
-# fnm (Node.js version manager)
-eval "$(fnm env --use-on-cd)"
+# fnm (Node.js version manager) - lazy load
+fnm() {
+  unfunction fnm
+  eval "$(command fnm env --use-on-cd)"
+  fnm "$@"
+}
+
+node() {
+  unfunction node
+  eval "$(command fnm env --use-on-cd)"
+  node "$@"
+}
+
+npm() {
+  unfunction npm
+  eval "$(command fnm env --use-on-cd)"
+  npm "$@"
+}
+
+npx() {
+  unfunction npx
+  eval "$(command fnm env --use-on-cd)"
+  npx "$@"
+}
 
 # yarn
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
@@ -215,21 +247,24 @@ zle -N peco-git-wt
 bindkey '^[' peco-git-wt
 
 function gcloud-activate() {
+  _init_gcloud
   name="$1"
   project="$2"
   echo "gcloud config configurations activate \"${name}\""
-  gcloud config configurations activate "${name}"
+  command gcloud config configurations activate "${name}"
 }
 function gx-complete() {
-  _values $(gcloud config configurations list | awk '{print $1}')
+  _init_gcloud
+  _values $(command gcloud config configurations list | awk '{print $1}')
 }
 function gx() {
+  _init_gcloud
   name="$1"
   if [ -z "$name" ]; then
-    line=$(gcloud config configurations list | tail -n +2 | peco)
+    line=$(command gcloud config configurations list | tail -n +2 | peco)
     name=$(echo "${line}" | awk '{print $1}')
   else
-    line=$(gcloud config configurations list | grep "$name")
+    line=$(command gcloud config configurations list | grep "$name")
   fi
   project=$(echo "${line}" | awk '{print $4}')
   gcloud-activate "${name}" "${project}"
@@ -393,11 +428,32 @@ export PATH="$PATH:/Users/$USER/.local/bin"
 # for deno
 export PATH="/Users/$USER/.deno/bin:$PATH"
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/usr/local/bin/google-cloud-sdk/path.zsh.inc' ]; then . '/usr/local/bin/google-cloud-sdk/path.zsh.inc'; fi
+# Google Cloud SDK - lazy load
+_gcloud_initialized=0
+_init_gcloud() {
+  if [[ $_gcloud_initialized -eq 0 ]]; then
+    if [ -f '/usr/local/bin/google-cloud-sdk/path.zsh.inc' ]; then
+      source '/usr/local/bin/google-cloud-sdk/path.zsh.inc'
+    fi
+    if [ -f '/usr/local/bin/google-cloud-sdk/completion.zsh.inc' ]; then
+      source '/usr/local/bin/google-cloud-sdk/completion.zsh.inc'
+    fi
+    _gcloud_initialized=1
+  fi
+}
 
-# The next line enables shell command completion for gcloud.
-if [ -f '/usr/local/bin/google-cloud-sdk/completion.zsh.inc' ]; then . '/usr/local/bin/google-cloud-sdk/completion.zsh.inc'; fi
+gcloud() {
+  _init_gcloud
+  unfunction gcloud
+  gcloud "$@"
+}
 
-# for k1LoW/git-wt
-eval "$(git wt --init zsh --nocd)"
+# for k1LoW/git-wt - lazy load
+_git_wt_initialized=0
+git() {
+  if [[ "$1" == "wt" ]] && [[ $_git_wt_initialized -eq 0 ]]; then
+    eval "$(command git wt --init zsh --nocd)"
+    _git_wt_initialized=1
+  fi
+  command git "$@"
+}
