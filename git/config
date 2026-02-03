@@ -32,5 +32,5 @@
 	email = 29038315+ponkio-o@users.noreply.github.com
 [wt]
 	copyignored = false
-	copyuntracked = false
+	copyuntracked = true
 	basedir = /tmp/git-worktrees/{gitroot}-wt
