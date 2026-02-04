@@ -101,7 +101,7 @@ packages:
 - name: suzuki-shunsuke/ghalint@v1.5.5
 - name: ynqa/jnv@v0.6.1
 - name: wagoodman/dive@v0.13.1
-- name: reproducible-containers/diffoci@v0.1.7
+- name: reproducible-containers/diffoci@v0.1.8
 - name: suzuki-shunsuke/tfcmt@v4.14.14
 - name: pipe-cd/pipecd/pipectl@v0.55.0
 - name: simeji/jid@v0.7.6
