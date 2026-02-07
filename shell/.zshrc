@@ -244,7 +244,7 @@ function peco-git-wt () {
     zle reset-prompt
 }
 zle -N peco-git-wt
-bindkey '^[' peco-git-wt
+bindkey "^w" peco-git-wt
 
 function gcloud-activate() {
   _init_gcloud
