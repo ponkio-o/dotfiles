@@ -81,7 +81,7 @@ packages:
 - name: terraform-docs/terraform-docs@v0.21.0
 - name: Mikescher/better-docker-ps@v1.16
 - name: protocolbuffers/protobuf/protoc@v33.5
-- name: oven-sh/bun@bun-v1.3.8
+- name: oven-sh/bun@bun-v1.3.9
 - name: traviswt/gke-auth-plugin@0.3.0
 - name: rajatjindal/kubectl-whoami@v0.0.46
 - name: mike-engel/jwt-cli@6.2.0
@@ -93,7 +93,7 @@ packages:
 - name: k1LoW/gh-do@v0.5.4
 - name: bitwarden/clients@cli-v2025.12.1
 - name: dominikh/go-tools/staticcheck@2025.1.1
-- name: gohugoio/hugo@v0.155.2
+- name: gohugoio/hugo@v0.155.3
 - name: fukubaka0825/tffmtmd@v0.0.9
 - name: kubernetes-sigs/kustomize@kustomize/v5.8.0
 - name: argoproj/argo-cd@v3.3.0
@@ -144,7 +144,7 @@ packages:
 - name: yonahd/kor@v0.6.7
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.0.12
-- name: k1LoW/git-wt@v0.19.0
+- name: k1LoW/git-wt@v0.19.1
 - name: sxyazi/yazi@v26.1.22
-- name: pnpm/pnpm@v10.28.2
+- name: pnpm/pnpm@v10.29.1
 - name: dag-andersen/argocd-diff-preview@v0.1.24
