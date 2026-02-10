@@ -57,7 +57,7 @@ packages:
 - name: kayac/ecspresso@v2.7.1
 - name: stern/stern@v1.33.1
 - name: Songmu/gitsemvers@v0.1.0
-- name: crate-ci/typos@v1.43.3
+- name: crate-ci/typos@v1.43.4
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.3
 - name: fastly/cli@v13.3.0
@@ -70,7 +70,7 @@ packages:
 - name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.33.17
+- name: aws/aws-cli@2.33.18
 - name: gruntwork-io/terragrunt@v0.99.1
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
@@ -95,9 +95,9 @@ packages:
 - name: dominikh/go-tools/staticcheck@2025.1.1
 - name: gohugoio/hugo@v0.155.3
 - name: fukubaka0825/tffmtmd@v0.0.9
-- name: kubernetes-sigs/kustomize@kustomize/v5.8.0
+- name: kubernetes-sigs/kustomize@kustomize/v5.8.1
 - name: argoproj/argo-cd@v3.3.0
-- name: homeport/dyff@v1.10.3
+- name: homeport/dyff@v1.10.4
 - name: suzuki-shunsuke/ghalint@v1.5.5
 - name: ynqa/jnv@v0.6.1
 - name: wagoodman/dive@v0.13.1
@@ -144,7 +144,7 @@ packages:
 - name: yonahd/kor@v0.6.7
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.0.12
-- name: k1LoW/git-wt@v0.19.1
+- name: k1LoW/git-wt@v0.20.0
 - name: sxyazi/yazi@v26.1.22
 - name: pnpm/pnpm@v10.29.2
 - name: dag-andersen/argocd-diff-preview@v0.1.24
