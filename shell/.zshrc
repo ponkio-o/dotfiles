@@ -98,8 +98,8 @@ export PATH=$PATH:$DOTNET_ROOT:$DOTNET_ROOT/tools
 # aws cli completion - lazy load
 aws() {
   unfunction aws
-  autoload bashcompinit && bashcompinit
-  complete -C 'aws_completer' aws
+  autoload -Uz bashcompinit && bashcompinit
+  complete -C "$(which aws_completer)" aws
   aws "$@"
 }
 
