@@ -146,5 +146,5 @@ packages:
 - name: d-kuro/gwq@v0.0.13
 - name: k1LoW/git-wt@v0.20.0
 - name: sxyazi/yazi@v26.1.22
-- name: pnpm/pnpm@v10.29.3
+- name: pnpm/pnpm@v10.29.2
 - name: dag-andersen/argocd-diff-preview@v0.1.25
