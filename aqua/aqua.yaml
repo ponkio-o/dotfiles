@@ -3,23 +3,23 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.467.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.468.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.0.0
 - name: peco/peco@v0.5.11
-- name: golang/go@go1.25.7
+- name: golang/go@go1.26.0
 - name: sharkdp/bat@v0.26.1
 - name: x-motemen/ghq@v1.8.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@v0.67.0
-- name: denoland/deno@v2.6.8
+- name: denoland/deno@v2.6.9
 - name: neovim/neovim@v0.11.6
 - name: golang.org/x/tools/gopls@v0.21.0
 - name: hashicorp/terraform-ls@v0.38.4
 - name: BurntSushi/ripgrep@15.1.0
-- name: kubernetes/kubectl@v1.35.0
+- name: kubernetes/kubectl@v1.35.1
 - name: ahmetb/kubectx/kubens@v0.9.5
-- name: CircleCI-Public/circleci-cli@v0.1.34283
+- name: CircleCI-Public/circleci-cli@v0.1.34422
 - name: mvdan/sh@v3.12.0
 - name: fujiwara/tfstate-lookup@v1.10.0
 - name: cli/cli@v2.86.0
@@ -50,7 +50,7 @@ packages:
 - name: dbrgn/tealdeer@v1.8.1
 - name: terraform-linters/tflint@v0.61.0
 - name: extrawurst/gitui@v0.28.0
-- name: helm/helm@v3.20.0
+- name: helm/helm@v4.1.1
 - name: kubernetes-sigs/krew@v0.4.5
 - name: weaveworks/eksctl@v0.222.0
 - name: suzuki-shunsuke/github-comment@v6.4.1
@@ -70,13 +70,13 @@ packages:
 - name: minamijoyo/hcledit@v0.2.17
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.33.18
+- name: aws/aws-cli@2.33.20
 - name: gruntwork-io/terragrunt@v0.99.1
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.5
 - name: jqlang/jq@jq-1.8.1
-- name: golangci/golangci-lint@v2.8.0
+- name: golangci/golangci-lint@v2.9.0
 - name: okta/okta-aws-cli@v2.5.3
 - name: terraform-docs/terraform-docs@v0.21.0
 - name: Mikescher/better-docker-ps@v1.16
@@ -116,7 +116,7 @@ packages:
 - name: iann0036/iamlive@v1.1.27
 - name: istio/istio/istioctl@1.28.3
 - name: aws/amazon-ecs-cli@v1.21.0
-- name: txn2/kubefwd@v1.25.10
+- name: txn2/kubefwd@v1.25.12
 - name: uber-go/mock@v0.6.0
 - name: suzuki-shunsuke/disable-checkout-persist-credentials@v1.0.0
 - name: gotestyourself/gotestsum@v1.13.0
@@ -129,7 +129,7 @@ packages:
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
-- name: prometheus/alertmanager@v0.31.0
+- name: prometheus/alertmanager@v0.31.1
 - name: bufbuild/buf@v1.65.0
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.11
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
@@ -143,8 +143,8 @@ packages:
 - name: argoproj/argo-rollouts@v1.8.3
 - name: yonahd/kor@v0.6.7
 - name: biomejs/biome@@biomejs/biome@2.3.11
-- name: d-kuro/gwq@v0.0.12
+- name: d-kuro/gwq@v0.0.13
 - name: k1LoW/git-wt@v0.20.0
 - name: sxyazi/yazi@v26.1.22
-- name: pnpm/pnpm@v10.29.2
-- name: dag-andersen/argocd-diff-preview@v0.1.24
+- name: pnpm/pnpm@v10.29.3
+- name: dag-andersen/argocd-diff-preview@v0.1.25
