@@ -52,7 +52,7 @@ packages:
 - name: extrawurst/gitui@v0.28.0
 - name: helm/helm@v4.1.1
 - name: kubernetes-sigs/krew@v0.4.5
-- name: weaveworks/eksctl@v0.222.0
+- name: weaveworks/eksctl@v0.223.0
 - name: suzuki-shunsuke/github-comment@v6.4.1
 - name: kayac/ecspresso@v2.7.1
 - name: stern/stern@v1.33.1
