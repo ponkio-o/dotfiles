@@ -80,8 +80,5 @@ sudo cp $DIR/bin/docker-credential-gh /usr/local/bin/docker-credential-gh
 # myaws
 ln -sf $DIR/myaws/.myaws.yml $HOME/.myaws.yml
 
-# yazi config
-ln -sf $DIR/yazi/yazi.toml $XDG_CONFIG_HOME/yazi/yazi.toml
-
 # python3 for neovim
 pip3 install pynvim
