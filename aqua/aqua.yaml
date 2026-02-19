@@ -83,7 +83,7 @@ packages:
 - name: protocolbuffers/protobuf/protoc@v33.5
 - name: oven-sh/bun@bun-v1.3.9
 - name: traviswt/gke-auth-plugin@0.3.0
-- name: rajatjindal/kubectl-whoami@v0.0.46
+- name: rajatjindal/kubectl-whoami@v0.0.47
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v5.0.0
 - name: helmfile/helmfile@v1.2.3
