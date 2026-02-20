@@ -137,7 +137,7 @@ packages:
 - name: minamijoyo/tfupdate@v0.9.3
 - name: tmccombs/hcl2json@v0.6.8
 - name: kubernetes-sigs/ingress2gateway@v0.5.0
-- name: google/go-containerregistry@v0.20.7
+- name: google/go-containerregistry@v0.21.0
 - name: open-policy-agent/conftest@v0.66.0
 - name: fluxcd/flux2@v2.7.5
 - name: argoproj/argo-rollouts@v1.8.4
