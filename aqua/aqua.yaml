@@ -11,7 +11,7 @@ packages:
 - name: sharkdp/bat@v0.26.1
 - name: x-motemen/ghq@v1.9.4
 - name: awslabs/git-secrets@1.3.0
-- name: junegunn/fzf@v0.67.0
+- name: junegunn/fzf@v0.68.0
 - name: denoland/deno@v2.6.10
 - name: neovim/neovim@v0.11.6
 - name: golang.org/x/tools/gopls@v0.21.1
