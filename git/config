@@ -34,4 +34,4 @@
 	copyignored = false
 	copyuntracked = true
 	basedir = /tmp/git-worktrees/{gitroot}-wt
-	hook=tmux neww -c "$PWD" -n "reponame:$(git branch --show-current):cc" 'claude'
+	; hook=tmux neww -c "$PWD" -n "reponame:$(git branch --show-current):cc" 'claude'

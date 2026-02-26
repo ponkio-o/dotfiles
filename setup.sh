@@ -72,6 +72,7 @@ done
 sudo ln -sf $DIR/script/sshx /usr/local/bin/sshx
 sudo ln -sf $DIR/script/get_battery_tmux /usr/local/bin/get_battery_tmux
 sudo ln -sf $DIR/script/get_ssid_tmux /usr/local/bin/get_ssid_tmux
+sudo ln -sf $DIR/script/claude_wt_hook_script /usr/local/bin/claude_wt_hook_script
 
 # bin
 sudo cp $DIR/bin/realpath /usr/local/bin/realpath
