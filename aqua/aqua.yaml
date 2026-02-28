@@ -123,7 +123,7 @@ packages:
 - name: suzuki-shunsuke/cmdx@v2.0.2
 - name: suzuki-shunsuke/nllint@v1.0.0
 - name: open-policy-agent/opa@v1.14.0
-- name: sorah/mairu@v0.10.0
+- name: sorah/mairu@v0.11.0
 - name: jscaltreto/eks-auth@v0.1.0
 - name: telepresenceio/telepresence@v2.26.2
 - name: tamasfe/taplo@0.10.0
