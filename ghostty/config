@@ -14,7 +14,7 @@ cursor-style = underline
 # Theme Configuration
 # https://terminalcolors.com/themes/github/dark/
 # 背景色・透過
-background = #010409
+background = #000000
 background-opacity = 0.9
 foreground = #e6edf3
 selection-background = #264f78
