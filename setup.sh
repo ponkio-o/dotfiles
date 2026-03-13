@@ -54,6 +54,9 @@ ln -sf $DIR/nvim/dein.vimrc $XDG_CONFIG_HOME/nvim/dein.vimrc
 ln -sf $DIR/nvim/key_bind.vimrc $XDG_CONFIG_HOME/nvim/key_bind.vimrc
 ln -sf $DIR/nvim/coc-settings.json $XDG_CONFIG_HOME/nvim/coc-settings.json
 
+# ghostty
+ln -sf $DIR/ghostty/config $XDG_CONFIG_HOME/ghostty/config
+
 ## nvim plugin setting files
 NVIM_PLUGINS_DIR=$XDG_CONFIG_HOME/nvim/plugins
 files=$(ls -1F nvim/plugins | grep -v "/")

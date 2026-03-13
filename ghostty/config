@@ -1,0 +1,14 @@
+# Ghostty configuration
+
+# 背景色・透過
+background = #1a1a1a
+background-opacity = 0.97
+
+# カラースキーム
+theme = Molokai
+
+# フォント
+font-thicken = true
+
+# カーソル
+cursor-style = underline
