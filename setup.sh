@@ -48,11 +48,11 @@ mkdir -p $XDG_CONFIG_HOME/nvim/colors
 mkdir -p $XDG_CONFIG_HOME/nvim/plugins
 mkdir -p $XDG_CONFIG_HOME/nvim/UltiSnips
 ln -sf $DIR/nvim/colors/molokai.vim $XDG_CONFIG_HOME/nvim/colors/molokai.vim
-ln -sf $DIR/nvim/init.vim $XDG_CONFIG_HOME/nvim/init.vim
+ln -sf $DIR/nvim/init.lua $XDG_CONFIG_HOME/nvim/init.lua
 ln -sf $DIR/nvim/basic.vimrc $XDG_CONFIG_HOME/nvim/basic.vimrc
-ln -sf $DIR/nvim/dein.vimrc $XDG_CONFIG_HOME/nvim/dein.vimrc
 ln -sf $DIR/nvim/key_bind.vimrc $XDG_CONFIG_HOME/nvim/key_bind.vimrc
 ln -sf $DIR/nvim/coc-settings.json $XDG_CONFIG_HOME/nvim/coc-settings.json
+ln -sf $DIR/nvim/lua $XDG_CONFIG_HOME/nvim/lua
 
 # ghostty
 mkdir -p $XDG_CONFIG_HOME/ghostty/themes
