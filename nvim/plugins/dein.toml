@@ -134,3 +134,16 @@ repo = 'github/copilot.vim'
 
 [[plugins]]
 repo = 'tsandall/vim-rego'
+
+[[plugins]]
+repo = 'folke/snacks.nvim'
+hook_add = '''
+  lua require('snacks').setup({})
+'''
+
+[[plugins]]
+repo = 'coder/claudecode.nvim'
+depends = 'folke/snacks.nvim'
+hook_add = '''
+  lua require('claudecode').setup()
+'''
