@@ -134,3 +134,13 @@ repo = 'github/copilot.vim'
 
 [[plugins]]
 repo = 'tsandall/vim-rego'
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'greggh/claude-code.nvim'
+depends = 'nvim-lua/plenary.nvim'
+hook_add = '''
+  lua require('claude-code').setup()
+'''
