@@ -7,6 +7,9 @@ window-padding-balance = false
 
 # フォント
 font-thicken = true
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
 
 # カーソル
 cursor-style = underline
