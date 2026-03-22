@@ -1,3 +1,6 @@
+" Claude のウインドウを Ctrl-w で操作できるようにする
+autocmd TermOpen * if expand('<afile>') =~ 'claude' | tnoremap <buffer> <C-w> <C-\><C-n><C-w> | endif
+
 nnoremap <silent> <leader>ac <cmd>ClaudeCode<cr>
 nnoremap <silent> <leader>af <cmd>ClaudeCodeFocus<cr>
 nnoremap <silent> <leader>ar <cmd>ClaudeCode --resume<cr>
