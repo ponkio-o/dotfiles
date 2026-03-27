@@ -71,7 +71,7 @@ return {
   { 'mattn/vim-goimports', ft = { 'go' }, config = source('vim-goimports.vim') },
 
   -- Markdown
-  { 'mattn/vim-maketable', ft = { 'markdown' } },
+  { 'mattn/vim-maketable'},
   { 'iamcco/markdown-preview.nvim',
     ft = { 'markdown', 'pandoc.markdown', 'rmd' },
     build = 'cd app && yarn install',
