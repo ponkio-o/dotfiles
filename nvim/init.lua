@@ -1,6 +1,3 @@
--- iTerm2 を使用した時にカーソルが変更されるのを回避するための設定
-vim.opt.guicursor = ''
-
 -- lazy.nvim のブートストラップ
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
