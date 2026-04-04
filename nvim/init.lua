@@ -1,5 +1,5 @@
 -- モードに応じたカーソル形状を設定
-vim.opt.guicursor = 'n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50'
+vim.opt.guicursor = 'n-v-c:hor20,i-ci-ve:ver25,r-cr:hor20,o:hor50'
 
 -- lazy.nvim のブートストラップ
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
