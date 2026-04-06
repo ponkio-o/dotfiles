@@ -71,7 +71,7 @@ zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
 zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd () { vcs_info }
+precmd () { vcs_info; printf '\e[5 q' }
 RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 
 # docker

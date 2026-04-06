@@ -1,6 +1,14 @@
 -- モードに応じたカーソル形状を設定
 vim.opt.guicursor = 'n-v-c:hor20,i-ci-ve:ver25,r-cr:hor20,o:hor50'
 
+-- 終了時にカーソルをターミナルデフォルトに戻す
+vim.api.nvim_create_autocmd('VimLeave', {
+  callback = function()
+    vim.opt.guicursor = 'a:ver25'
+    io.write('\27[0 q')
+  end,
+})
+
 -- lazy.nvim のブートストラップ
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
