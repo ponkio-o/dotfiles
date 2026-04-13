@@ -60,7 +60,7 @@ packages:
 - name: crate-ci/typos@v1.45.1
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.3
-- name: fastly/cli@v14.3.0
+- name: fastly/cli@v14.3.1
 - name: derailed/k9s@v0.50.18
 - name: google/yamlfmt@v0.21.0
 - name: k1LoW/runn@v1.9.0
