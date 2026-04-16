@@ -138,7 +138,7 @@ packages:
 - name: tmccombs/hcl2json@v0.6.9
 - name: kubernetes-sigs/ingress2gateway@v1.0.0
 - name: google/go-containerregistry@v0.21.5
-- name: open-policy-agent/conftest@v0.68.0
+- name: open-policy-agent/conftest@v0.68.2
 - name: fluxcd/flux2@v2.8.5
 - name: argoproj/argo-rollouts@v1.9.0
 - name: yonahd/kor@v0.6.7
