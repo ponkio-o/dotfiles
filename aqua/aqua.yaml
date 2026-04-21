@@ -148,5 +148,5 @@ packages:
 - name: sxyazi/yazi@v26.1.22
 - name: pnpm/pnpm@v10.33.0
 - name: dag-andersen/argocd-diff-preview@v0.2.3
-- name: goreleaser/goreleaser@v2.15.3
+- name: goreleaser/goreleaser@v2.15.4
 - name: ko-build/ko@v0.18.1
