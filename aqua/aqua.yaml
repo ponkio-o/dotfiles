@@ -5,7 +5,7 @@ registries:
 - type: standard
   ref: v4.499.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: tfutils/tfenv@v3.2.0
+- name: tfutils/tfenv@v3.2.1
 - name: peco/peco@v0.6.0
 - name: golang/go@go1.26.2
 - name: sharkdp/bat@v0.26.1
