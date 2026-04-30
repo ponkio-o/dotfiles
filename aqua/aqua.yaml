@@ -79,7 +79,7 @@ packages:
 - name: golangci/golangci-lint@v2.11.4
 - name: okta/okta-aws-cli@v2.6.0
 - name: terraform-docs/terraform-docs@v0.22.0
-- name: Mikescher/better-docker-ps@v1.16
+- name: Mikescher/better-docker-ps@v1.17
 - name: protocolbuffers/protobuf/protoc@v34.1
 - name: oven-sh/bun@bun-v1.3.13
 - name: traviswt/gke-auth-plugin@0.6.2
