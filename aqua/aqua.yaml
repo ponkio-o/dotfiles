@@ -55,7 +55,7 @@ packages:
 - name: weaveworks/eksctl@v0.226.0
 - name: suzuki-shunsuke/github-comment@v6.4.1
 - name: kayac/ecspresso@v2.8.3
-- name: stern/stern@v1.33.1
+- name: stern/stern@v1.34.0
 - name: Songmu/gitsemvers@v0.1.0
 - name: crate-ci/typos@v1.46.0
 - name: kyoshidajp/ghkw@v0.2.1
