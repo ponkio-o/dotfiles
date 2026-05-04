@@ -105,7 +105,7 @@ packages:
 - name: suzuki-shunsuke/tfcmt@v4.14.15
 - name: pipe-cd/pipecd/pipectl@v0.55.0
 - name: simeji/jid@v1.1.2
-- name: argoproj-labs/argocd-image-updater@v1.1.1
+- name: argoproj-labs/argocd-image-updater@v1.2.0
 - name: kubernetes-sigs/kind@v0.31.0
 - name: suzuki-shunsuke/ghatm@v1.0.0
 - name: go-delve/delve@v1.26.3
