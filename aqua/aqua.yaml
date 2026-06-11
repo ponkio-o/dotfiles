@@ -13,7 +13,7 @@ packages:
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@v0.73.1
 - name: denoland/deno@v2.8.2
-- name: neovim/neovim@v0.12.2
+- name: neovim/neovim@v0.12.3
 - name: golang.org/x/tools/gopls@v0.22.0
 - name: hashicorp/terraform-ls@v0.38.7
 - name: BurntSushi/ripgrep@15.1.0
