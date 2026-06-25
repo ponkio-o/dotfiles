@@ -150,3 +150,4 @@ packages:
 - name: dag-andersen/argocd-diff-preview@v0.2.11
 - name: goreleaser/goreleaser@v2.16.0
 - name: ko-build/ko@v0.18.1
+- name: masasuzu/clrnd@v0.2.0
