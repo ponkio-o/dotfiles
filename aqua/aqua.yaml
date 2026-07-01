@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.528.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.530.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.2.2
 - name: peco/peco@v0.6.0
@@ -12,7 +12,7 @@ packages:
 - name: x-motemen/ghq@v1.10.1
 - name: awslabs/git-secrets@1.3.0
 - name: junegunn/fzf@v0.73.1
-- name: denoland/deno@v2.8.3
+- name: denoland/deno@v2.9.0
 - name: neovim/neovim@v0.12.3
 - name: golang.org/x/tools/gopls@v0.22.0
 - name: hashicorp/terraform-ls@v0.38.7
@@ -52,25 +52,25 @@ packages:
 - name: extrawurst/gitui@v0.28.1
 - name: helm/helm@v4.2.2
 - name: kubernetes-sigs/krew@v0.5.0
-- name: weaveworks/eksctl@v0.227.0
+- name: weaveworks/eksctl@v0.228.0
 - name: suzuki-shunsuke/github-comment@v6.4.1
 - name: kayac/ecspresso@v2.8.4
 - name: stern/stern@v1.34.0
 - name: Songmu/gitsemvers@v0.1.0
-- name: crate-ci/typos@v1.47.2
+- name: crate-ci/typos@v1.48.0
 - name: kyoshidajp/ghkw@v0.2.1
 - name: fullstorydev/grpcui@v1.4.3
-- name: fastly/cli@v15.2.0
+- name: fastly/cli@v15.3.1
 - name: derailed/k9s@v0.51.0
 - name: google/yamlfmt@v0.21.0
-- name: k1LoW/runn@v1.9.3
+- name: k1LoW/runn@v1.9.4
 - name: enokawa/taskdiff@v0.0.1
 - name: aereal/jsondiff
   version: v0.2.3
 - name: minamijoyo/hcledit@v0.2.18
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.35.11
+- name: aws/aws-cli@2.35.13
 - name: gruntwork-io/terragrunt@v1.0.8
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
@@ -87,11 +87,11 @@ packages:
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v5.1.0
 - name: helmfile/helmfile@v1.6.0
-- name: cue-lang/cue@v0.16.1
+- name: cue-lang/cue@v0.17.0
 - name: suzuki-shunsuke/pinact@v4.1.0
 - name: ajeetdsouza/zoxide@v0.9.9
 - name: k1LoW/gh-do@v0.6.0
-- name: bitwarden/clients@cli-v2026.5.0
+- name: bitwarden/clients@cli-v2026.6.0
 - name: dominikh/go-tools/staticcheck@2026.1
 - name: gohugoio/hugo@v0.163.3
 - name: fukubaka0825/tffmtmd@v0.0.9
@@ -103,9 +103,9 @@ packages:
 - name: wagoodman/dive@v0.13.1
 - name: reproducible-containers/diffoci@v0.1.8
 - name: suzuki-shunsuke/tfcmt@v4.14.15
-- name: pipe-cd/pipecd/pipectl@v0.56.0
+- name: pipe-cd/pipecd/pipectl@v0.57.0
 - name: simeji/jid@v1.1.2
-- name: argoproj-labs/argocd-image-updater@v1.2.1
+- name: argoproj-labs/argocd-image-updater@v1.2.2
 - name: kubernetes-sigs/kind@v0.32.0
 - name: suzuki-shunsuke/ghatm@v1.0.0
 - name: go-delve/delve@v1.27.0
@@ -122,7 +122,7 @@ packages:
 - name: gotestyourself/gotestsum@v1.13.0
 - name: suzuki-shunsuke/cmdx@v2.0.2
 - name: suzuki-shunsuke/nllint@v1.1.0
-- name: open-policy-agent/opa@v1.17.1
+- name: open-policy-agent/opa@v1.18.1
 - name: sorah/mairu@v0.11.0
 - name: jscaltreto/eks-auth@v0.1.0
 - name: telepresenceio/telepresence@v2.29.1
@@ -139,7 +139,7 @@ packages:
 - name: kubernetes-sigs/ingress2gateway@v1.1.0
 - name: google/go-containerregistry@v0.21.7
 - name: open-policy-agent/conftest@v0.68.2
-- name: fluxcd/flux2@v2.8.8
+- name: fluxcd/flux2@v2.9.0
 - name: argoproj/argo-rollouts@v1.9.0
 - name: yonahd/kor@v0.6.8
 - name: biomejs/biome@@biomejs/biome@2.3.11
@@ -149,6 +149,6 @@ packages:
 - name: pnpm/pnpm@v11.9.0
 - name: dag-andersen/argocd-diff-preview@v0.2.11
 - name: goreleaser/goreleaser@v2.16.0
-- name: ko-build/ko@v0.18.1
+- name: ko-build/ko@v0.19.1
 - name: masasuzu/clrnd@v0.2.0
 - name: suzuki-shunsuke/tfprovidercheck@v1.0.7
