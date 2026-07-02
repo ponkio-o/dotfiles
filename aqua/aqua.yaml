@@ -22,7 +22,7 @@ packages:
 - name: CircleCI-Public/circleci-cli@v0.1.38646
 - name: mvdan/sh@v3.13.1
 - name: fujiwara/tfstate-lookup@v1.12.1
-- name: cli/cli@v2.95.0
+- name: cli/cli@v2.96.0
 - name: fullstorydev/grpcurl@v1.9.3
 - name: cosmtrek/air@v1.65.3
 - name: fujiwara/lambroll@v1.5.0
