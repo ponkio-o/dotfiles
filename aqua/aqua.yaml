@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.532.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.533.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.2.2
 - name: peco/peco@v0.6.0
@@ -152,3 +152,4 @@ packages:
 - name: ko-build/ko@v0.19.1
 - name: masasuzu/clrnd@v0.2.0
 - name: suzuki-shunsuke/tfprovidercheck@v1.0.7
+- name: sivchari/gopls-lazy@v0.3.0
