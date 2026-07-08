@@ -46,7 +46,7 @@
       "url": "https://docs.renovatebot.com/renovate-schema.json"
     }
   ],
-  "go.goplsPath": "gopls",
+  "go.goplsPath": "gopls-lazy",
   "go.goplsOptions": {
     "gofumpt": true
   }
