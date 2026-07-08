@@ -136,7 +136,7 @@ packages:
 - name: johanhaleby/kubetail@1.6.22
 - name: minamijoyo/tfupdate@v0.10.0
 - name: tmccombs/hcl2json@v0.6.9
-- name: kubernetes-sigs/ingress2gateway@v1.1.0
+- name: kubernetes-sigs/ingress2gateway@v1.2.0
 - name: google/go-containerregistry@v0.21.7
 - name: open-policy-agent/conftest@v0.68.2
 - name: fluxcd/flux2@v2.9.1
