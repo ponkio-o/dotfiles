@@ -153,3 +153,4 @@ packages:
 - name: masasuzu/clrnd@v0.2.0
 - name: suzuki-shunsuke/tfprovidercheck@v1.0.7
 - name: sivchari/gopls-lazy@v0.3.0
+- name: kubernetes-sigs/gwctl@v0.2.0
