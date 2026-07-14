@@ -34,6 +34,7 @@ return {
   -- Git
   { 'tpope/vim-fugitive', config = source('fugitive.vim') },
   { 'tpope/vim-rhubarb',  config = source('vim-rhubarb.vim') },
+  { 'justinmk/guh.nvim' },
 
   -- File explorer
   { 'lambdalisue/fern.vim',
