@@ -34,7 +34,30 @@ return {
   -- Git
   { 'tpope/vim-fugitive', config = source('fugitive.vim') },
   { 'tpope/vim-rhubarb',  config = source('vim-rhubarb.vim') },
-  { 'justinmk/guh.nvim' },
+  { 'justinmk/guh.nvim',
+    -- guh.nvim は Nvim 0.13 (nightly) の内部モジュール vim._core.time に依存しているため、
+    -- 0.12 では相対時刻フォーマットの互換実装を shim として注入する。nvim 0.13+ で削除可能
+    init = function()
+      if pcall(require, 'vim._core.time') then
+        return
+      end
+      package.preload['vim._core.time'] = function()
+        return {
+          fmt_rtime = function(secs)
+            local units = { { 31536000, 'year' }, { 2592000, 'month' }, { 604800, 'week' },
+              { 86400, 'day' }, { 3600, 'hour' }, { 60, 'minute' }, { 1, 'second' } }
+            for _, u in ipairs(units) do
+              local n = math.floor(secs / u[1])
+              if n >= 1 then
+                return ('%d %s%s'):format(n, u[2], n > 1 and 's' or '')
+              end
+            end
+            return '0 seconds'
+          end,
+        }
+      end
+    end,
+  },
 
   -- File explorer
   { 'lambdalisue/fern.vim',
