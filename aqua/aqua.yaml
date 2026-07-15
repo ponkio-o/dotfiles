@@ -16,7 +16,7 @@ packages:
 - name: neovim/neovim@v0.12.4
 - name: golang.org/x/tools/gopls@v0.23.0
 - name: hashicorp/terraform-ls@v0.38.8
-- name: BurntSushi/ripgrep@15.1.0
+- name: BurntSushi/ripgrep@15.2.0
 - name: kubernetes/kubectl@v1.36.2
 - name: ahmetb/kubectx/kubens@v0.11.0
 - name: CircleCI-Public/circleci-cli@v0.1.38646
