@@ -30,6 +30,7 @@ return {
   'tsandall/vim-rego',
   'itkq/fluentd-vim',
   'jjo/vim-cue',
+  'barrettruth/diffs.nvim',
 
   -- Git
   { 'tpope/vim-fugitive', config = source('fugitive.vim') },
