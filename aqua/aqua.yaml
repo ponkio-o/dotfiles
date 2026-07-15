@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.537.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.538.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.2.2
 - name: peco/peco@v0.6.0
@@ -29,7 +29,7 @@ packages:
 - name: awslabs/amazon-ecr-credential-helper@v0.12.0
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.12
-- name: Songmu/ecschedule@v0.19.0
+- name: Songmu/ecschedule@v0.20.0
 - name: owenthereal/upterm@v0.24.0
 - name: tomnomnom/gron@v0.7.1
 - name: aquaproj/registry-tool@v0.5.5
@@ -70,8 +70,8 @@ packages:
 - name: minamijoyo/hcledit@v0.2.18
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.35.22
-- name: gruntwork-io/terragrunt@v1.1.0
+- name: aws/aws-cli@2.35.23
+- name: gruntwork-io/terragrunt@v1.1.1
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
 - name: ponkio-o/ec2x@v0.1.6
@@ -125,7 +125,7 @@ packages:
 - name: open-policy-agent/opa@v1.18.2
 - name: sorah/mairu@v0.11.0
 - name: jscaltreto/eks-auth@v0.1.0
-- name: telepresenceio/telepresence@v2.29.3
+- name: telepresenceio/telepresence@v2.30.0
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
@@ -134,7 +134,7 @@ packages:
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.11
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
 - name: johanhaleby/kubetail@1.6.22
-- name: minamijoyo/tfupdate@v0.10.1
+- name: minamijoyo/tfupdate@v0.10.2
 - name: tmccombs/hcl2json@v0.6.9
 - name: kubernetes-sigs/ingress2gateway@v1.2.0
 - name: google/go-containerregistry@v0.21.7
