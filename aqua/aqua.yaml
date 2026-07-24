@@ -3,7 +3,7 @@
 # https://aquaproj.github.io/
 registries:
 - type: standard
-  ref: v4.538.0 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.542.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: tfutils/tfenv@v3.2.2
 - name: peco/peco@v0.6.0
@@ -11,21 +11,21 @@ packages:
 - name: sharkdp/bat@v0.26.1
 - name: x-motemen/ghq@v1.10.1
 - name: awslabs/git-secrets@1.3.0
-- name: junegunn/fzf@v0.74.0
-- name: denoland/deno@v2.9.2
+- name: junegunn/fzf@v0.74.1
+- name: denoland/deno@v2.9.4
 - name: neovim/neovim@v0.12.4
 - name: golang.org/x/tools/gopls@v0.23.0
-- name: hashicorp/terraform-ls@v0.38.8
-- name: BurntSushi/ripgrep@15.1.0
-- name: kubernetes/kubectl@v1.36.2
+- name: hashicorp/terraform-ls@v0.39.0
+- name: BurntSushi/ripgrep@15.2.0
+- name: kubernetes/kubectl@v1.36.3
 - name: ahmetb/kubectx/kubens@v0.11.0
 - name: CircleCI-Public/circleci-cli@v0.1.38646
 - name: mvdan/sh@v3.13.1
 - name: fujiwara/tfstate-lookup@v1.12.1
 - name: cli/cli@v2.96.0
 - name: fullstorydev/grpcurl@v1.9.3
-- name: cosmtrek/air@v1.65.3
-- name: fujiwara/lambroll@v1.5.0
+- name: cosmtrek/air@v1.67.2
+- name: fujiwara/lambroll@v1.5.1
 - name: awslabs/amazon-ecr-credential-helper@v0.12.0
 - name: golang/tools/goimports@v0.28.0
 - name: rhysd/actionlint@v1.7.12
@@ -48,7 +48,7 @@ packages:
 - name: clok/sm@v0.1.3
 - name: ysugimoto/falco@v2.3.0
 - name: dbrgn/tealdeer@v1.8.1
-- name: terraform-linters/tflint@v0.63.1
+- name: terraform-linters/tflint@v0.64.0
 - name: extrawurst/gitui@v0.28.1
 - name: helm/helm@v4.2.3
 - name: kubernetes-sigs/krew@v0.5.0
@@ -70,7 +70,7 @@ packages:
 - name: minamijoyo/hcledit@v0.2.18
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.35.23
+- name: aws/aws-cli@2.36.7
 - name: gruntwork-io/terragrunt@v1.1.1
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
@@ -86,12 +86,12 @@ packages:
 - name: rajatjindal/kubectl-whoami@v0.0.48
 - name: mike-engel/jwt-cli@6.2.0
 - name: hairyhenderson/gomplate@v5.2.0
-- name: helmfile/helmfile@v1.7.0
-- name: cue-lang/cue@v0.17.0
+- name: helmfile/helmfile@v1.7.1
+- name: cue-lang/cue@v0.17.1
 - name: suzuki-shunsuke/pinact@v4.1.0
 - name: ajeetdsouza/zoxide@v0.10.0
 - name: k1LoW/gh-do@v0.6.0
-- name: bitwarden/clients@cli-v2026.6.0
+- name: bitwarden/clients@cli-v2026.7.0
 - name: dominikh/go-tools/staticcheck@2026.1
 - name: gohugoio/hugo@v0.164.0
 - name: fukubaka0825/tffmtmd@v0.0.9
@@ -102,7 +102,7 @@ packages:
 - name: ynqa/jnv@v0.7.1
 - name: wagoodman/dive@v0.13.1
 - name: reproducible-containers/diffoci@v0.1.8
-- name: suzuki-shunsuke/tfcmt@v4.14.15
+- name: suzuki-shunsuke/tfcmt@v4.14.17
 - name: pipe-cd/pipecd/pipectl@v0.57.0
 - name: simeji/jid@v1.1.2
 - name: argoproj-labs/argocd-image-updater@v1.2.2
@@ -114,7 +114,7 @@ packages:
 - name: earthly/earthly@v0.8.16
 - name: hashicorp/packer@v1.15.4
 - name: iann0036/iamlive@v1.1.28
-- name: istio/istio/istioctl@1.30.2
+- name: istio/istio/istioctl@1.30.3
 - name: aws/amazon-ecs-cli@v1.21.0
 - name: txn2/kubefwd@v1.25.16
 - name: uber-go/mock@v0.6.0
@@ -125,12 +125,12 @@ packages:
 - name: open-policy-agent/opa@v1.18.2
 - name: sorah/mairu@v0.11.0
 - name: jscaltreto/eks-auth@v0.1.0
-- name: telepresenceio/telepresence@v2.30.0
+- name: telepresenceio/telepresence@v2.31.0
 - name: tamasfe/taplo@0.10.0
 - name: itaysk/kubectl-neat@v2.0.4
 - name: gabeduke/kubectl-iexec@v1.19.14
 - name: prometheus/alertmanager@v0.33.1
-- name: bufbuild/buf@v1.71.0
+- name: bufbuild/buf@v1.72.0
 - name: protocolbuffers/protobuf-go/protoc-gen-go@v1.36.11
 - name: grpc/grpc-go/protoc-gen-go-grpc@cmd/protoc-gen-go-grpc/v1.5.1
 - name: johanhaleby/kubetail@1.6.22
@@ -139,14 +139,14 @@ packages:
 - name: kubernetes-sigs/ingress2gateway@v1.2.0
 - name: google/go-containerregistry@v0.21.7
 - name: open-policy-agent/conftest@v0.68.2
-- name: fluxcd/flux2@v2.9.2
-- name: argoproj/argo-rollouts@v1.9.0
+- name: fluxcd/flux2@v2.9.3
+- name: argoproj/argo-rollouts@v1.9.1
 - name: yonahd/kor@v0.6.8
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.1.1
 - name: k1LoW/git-wt@v0.29.0
 - name: sxyazi/yazi@v26.5.6
-- name: pnpm/pnpm@v11.13.0
+- name: pnpm/pnpm@v11.17.0
 - name: dag-andersen/argocd-diff-preview@v0.2.11
 - name: goreleaser/goreleaser@v2.17.0
 - name: ko-build/ko@v0.19.1
