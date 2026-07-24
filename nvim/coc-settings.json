@@ -44,10 +44,6 @@
     "https://json.schemastore.org/github-workflow.json": [
       ".github/workflows/*.yaml",
       ".github/workflows/*.yml"
-    ],
-    "https://raw.githubusercontent.com/octo-sts/app/refs/heads/main/pkg/octosts/octosts.TrustPolicy.json": [
-      ".github/chainguard/*.yaml",
-      ".github/chainguard/*.yml"
     ]
   },
   "yaml.schemaStore.enable": false,
