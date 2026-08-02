@@ -104,7 +104,7 @@ packages:
 - name: reproducible-containers/diffoci@v0.1.8
 - name: suzuki-shunsuke/tfcmt@v4.14.17
 - name: pipe-cd/pipecd/pipectl@v0.57.0
-- name: simeji/jid@v1.1.2
+- name: simeji/jid@v1.1.3
 - name: argoproj-labs/argocd-image-updater@v1.2.2
 - name: kubernetes-sigs/kind@v0.32.0
 - name: suzuki-shunsuke/ghatm@v1.0.0
