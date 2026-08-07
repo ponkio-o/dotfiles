@@ -152,5 +152,5 @@ packages:
 - name: ko-build/ko@v0.19.1
 - name: masasuzu/clrnd@v0.2.0
 - name: suzuki-shunsuke/tfprovidercheck@v1.0.7
-- name: sivchari/gopls-lazy@v0.4.0
+- name: sivchari/gopls-lazy@v0.4.1
 - name: kubernetes-sigs/gwctl@v0.2.0
