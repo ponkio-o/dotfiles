@@ -19,7 +19,7 @@ packages:
 - name: BurntSushi/ripgrep@15.2.0
 - name: kubernetes/kubectl@v1.37.0
 - name: ahmetb/kubectx/kubens@v0.11.0
-- name: CircleCI-Public/circleci-cli@v1.0.49221
+- name: CircleCI-Public/circleci-cli@v1.0.49308
 - name: mvdan/sh@v3.14.0
 - name: fujiwara/tfstate-lookup@v1.12.1
 - name: cli/cli@v2.99.0
@@ -59,7 +59,7 @@ packages:
 - name: Songmu/gitsemvers@v0.1.0
 - name: crate-ci/typos@v1.50.1
 - name: kyoshidajp/ghkw@v0.2.1
-- name: fullstorydev/grpcui@v1.5.3
+- name: fullstorydev/grpcui@v1.5.4
 - name: fastly/cli@v16.0.0
 - name: derailed/k9s@v0.51.0
 - name: google/yamlfmt@v0.21.0
@@ -70,7 +70,7 @@ packages:
 - name: minamijoyo/hcledit@v0.2.18
 - name: Pluralith/pluralith-cli@v0.2.2
 - name: koalaman/shellcheck@v0.11.0
-- name: aws/aws-cli@2.36.37
+- name: aws/aws-cli@2.36.38
 - name: gruntwork-io/terragrunt@v1.1.4
 - name: Versent/saml2aws@v2.36.19
 - name: aws/session-manager-plugin@1.2.694.0
@@ -145,8 +145,8 @@ packages:
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.1.1
 - name: k1LoW/git-wt@v0.29.1
-- name: sxyazi/yazi@v26.8.15
-- name: pnpm/pnpm@v12.2.1
+- name: sxyazi/yazi@v26.9.1
+- name: pnpm/pnpm@v12.3.1
 - name: dag-andersen/argocd-diff-preview@v0.2.14
 - name: goreleaser/goreleaser@v2.18.0
 - name: ko-build/ko@v0.19.1
