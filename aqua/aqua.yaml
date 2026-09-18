@@ -91,7 +91,7 @@ packages:
 - name: suzuki-shunsuke/pinact@v5.0.0
 - name: ajeetdsouza/zoxide@v0.10.0
 - name: k1LoW/gh-do@v0.6.0
-- name: bitwarden/clients@cli-v2026.8.0
+- name: bitwarden/clients@cli-v2026.9.0
 - name: dominikh/go-tools/staticcheck@2026.2.1
 - name: gohugoio/hugo@v0.166.0
 - name: fukubaka0825/tffmtmd@v0.0.9
