@@ -7,7 +7,7 @@ registries:
 packages:
 - name: tfutils/tfenv@v3.2.2
 - name: peco/peco@v0.6.0
-- name: golang/go@go1.27.1
+- name: golang/go@go1.27.2
 - name: sharkdp/bat@v0.26.1
 - name: x-motemen/ghq@v1.11.2
 - name: awslabs/git-secrets@1.3.0
