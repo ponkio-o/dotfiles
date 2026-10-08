@@ -95,7 +95,7 @@ packages:
 - name: dominikh/go-tools/staticcheck@2026.2.1
 - name: gohugoio/hugo@v0.167.0
 - name: fukubaka0825/tffmtmd@v0.0.9
-- name: kubernetes-sigs/kustomize@kustomize/v5.8.2
+- name: kubernetes-sigs/kustomize@kustomize/v5.8.3
 - name: argoproj/argo-cd@v3.5.4
 - name: homeport/dyff@v1.12.0
 - name: suzuki-shunsuke/ghalint@v1.5.6
