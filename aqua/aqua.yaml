@@ -144,7 +144,7 @@ packages:
 - name: yonahd/kor@v0.6.9
 - name: biomejs/biome@@biomejs/biome@2.3.11
 - name: d-kuro/gwq@v0.1.2
-- name: k1LoW/git-wt@v0.29.3
+- name: k1LoW/git-wt@v0.30.0
 - name: sxyazi/yazi@v26.9.1
 - name: pnpm/pnpm@v12.10.1
 - name: dag-andersen/argocd-diff-preview@v0.2.16
