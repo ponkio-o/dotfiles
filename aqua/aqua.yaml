@@ -85,7 +85,7 @@ packages:
 - name: traviswt/gke-auth-plugin@0.6.3
 - name: rajatjindal/kubectl-whoami@v0.0.48
 - name: mike-engel/jwt-cli@6.2.0
-- name: hairyhenderson/gomplate@v5.2.0
+- name: hairyhenderson/gomplate@v5.3.0
 - name: helmfile/helmfile@v1.8.2
 - name: cue-lang/cue@v0.17.1
 - name: suzuki-shunsuke/pinact@v5.0.0
