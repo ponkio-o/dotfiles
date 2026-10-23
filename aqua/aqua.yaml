@@ -156,4 +156,4 @@ packages:
 - name: kubernetes-sigs/gwctl@v0.2.0
 - name: regclient/regclient/regsync@v0.11.7
 - name: sigstore/cosign@v3.1.4
-- name: hashicorp/terraform-mcp-server@v1.3.0
+- name: hashicorp/terraform-mcp-server@v1.4.1
