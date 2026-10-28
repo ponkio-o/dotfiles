@@ -151,7 +151,7 @@ packages:
 - name: goreleaser/goreleaser@v2.19.0
 - name: ko-build/ko@v0.19.1
 - name: masasuzu/clrnd@v0.8.2
-- name: suzuki-shunsuke/tfprovidercheck@v1.0.7
+- name: suzuki-shunsuke/tfprovidercheck@v1.0.8
 - name: sivchari/gopls-lazy@v0.4.1
 - name: kubernetes-sigs/gwctl@v0.2.0
 - name: regclient/regclient/regsync@v0.11.7
