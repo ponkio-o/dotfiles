@@ -148,6 +148,7 @@ HISTFILE=~/.zsh_history
 export HISTSIZE=5000
 export SAVEHIST=100000
 setopt histignorealldups # 同じコマンドを重複して記録しない
+setopt hist_ignore_space # スペースから始まるコマンドは記録しない
 
 # zsh hisotry ( Ctrl + r )
 function peco-select-history() {
