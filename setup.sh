@@ -58,6 +58,11 @@ ln -sf $DIR/nvim/lua $XDG_CONFIG_HOME/nvim/lua
 mkdir -p $XDG_CONFIG_HOME/ghostty/themes
 ln -sf $DIR/ghostty/config $XDG_CONFIG_HOME/ghostty/config
 
+# rex
+mkdir -p $XDG_CONFIG_HOME/rex/themes
+ln -sf $DIR/rex/init.lua $XDG_CONFIG_HOME/rex/init.lua
+ln -sf $DIR/rex/themes/ghostty-github-dark.conf $XDG_CONFIG_HOME/rex/themes/ghostty-github-dark.conf
+
 ## nvim plugin setting files
 NVIM_PLUGINS_DIR=$XDG_CONFIG_HOME/nvim/plugins
 files=$(ls -1F nvim/plugins | grep -v "/")
