@@ -24,6 +24,7 @@ export XDG_DATA_HOME=~/.local/share
 zinit light zsh-users/zsh-syntax-highlighting
 zinit ice wait'!0'; zinit load zsh-users/zsh-completions
 zinit ice wait'!0'; zinit load zsh-users/zsh-autosuggestions
+zinit ice pick'kube-ps1.sh'; zinit light jonmosco/kube-ps1
 
 zmodload -i zsh/complist
 
@@ -60,7 +61,17 @@ autoload colors
 colors
 
 # プロンプト
-PROMPT="%F{green}%c %f%# "
+# context 名からクラスタ名だけ取り出し、どのマネージドサービスかを前置きする
+function kube-ps1-cluster() {
+  case "$1" in
+    gke_*) echo "gke:${1##*_}" ;;
+    arn:aws:eks:*) echo "eks:${1##*/}" ;;
+    *) echo "$1" ;;
+  esac
+}
+KUBE_PS1_CLUSTER_FUNCTION=kube-ps1-cluster
+KUBE_PS1_CTX_COLOR=green
+PROMPT='$(kube_ps1)'" %f%# "
 
 # git の情報を右側に表示する
 RPROMPT="%{${fg[blue]}%}[%~]%{${reset_color}%}"
