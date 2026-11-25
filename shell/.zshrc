@@ -69,6 +69,24 @@ function kube-ps1-cluster() {
     *) echo "$1" ;;
   esac
 }
+
+# kube-ps1 は context と namespace の取得に kubectl を起動するが、シェル起動のたびに 200ms ほどかかるので kubeconfig を直接読む
+function kube-ps1-kubectl() {
+  local field=context
+  [[ "$*" == *namespace* ]] && field=namespace
+  awk -v field="$field" '
+    FNR == 1 { sec = "" }
+    /^[^ \t-]/ { sec = $1 }
+    sec == "current-context:" { if (cur == "") cur = $2; next }
+    sec != "contexts:" { next }
+    /^[ \t]*-/ { ns = "" }
+    $1 == "namespace:" { ns = $2 }
+    $1 == "name:" && !($2 in nsmap) { nsmap[$2] = ns }
+    END { print (field == "context" ? cur : nsmap[cur]) }
+  ' ${(s.:.)${KUBECONFIG:-$HOME/.kube/config}}
+}
+
+KUBE_PS1_BINARY=kube-ps1-kubectl
 KUBE_PS1_CLUSTER_FUNCTION=kube-ps1-cluster
 KUBE_PS1_CTX_COLOR=green
 PROMPT='$(kube_ps1)'" %f%# "
